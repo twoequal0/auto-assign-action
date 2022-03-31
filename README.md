@@ -112,6 +112,10 @@ reviewGroups:
     - reviewerE
     - reviewerF
 
+# A list of label, to add the entire review groups to reviewers
+useAllReviewGroupsLabels:
+  - 모두 리뷰어
+
 # Set to true to add assignees from different groups to pull requests
 useAssigneeGroups: false
 # A list of assignees, split into different froups, to be added to pull requests (GitHub user name)

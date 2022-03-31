@@ -46,7 +46,7 @@ function handlePullRequest(client, context, config) {
         }
         const { pull_request: event } = context.payload;
         const { title, draft, user, number } = event;
-        const { skipKeywords, useReviewGroups, useAssigneeGroups, reviewGroups, assigneeGroups, addReviewers, addAssignees, filterLabels, runOnDraft, } = config;
+        const { skipKeywords, useReviewGroups, useAssigneeGroups, reviewGroups, assigneeGroups, addReviewers, addAssignees, filterLabels, runOnDraft, useAllReviewGroupsLabels, } = config;
         if (skipKeywords && utils.includesSkipKeywords(title, skipKeywords)) {
             core.info('Skips the process to add reviewers/assignees since PR title includes skip-keywords');
             return;
@@ -81,7 +81,13 @@ function handlePullRequest(client, context, config) {
         }
         if (addReviewers) {
             try {
-                const reviewers = utils.chooseReviewers(owner, config);
+                let useAllReviewGroups = false;
+                if (useAllReviewGroupsLabels !== undefined) {
+                    if (useAllReviewGroupsLabels.length > 0) {
+                        useAllReviewGroups = pr.hasAnyLabel(useAllReviewGroupsLabels);
+                    }
+                }
+                const reviewers = utils.chooseReviewers(owner, useAllReviewGroups, config);
                 if (reviewers.length > 0) {
                     yield pr.addReviewers(reviewers);
                     core.info(`Added reviewers to PR #${number}: ${reviewers.join(', ')}`);
@@ -300,12 +306,12 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fetchConfigurationFile = exports.chooseUsersFromGroups = exports.includesSkipKeywords = exports.chooseUsers = exports.chooseAssignees = exports.chooseReviewers = void 0;
 const lodash_1 = __importDefault(__nccwpck_require__(5817));
 const yaml = __importStar(__nccwpck_require__(9818));
-function chooseReviewers(owner, config) {
+function chooseReviewers(owner, useAllReviewGroups, config) {
     const { useReviewGroups, reviewGroups, numberOfReviewers, reviewers } = config;
     let chosenReviewers = [];
     const useGroups = useReviewGroups && Object.keys(reviewGroups).length > 0;
     if (useGroups) {
-        chosenReviewers = chooseUsersFromGroups(owner, reviewGroups, numberOfReviewers);
+        chosenReviewers = chooseUsersFromGroups(owner, reviewGroups, numberOfReviewers, useAllReviewGroups);
     }
     else {
         chosenReviewers = chooseUsers(reviewers, numberOfReviewers, owner);
@@ -324,7 +330,7 @@ function chooseAssignees(owner, config) {
         chosenAssignees = [owner];
     }
     else if (useGroups) {
-        chosenAssignees = chooseUsersFromGroups(owner, assigneeGroups, numberOfAssignees || numberOfReviewers);
+        chosenAssignees = chooseUsersFromGroups(owner, assigneeGroups, numberOfAssignees || numberOfReviewers, false);
     }
     else {
         const candidates = assignees ? assignees : reviewers;
@@ -353,10 +359,12 @@ function includesSkipKeywords(title, skipKeywords) {
     return false;
 }
 exports.includesSkipKeywords = includesSkipKeywords;
-function chooseUsersFromGroups(owner, groups, desiredNumber) {
+function chooseUsersFromGroups(owner, groups, desiredNumber, useAllGroups) {
     let users = [];
     for (const group in groups) {
-        users = users.concat(chooseUsers(groups[group], desiredNumber, owner));
+        if (useAllGroups || groups[group].indexOf(owner) > -1) {
+            users = users.concat(chooseUsers(groups[group], desiredNumber, owner));
+        }
     }
     return users;
 }

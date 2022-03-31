@@ -5,4 +5,4 @@ jobs:
   add-reviews:
     runs-on: ubuntu-latest
     steps:
-      - uses: twoequal0/auto-assign-bot@v1.2.1
+      - uses: twoequal0/auto-assign-bot@v1.3.0
