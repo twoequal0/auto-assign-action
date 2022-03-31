@@ -34,6 +34,7 @@
     "jest-circus": "^27.3.1",
     "prettier": "^1.18.2",
     "ts-jest": "^27.0.7",
+    "ts-node": "^10.7.0",
     "typescript": "^3.9.10"
   },
   "husky": {
@@ -41,5 +42,13 @@
     "hooks": {
       "pre-commit": "npm run format && git add ."
     }
+  },
+  "bugs": {
+    "url": "https://github.com/kentaro-m/auto-assign-action/issues"
+  },
+  "homepage": "https://github.com/kentaro-m/auto-assign-action#readme",
+  "keywords": [],
+  "directories": {
+    "lib": "lib"
   }
 }

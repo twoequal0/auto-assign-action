@@ -1,33 +1,8 @@
-require('./sourcemap-register.js');module.exports =
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 8444:
-/***/ ((module) => {
-
-"use strict";
-module.exports = {"i8":"2.1.3"};
-
-/***/ }),
-
-/***/ 9674:
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse("{\"name\":\"@octokit/rest\",\"version\":\"16.30.1\",\"publishConfig\":{\"access\":\"public\"},\"description\":\"GitHub REST API client for Node.js\",\"keywords\":[\"octokit\",\"github\",\"rest\",\"api-client\"],\"author\":\"Gregor Martynus (https://github.com/gr2m)\",\"contributors\":[{\"name\":\"Mike de Boer\",\"email\":\"info@mikedeboer.nl\"},{\"name\":\"Fabian Jakobs\",\"email\":\"fabian@c9.io\"},{\"name\":\"Joe Gallo\",\"email\":\"joe@brassafrax.com\"},{\"name\":\"Gregor Martynus\",\"url\":\"https://github.com/gr2m\"}],\"repository\":\"https://github.com/octokit/rest.js\",\"dependencies\":{\"@octokit/request\":\"^5.0.0\",\"@octokit/request-error\":\"^1.0.2\",\"atob-lite\":\"^2.0.0\",\"before-after-hook\":\"^2.0.0\",\"btoa-lite\":\"^1.0.0\",\"deprecation\":\"^2.0.0\",\"lodash.get\":\"^4.4.2\",\"lodash.set\":\"^4.3.2\",\"lodash.uniq\":\"^4.5.0\",\"octokit-pagination-methods\":\"^1.1.0\",\"once\":\"^1.4.0\",\"universal-user-agent\":\"^4.0.0\"},\"devDependencies\":{\"@gimenete/type-writer\":\"^0.1.3\",\"@octokit/fixtures-server\":\"^5.0.6\",\"@octokit/graphql\":\"^4.2.0\",\"@types/node\":\"^12.0.0\",\"bundlesize\":\"^0.18.0\",\"chai\":\"^4.1.2\",\"compression-webpack-plugin\":\"^3.0.0\",\"cypress\":\"^3.0.0\",\"glob\":\"^7.1.2\",\"http-proxy-agent\":\"^2.1.0\",\"lodash.camelcase\":\"^4.3.0\",\"lodash.merge\":\"^4.6.1\",\"lodash.upperfirst\":\"^4.3.1\",\"mkdirp\":\"^0.5.1\",\"mocha\":\"^6.0.0\",\"mustache\":\"^3.0.0\",\"nock\":\"^11.3.3\",\"npm-run-all\":\"^4.1.2\",\"nyc\":\"^14.0.0\",\"prettier\":\"^1.14.2\",\"proxy\":\"^0.2.4\",\"semantic-release\":\"^15.0.0\",\"sinon\":\"^7.2.4\",\"sinon-chai\":\"^3.0.0\",\"sort-keys\":\"^4.0.0\",\"string-to-arraybuffer\":\"^1.0.0\",\"string-to-jsdoc-comment\":\"^1.0.0\",\"typescript\":\"^3.3.1\",\"webpack\":\"^4.0.0\",\"webpack-bundle-analyzer\":\"^3.0.0\",\"webpack-cli\":\"^3.0.0\"},\"types\":\"index.d.ts\",\"scripts\":{\"coverage\":\"nyc report --reporter=html && open coverage/index.html\",\"lint\":\"prettier --check '{lib,plugins,scripts,test}/**/*.{js,json,ts}' 'docs/*.{js,json}' 'docs/src/**/*' index.js README.md package.json\",\"lint:fix\":\"prettier --write '{lib,plugins,scripts,test}/**/*.{js,json,ts}' 'docs/*.{js,json}' 'docs/src/**/*' index.js README.md package.json\",\"pretest\":\"npm run -s lint\",\"test\":\"nyc mocha test/mocha-node-setup.js \\\"test/*/**/*-test.js\\\"\",\"test:browser\":\"cypress run --browser chrome\",\"build\":\"npm-run-all build:*\",\"build:ts\":\"node scripts/generate-types\",\"prebuild:browser\":\"mkdirp dist/\",\"build:browser\":\"npm-run-all build:browser:*\",\"build:browser:development\":\"webpack --mode development --entry . --output-library=Octokit --output=./dist/octokit-rest.js --profile --json > dist/bundle-stats.json\",\"build:browser:production\":\"webpack --mode production --entry . --plugin=compression-webpack-plugin --output-library=Octokit --output-path=./dist --output-filename=octokit-rest.min.js --devtool source-map\",\"generate-bundle-report\":\"webpack-bundle-analyzer dist/bundle-stats.json --mode=static --no-open --report dist/bundle-report.html\",\"generate-routes\":\"node scripts/generate-routes\",\"prevalidate:ts\":\"npm run -s build:ts\",\"validate:ts\":\"tsc --target es6 --noImplicitAny index.d.ts\",\"postvalidate:ts\":\"tsc --noEmit --target es6 test/typescript-validate.ts\",\"start-fixtures-server\":\"octokit-fixtures-server\"},\"license\":\"MIT\",\"files\":[\"index.js\",\"index.d.ts\",\"lib\",\"plugins\"],\"nyc\":{\"ignore\":[\"test\"]},\"release\":{\"publish\":[\"@semantic-release/npm\",{\"path\":\"@semantic-release/github\",\"assets\":[\"dist/*\",\"!dist/*.map.gz\"]}]},\"bundlesize\":[{\"path\":\"./dist/octokit-rest.min.js.gz\",\"maxSize\":\"33 kB\"}]}");
-
-/***/ }),
-
-/***/ 3923:
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse("{\"activity\":{\"checkStarringRepo\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/starred/:owner/:repo\"},\"deleteRepoSubscription\":{\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/subscription\"},\"deleteThreadSubscription\":{\"method\":\"DELETE\",\"params\":{\"thread_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/notifications/threads/:thread_id/subscription\"},\"getRepoSubscription\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/subscription\"},\"getThread\":{\"method\":\"GET\",\"params\":{\"thread_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/notifications/threads/:thread_id\"},\"getThreadSubscription\":{\"method\":\"GET\",\"params\":{\"thread_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/notifications/threads/:thread_id/subscription\"},\"listEventsForOrg\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/events/orgs/:org\"},\"listEventsForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/events\"},\"listFeeds\":{\"method\":\"GET\",\"params\":{},\"url\":\"/feeds\"},\"listNotifications\":{\"method\":\"GET\",\"params\":{\"all\":{\"type\":\"boolean\"},\"before\":{\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"participating\":{\"type\":\"boolean\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"}},\"url\":\"/notifications\"},\"listNotificationsForRepo\":{\"method\":\"GET\",\"params\":{\"all\":{\"type\":\"boolean\"},\"before\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"participating\":{\"type\":\"boolean\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"since\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/notifications\"},\"listPublicEvents\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/events\"},\"listPublicEventsForOrg\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/events\"},\"listPublicEventsForRepoNetwork\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/networks/:owner/:repo/events\"},\"listPublicEventsForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/events/public\"},\"listReceivedEventsForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/received_events\"},\"listReceivedPublicEventsForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/received_events/public\"},\"listRepoEvents\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/events\"},\"listReposStarredByAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/user/starred\"},\"listReposStarredByUser\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/starred\"},\"listReposWatchedByUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/subscriptions\"},\"listStargazersForRepo\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/stargazers\"},\"listWatchedReposForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/subscriptions\"},\"listWatchersForRepo\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/subscribers\"},\"markAsRead\":{\"method\":\"PUT\",\"params\":{\"last_read_at\":{\"type\":\"string\"}},\"url\":\"/notifications\"},\"markNotificationsAsReadForRepo\":{\"method\":\"PUT\",\"params\":{\"last_read_at\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/notifications\"},\"markThreadAsRead\":{\"method\":\"PATCH\",\"params\":{\"thread_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/notifications/threads/:thread_id\"},\"setRepoSubscription\":{\"method\":\"PUT\",\"params\":{\"ignored\":{\"type\":\"boolean\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"subscribed\":{\"type\":\"boolean\"}},\"url\":\"/repos/:owner/:repo/subscription\"},\"setThreadSubscription\":{\"method\":\"PUT\",\"params\":{\"ignored\":{\"type\":\"boolean\"},\"thread_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/notifications/threads/:thread_id/subscription\"},\"starRepo\":{\"method\":\"PUT\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/starred/:owner/:repo\"},\"unstarRepo\":{\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/starred/:owner/:repo\"}},\"apps\":{\"addRepoToInstallation\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"PUT\",\"params\":{\"installation_id\":{\"required\":true,\"type\":\"integer\"},\"repository_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/installations/:installation_id/repositories/:repository_id\"},\"checkAccountIsAssociatedWithAny\":{\"method\":\"GET\",\"params\":{\"account_id\":{\"required\":true,\"type\":\"integer\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/marketplace_listing/accounts/:account_id\"},\"checkAccountIsAssociatedWithAnyStubbed\":{\"method\":\"GET\",\"params\":{\"account_id\":{\"required\":true,\"type\":\"integer\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/marketplace_listing/stubbed/accounts/:account_id\"},\"createContentAttachment\":{\"headers\":{\"accept\":\"application/vnd.github.corsair-preview+json\"},\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"content_reference_id\":{\"required\":true,\"type\":\"integer\"},\"title\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/content_references/:content_reference_id/attachments\"},\"createFromManifest\":{\"headers\":{\"accept\":\"application/vnd.github.fury-preview+json\"},\"method\":\"POST\",\"params\":{\"code\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/app-manifests/:code/conversions\"},\"createInstallationToken\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"POST\",\"params\":{\"installation_id\":{\"required\":true,\"type\":\"integer\"},\"permissions\":{\"type\":\"object\"},\"repository_ids\":{\"type\":\"integer[]\"}},\"url\":\"/app/installations/:installation_id/access_tokens\"},\"deleteInstallation\":{\"headers\":{\"accept\":\"application/vnd.github.gambit-preview+json,application/vnd.github.machine-man-preview+json\"},\"method\":\"DELETE\",\"params\":{\"installation_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/app/installations/:installation_id\"},\"findOrgInstallation\":{\"deprecated\":\"octokit.apps.findOrgInstallation() has been renamed to octokit.apps.getOrgInstallation() (2019-04-10)\",\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/installation\"},\"findRepoInstallation\":{\"deprecated\":\"octokit.apps.findRepoInstallation() has been renamed to octokit.apps.getRepoInstallation() (2019-04-10)\",\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/installation\"},\"findUserInstallation\":{\"deprecated\":\"octokit.apps.findUserInstallation() has been renamed to octokit.apps.getUserInstallation() (2019-04-10)\",\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/installation\"},\"getAuthenticated\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{},\"url\":\"/app\"},\"getBySlug\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"app_slug\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/apps/:app_slug\"},\"getInstallation\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"installation_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/app/installations/:installation_id\"},\"getOrgInstallation\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/installation\"},\"getRepoInstallation\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/installation\"},\"getUserInstallation\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/installation\"},\"listAccountsUserOrOrgOnPlan\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"plan_id\":{\"required\":true,\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/marketplace_listing/plans/:plan_id/accounts\"},\"listAccountsUserOrOrgOnPlanStubbed\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"plan_id\":{\"required\":true,\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/marketplace_listing/stubbed/plans/:plan_id/accounts\"},\"listInstallationReposForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"installation_id\":{\"required\":true,\"type\":\"integer\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/installations/:installation_id/repositories\"},\"listInstallations\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/app/installations\"},\"listInstallationsForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/installations\"},\"listMarketplacePurchasesForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/marketplace_purchases\"},\"listMarketplacePurchasesForAuthenticatedUserStubbed\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/marketplace_purchases/stubbed\"},\"listPlans\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/marketplace_listing/plans\"},\"listPlansStubbed\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/marketplace_listing/stubbed/plans\"},\"listRepos\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/installation/repositories\"},\"removeRepoFromInstallation\":{\"headers\":{\"accept\":\"application/vnd.github.machine-man-preview+json\"},\"method\":\"DELETE\",\"params\":{\"installation_id\":{\"required\":true,\"type\":\"integer\"},\"repository_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/installations/:installation_id/repositories/:repository_id\"}},\"checks\":{\"create\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"POST\",\"params\":{\"actions\":{\"type\":\"object[]\"},\"actions[].description\":{\"required\":true,\"type\":\"string\"},\"actions[].identifier\":{\"required\":true,\"type\":\"string\"},\"actions[].label\":{\"required\":true,\"type\":\"string\"},\"completed_at\":{\"type\":\"string\"},\"conclusion\":{\"enum\":[\"success\",\"failure\",\"neutral\",\"cancelled\",\"timed_out\",\"action_required\"],\"type\":\"string\"},\"details_url\":{\"type\":\"string\"},\"external_id\":{\"type\":\"string\"},\"head_sha\":{\"required\":true,\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"output\":{\"type\":\"object\"},\"output.annotations\":{\"type\":\"object[]\"},\"output.annotations[].annotation_level\":{\"enum\":[\"notice\",\"warning\",\"failure\"],\"required\":true,\"type\":\"string\"},\"output.annotations[].end_column\":{\"type\":\"integer\"},\"output.annotations[].end_line\":{\"required\":true,\"type\":\"integer\"},\"output.annotations[].message\":{\"required\":true,\"type\":\"string\"},\"output.annotations[].path\":{\"required\":true,\"type\":\"string\"},\"output.annotations[].raw_details\":{\"type\":\"string\"},\"output.annotations[].start_column\":{\"type\":\"integer\"},\"output.annotations[].start_line\":{\"required\":true,\"type\":\"integer\"},\"output.annotations[].title\":{\"type\":\"string\"},\"output.images\":{\"type\":\"object[]\"},\"output.images[].alt\":{\"required\":true,\"type\":\"string\"},\"output.images[].caption\":{\"type\":\"string\"},\"output.images[].image_url\":{\"required\":true,\"type\":\"string\"},\"output.summary\":{\"required\":true,\"type\":\"string\"},\"output.text\":{\"type\":\"string\"},\"output.title\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"started_at\":{\"type\":\"string\"},\"status\":{\"enum\":[\"queued\",\"in_progress\",\"completed\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-runs\"},\"createSuite\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"POST\",\"params\":{\"head_sha\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-suites\"},\"get\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"GET\",\"params\":{\"check_run_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-runs/:check_run_id\"},\"getSuite\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"GET\",\"params\":{\"check_suite_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-suites/:check_suite_id\"},\"listAnnotations\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"GET\",\"params\":{\"check_run_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-runs/:check_run_id/annotations\"},\"listForRef\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"GET\",\"params\":{\"check_name\":{\"type\":\"string\"},\"filter\":{\"enum\":[\"latest\",\"all\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"status\":{\"enum\":[\"queued\",\"in_progress\",\"completed\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:ref/check-runs\"},\"listForSuite\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"GET\",\"params\":{\"check_name\":{\"type\":\"string\"},\"check_suite_id\":{\"required\":true,\"type\":\"integer\"},\"filter\":{\"enum\":[\"latest\",\"all\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"status\":{\"enum\":[\"queued\",\"in_progress\",\"completed\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-suites/:check_suite_id/check-runs\"},\"listSuitesForRef\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"GET\",\"params\":{\"app_id\":{\"type\":\"integer\"},\"check_name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:ref/check-suites\"},\"rerequestSuite\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"POST\",\"params\":{\"check_suite_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-suites/:check_suite_id/rerequest\"},\"setSuitesPreferences\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"PATCH\",\"params\":{\"auto_trigger_checks\":{\"type\":\"object[]\"},\"auto_trigger_checks[].app_id\":{\"required\":true,\"type\":\"integer\"},\"auto_trigger_checks[].setting\":{\"required\":true,\"type\":\"boolean\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-suites/preferences\"},\"update\":{\"headers\":{\"accept\":\"application/vnd.github.antiope-preview+json\"},\"method\":\"PATCH\",\"params\":{\"actions\":{\"type\":\"object[]\"},\"actions[].description\":{\"required\":true,\"type\":\"string\"},\"actions[].identifier\":{\"required\":true,\"type\":\"string\"},\"actions[].label\":{\"required\":true,\"type\":\"string\"},\"check_run_id\":{\"required\":true,\"type\":\"integer\"},\"completed_at\":{\"type\":\"string\"},\"conclusion\":{\"enum\":[\"success\",\"failure\",\"neutral\",\"cancelled\",\"timed_out\",\"action_required\"],\"type\":\"string\"},\"details_url\":{\"type\":\"string\"},\"external_id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"output\":{\"type\":\"object\"},\"output.annotations\":{\"type\":\"object[]\"},\"output.annotations[].annotation_level\":{\"enum\":[\"notice\",\"warning\",\"failure\"],\"required\":true,\"type\":\"string\"},\"output.annotations[].end_column\":{\"type\":\"integer\"},\"output.annotations[].end_line\":{\"required\":true,\"type\":\"integer\"},\"output.annotations[].message\":{\"required\":true,\"type\":\"string\"},\"output.annotations[].path\":{\"required\":true,\"type\":\"string\"},\"output.annotations[].raw_details\":{\"type\":\"string\"},\"output.annotations[].start_column\":{\"type\":\"integer\"},\"output.annotations[].start_line\":{\"required\":true,\"type\":\"integer\"},\"output.annotations[].title\":{\"type\":\"string\"},\"output.images\":{\"type\":\"object[]\"},\"output.images[].alt\":{\"required\":true,\"type\":\"string\"},\"output.images[].caption\":{\"type\":\"string\"},\"output.images[].image_url\":{\"required\":true,\"type\":\"string\"},\"output.summary\":{\"required\":true,\"type\":\"string\"},\"output.text\":{\"type\":\"string\"},\"output.title\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"started_at\":{\"type\":\"string\"},\"status\":{\"enum\":[\"queued\",\"in_progress\",\"completed\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/check-runs/:check_run_id\"}},\"codesOfConduct\":{\"getConductCode\":{\"headers\":{\"accept\":\"application/vnd.github.scarlet-witch-preview+json\"},\"method\":\"GET\",\"params\":{\"key\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/codes_of_conduct/:key\"},\"getForRepo\":{\"headers\":{\"accept\":\"application/vnd.github.scarlet-witch-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/community/code_of_conduct\"},\"listConductCodes\":{\"headers\":{\"accept\":\"application/vnd.github.scarlet-witch-preview+json\"},\"method\":\"GET\",\"params\":{},\"url\":\"/codes_of_conduct\"}},\"emojis\":{\"get\":{\"method\":\"GET\",\"params\":{},\"url\":\"/emojis\"}},\"gists\":{\"checkIsStarred\":{\"method\":\"GET\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/star\"},\"create\":{\"method\":\"POST\",\"params\":{\"description\":{\"type\":\"string\"},\"files\":{\"required\":true,\"type\":\"object\"},\"files.content\":{\"type\":\"string\"},\"public\":{\"type\":\"boolean\"}},\"url\":\"/gists\"},\"createComment\":{\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/comments\"},\"delete\":{\"method\":\"DELETE\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id\"},\"deleteComment\":{\"method\":\"DELETE\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/comments/:comment_id\"},\"fork\":{\"method\":\"POST\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/forks\"},\"get\":{\"method\":\"GET\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id\"},\"getComment\":{\"method\":\"GET\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/comments/:comment_id\"},\"getRevision\":{\"method\":\"GET\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/:sha\"},\"list\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"}},\"url\":\"/gists\"},\"listComments\":{\"method\":\"GET\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/gists/:gist_id/comments\"},\"listCommits\":{\"method\":\"GET\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/gists/:gist_id/commits\"},\"listForks\":{\"method\":\"GET\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/gists/:gist_id/forks\"},\"listPublic\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"}},\"url\":\"/gists/public\"},\"listPublicForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/gists\"},\"listStarred\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"}},\"url\":\"/gists/starred\"},\"star\":{\"method\":\"PUT\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/star\"},\"unstar\":{\"method\":\"DELETE\",\"params\":{\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/star\"},\"update\":{\"method\":\"PATCH\",\"params\":{\"description\":{\"type\":\"string\"},\"files\":{\"type\":\"object\"},\"files.content\":{\"type\":\"string\"},\"files.filename\":{\"type\":\"string\"},\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id\"},\"updateComment\":{\"method\":\"PATCH\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"gist_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gists/:gist_id/comments/:comment_id\"}},\"git\":{\"createBlob\":{\"method\":\"POST\",\"params\":{\"content\":{\"required\":true,\"type\":\"string\"},\"encoding\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/blobs\"},\"createCommit\":{\"method\":\"POST\",\"params\":{\"author\":{\"type\":\"object\"},\"author.date\":{\"type\":\"string\"},\"author.email\":{\"type\":\"string\"},\"author.name\":{\"type\":\"string\"},\"committer\":{\"type\":\"object\"},\"committer.date\":{\"type\":\"string\"},\"committer.email\":{\"type\":\"string\"},\"committer.name\":{\"type\":\"string\"},\"message\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"parents\":{\"required\":true,\"type\":\"string[]\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"signature\":{\"type\":\"string\"},\"tree\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/commits\"},\"createRef\":{\"method\":\"POST\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/refs\"},\"createTag\":{\"method\":\"POST\",\"params\":{\"message\":{\"required\":true,\"type\":\"string\"},\"object\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tag\":{\"required\":true,\"type\":\"string\"},\"tagger\":{\"type\":\"object\"},\"tagger.date\":{\"type\":\"string\"},\"tagger.email\":{\"type\":\"string\"},\"tagger.name\":{\"type\":\"string\"},\"type\":{\"enum\":[\"commit\",\"tree\",\"blob\"],\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/tags\"},\"createTree\":{\"method\":\"POST\",\"params\":{\"base_tree\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tree\":{\"required\":true,\"type\":\"object[]\"},\"tree[].content\":{\"type\":\"string\"},\"tree[].mode\":{\"enum\":[\"100644\",\"100755\",\"040000\",\"160000\",\"120000\"],\"type\":\"string\"},\"tree[].path\":{\"type\":\"string\"},\"tree[].sha\":{\"type\":\"string\"},\"tree[].type\":{\"enum\":[\"blob\",\"tree\",\"commit\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/trees\"},\"deleteRef\":{\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/refs/:ref\"},\"getBlob\":{\"method\":\"GET\",\"params\":{\"file_sha\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/blobs/:file_sha\"},\"getCommit\":{\"method\":\"GET\",\"params\":{\"commit_sha\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/commits/:commit_sha\"},\"getRef\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/refs/:ref\"},\"getTag\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tag_sha\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/tags/:tag_sha\"},\"getTree\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"recursive\":{\"enum\":[\"1\"],\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tree_sha\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/trees/:tree_sha\"},\"listRefs\":{\"method\":\"GET\",\"params\":{\"namespace\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/refs/:namespace\"},\"updateRef\":{\"method\":\"PATCH\",\"params\":{\"force\":{\"type\":\"boolean\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/git/refs/:ref\"}},\"gitignore\":{\"getTemplate\":{\"method\":\"GET\",\"params\":{\"name\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/gitignore/templates/:name\"},\"listTemplates\":{\"method\":\"GET\",\"params\":{},\"url\":\"/gitignore/templates\"}},\"interactions\":{\"addOrUpdateRestrictionsForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.sombra-preview+json\"},\"method\":\"PUT\",\"params\":{\"limit\":{\"enum\":[\"existing_users\",\"contributors_only\",\"collaborators_only\"],\"required\":true,\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/interaction-limits\"},\"addOrUpdateRestrictionsForRepo\":{\"headers\":{\"accept\":\"application/vnd.github.sombra-preview+json\"},\"method\":\"PUT\",\"params\":{\"limit\":{\"enum\":[\"existing_users\",\"contributors_only\",\"collaborators_only\"],\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/interaction-limits\"},\"getRestrictionsForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.sombra-preview+json\"},\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/interaction-limits\"},\"getRestrictionsForRepo\":{\"headers\":{\"accept\":\"application/vnd.github.sombra-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/interaction-limits\"},\"removeRestrictionsForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.sombra-preview+json\"},\"method\":\"DELETE\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/interaction-limits\"},\"removeRestrictionsForRepo\":{\"headers\":{\"accept\":\"application/vnd.github.sombra-preview+json\"},\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/interaction-limits\"}},\"issues\":{\"addAssignees\":{\"method\":\"POST\",\"params\":{\"assignees\":{\"type\":\"string[]\"},\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/assignees\"},\"addLabels\":{\"method\":\"POST\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"labels\":{\"required\":true,\"type\":\"string[]\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/labels\"},\"checkAssignee\":{\"method\":\"GET\",\"params\":{\"assignee\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/assignees/:assignee\"},\"create\":{\"method\":\"POST\",\"params\":{\"assignee\":{\"type\":\"string\"},\"assignees\":{\"type\":\"string[]\"},\"body\":{\"type\":\"string\"},\"labels\":{\"type\":\"string[]\"},\"milestone\":{\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"title\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues\"},\"createComment\":{\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/comments\"},\"createLabel\":{\"method\":\"POST\",\"params\":{\"color\":{\"required\":true,\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/labels\"},\"createMilestone\":{\"method\":\"POST\",\"params\":{\"description\":{\"type\":\"string\"},\"due_on\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\"],\"type\":\"string\"},\"title\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/milestones\"},\"deleteComment\":{\"method\":\"DELETE\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/comments/:comment_id\"},\"deleteLabel\":{\"method\":\"DELETE\",\"params\":{\"name\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/labels/:name\"},\"deleteMilestone\":{\"method\":\"DELETE\",\"params\":{\"milestone_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"milestone_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/milestones/:milestone_number\"},\"get\":{\"method\":\"GET\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number\"},\"getComment\":{\"method\":\"GET\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/comments/:comment_id\"},\"getEvent\":{\"method\":\"GET\",\"params\":{\"event_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/events/:event_id\"},\"getLabel\":{\"method\":\"GET\",\"params\":{\"name\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/labels/:name\"},\"getMilestone\":{\"method\":\"GET\",\"params\":{\"milestone_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"milestone_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/milestones/:milestone_number\"},\"list\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"filter\":{\"enum\":[\"assigned\",\"created\",\"mentioned\",\"subscribed\",\"all\"],\"type\":\"string\"},\"labels\":{\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"comments\"],\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/issues\"},\"listAssignees\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/assignees\"},\"listComments\":{\"method\":\"GET\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"since\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/comments\"},\"listCommentsForRepo\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"since\":{\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/comments\"},\"listEvents\":{\"method\":\"GET\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/events\"},\"listEventsForRepo\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/events\"},\"listEventsForTimeline\":{\"headers\":{\"accept\":\"application/vnd.github.mockingbird-preview+json\"},\"method\":\"GET\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/timeline\"},\"listForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"filter\":{\"enum\":[\"assigned\",\"created\",\"mentioned\",\"subscribed\",\"all\"],\"type\":\"string\"},\"labels\":{\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"comments\"],\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/user/issues\"},\"listForOrg\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"filter\":{\"enum\":[\"assigned\",\"created\",\"mentioned\",\"subscribed\",\"all\"],\"type\":\"string\"},\"labels\":{\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"comments\"],\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/orgs/:org/issues\"},\"listForRepo\":{\"method\":\"GET\",\"params\":{\"assignee\":{\"type\":\"string\"},\"creator\":{\"type\":\"string\"},\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"labels\":{\"type\":\"string\"},\"mentioned\":{\"type\":\"string\"},\"milestone\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"since\":{\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"comments\"],\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues\"},\"listLabelsForMilestone\":{\"method\":\"GET\",\"params\":{\"milestone_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"milestone_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/milestones/:milestone_number/labels\"},\"listLabelsForRepo\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/labels\"},\"listLabelsOnIssue\":{\"method\":\"GET\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/labels\"},\"listMilestonesForRepo\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"due_on\",\"completeness\"],\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/milestones\"},\"lock\":{\"method\":\"PUT\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"lock_reason\":{\"enum\":[\"off-topic\",\"too heated\",\"resolved\",\"spam\"],\"type\":\"string\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/lock\"},\"removeAssignees\":{\"method\":\"DELETE\",\"params\":{\"assignees\":{\"type\":\"string[]\"},\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/assignees\"},\"removeLabel\":{\"method\":\"DELETE\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"name\":{\"required\":true,\"type\":\"string\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/labels/:name\"},\"removeLabels\":{\"method\":\"DELETE\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/labels\"},\"replaceLabels\":{\"method\":\"PUT\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"labels\":{\"type\":\"string[]\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/labels\"},\"unlock\":{\"method\":\"DELETE\",\"params\":{\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/lock\"},\"update\":{\"method\":\"PATCH\",\"params\":{\"assignee\":{\"type\":\"string\"},\"assignees\":{\"type\":\"string[]\"},\"body\":{\"type\":\"string\"},\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"labels\":{\"type\":\"string[]\"},\"milestone\":{\"allowNull\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\"],\"type\":\"string\"},\"title\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number\"},\"updateComment\":{\"method\":\"PATCH\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/comments/:comment_id\"},\"updateLabel\":{\"method\":\"PATCH\",\"params\":{\"color\":{\"type\":\"string\"},\"current_name\":{\"required\":true,\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/labels/:current_name\"},\"updateMilestone\":{\"method\":\"PATCH\",\"params\":{\"description\":{\"type\":\"string\"},\"due_on\":{\"type\":\"string\"},\"milestone_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"milestone_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\"],\"type\":\"string\"},\"title\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/milestones/:milestone_number\"}},\"licenses\":{\"get\":{\"method\":\"GET\",\"params\":{\"license\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/licenses/:license\"},\"getForRepo\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/license\"},\"list\":{\"deprecated\":\"octokit.licenses.list() has been renamed to octokit.licenses.listCommonlyUsed() (2019-03-05)\",\"method\":\"GET\",\"params\":{},\"url\":\"/licenses\"},\"listCommonlyUsed\":{\"method\":\"GET\",\"params\":{},\"url\":\"/licenses\"}},\"markdown\":{\"render\":{\"method\":\"POST\",\"params\":{\"context\":{\"type\":\"string\"},\"mode\":{\"enum\":[\"markdown\",\"gfm\"],\"type\":\"string\"},\"text\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/markdown\"},\"renderRaw\":{\"headers\":{\"content-type\":\"text/plain; charset=utf-8\"},\"method\":\"POST\",\"params\":{\"data\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string\"}},\"url\":\"/markdown/raw\"}},\"meta\":{\"get\":{\"method\":\"GET\",\"params\":{},\"url\":\"/meta\"}},\"migrations\":{\"cancelImport\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import\"},\"deleteArchiveForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"DELETE\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/migrations/:migration_id/archive\"},\"deleteArchiveForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"DELETE\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/migrations/:migration_id/archive\"},\"getArchiveForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"GET\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/migrations/:migration_id/archive\"},\"getArchiveForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"GET\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/migrations/:migration_id/archive\"},\"getCommitAuthors\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"since\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import/authors\"},\"getImportProgress\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import\"},\"getLargeFiles\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import/large_files\"},\"getStatusForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"GET\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/migrations/:migration_id\"},\"getStatusForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"GET\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/migrations/:migration_id\"},\"listForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/migrations\"},\"listForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/migrations\"},\"mapCommitAuthor\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"PATCH\",\"params\":{\"author_id\":{\"required\":true,\"type\":\"integer\"},\"email\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import/authors/:author_id\"},\"setLfsPreference\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"PATCH\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"use_lfs\":{\"enum\":[\"opt_in\",\"opt_out\"],\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import/lfs\"},\"startForAuthenticatedUser\":{\"method\":\"POST\",\"params\":{\"exclude_attachments\":{\"type\":\"boolean\"},\"lock_repositories\":{\"type\":\"boolean\"},\"repositories\":{\"required\":true,\"type\":\"string[]\"}},\"url\":\"/user/migrations\"},\"startForOrg\":{\"method\":\"POST\",\"params\":{\"exclude_attachments\":{\"type\":\"boolean\"},\"lock_repositories\":{\"type\":\"boolean\"},\"org\":{\"required\":true,\"type\":\"string\"},\"repositories\":{\"required\":true,\"type\":\"string[]\"}},\"url\":\"/orgs/:org/migrations\"},\"startImport\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"PUT\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tfvc_project\":{\"type\":\"string\"},\"vcs\":{\"enum\":[\"subversion\",\"git\",\"mercurial\",\"tfvc\"],\"type\":\"string\"},\"vcs_password\":{\"type\":\"string\"},\"vcs_url\":{\"required\":true,\"type\":\"string\"},\"vcs_username\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import\"},\"unlockRepoForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"DELETE\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"},\"repo_name\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/migrations/:migration_id/repos/:repo_name/lock\"},\"unlockRepoForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.wyandotte-preview+json\"},\"method\":\"DELETE\",\"params\":{\"migration_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"},\"repo_name\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/migrations/:migration_id/repos/:repo_name/lock\"},\"updateImport\":{\"headers\":{\"accept\":\"application/vnd.github.barred-rock-preview+json\"},\"method\":\"PATCH\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"vcs_password\":{\"type\":\"string\"},\"vcs_username\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/import\"}},\"oauthAuthorizations\":{\"checkAuthorization\":{\"method\":\"GET\",\"params\":{\"access_token\":{\"required\":true,\"type\":\"string\"},\"client_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/applications/:client_id/tokens/:access_token\"},\"createAuthorization\":{\"method\":\"POST\",\"params\":{\"client_id\":{\"type\":\"string\"},\"client_secret\":{\"type\":\"string\"},\"fingerprint\":{\"type\":\"string\"},\"note\":{\"required\":true,\"type\":\"string\"},\"note_url\":{\"type\":\"string\"},\"scopes\":{\"type\":\"string[]\"}},\"url\":\"/authorizations\"},\"deleteAuthorization\":{\"method\":\"DELETE\",\"params\":{\"authorization_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/authorizations/:authorization_id\"},\"deleteGrant\":{\"method\":\"DELETE\",\"params\":{\"grant_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/applications/grants/:grant_id\"},\"getAuthorization\":{\"method\":\"GET\",\"params\":{\"authorization_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/authorizations/:authorization_id\"},\"getGrant\":{\"method\":\"GET\",\"params\":{\"grant_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/applications/grants/:grant_id\"},\"getOrCreateAuthorizationForApp\":{\"method\":\"PUT\",\"params\":{\"client_id\":{\"required\":true,\"type\":\"string\"},\"client_secret\":{\"required\":true,\"type\":\"string\"},\"fingerprint\":{\"type\":\"string\"},\"note\":{\"type\":\"string\"},\"note_url\":{\"type\":\"string\"},\"scopes\":{\"type\":\"string[]\"}},\"url\":\"/authorizations/clients/:client_id\"},\"getOrCreateAuthorizationForAppAndFingerprint\":{\"method\":\"PUT\",\"params\":{\"client_id\":{\"required\":true,\"type\":\"string\"},\"client_secret\":{\"required\":true,\"type\":\"string\"},\"fingerprint\":{\"required\":true,\"type\":\"string\"},\"note\":{\"type\":\"string\"},\"note_url\":{\"type\":\"string\"},\"scopes\":{\"type\":\"string[]\"}},\"url\":\"/authorizations/clients/:client_id/:fingerprint\"},\"getOrCreateAuthorizationForAppFingerprint\":{\"deprecated\":\"octokit.oauthAuthorizations.getOrCreateAuthorizationForAppFingerprint() has been renamed to octokit.oauthAuthorizations.getOrCreateAuthorizationForAppAndFingerprint() (2018-12-27)\",\"method\":\"PUT\",\"params\":{\"client_id\":{\"required\":true,\"type\":\"string\"},\"client_secret\":{\"required\":true,\"type\":\"string\"},\"fingerprint\":{\"required\":true,\"type\":\"string\"},\"note\":{\"type\":\"string\"},\"note_url\":{\"type\":\"string\"},\"scopes\":{\"type\":\"string[]\"}},\"url\":\"/authorizations/clients/:client_id/:fingerprint\"},\"listAuthorizations\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/authorizations\"},\"listGrants\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/applications/grants\"},\"resetAuthorization\":{\"method\":\"POST\",\"params\":{\"access_token\":{\"required\":true,\"type\":\"string\"},\"client_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/applications/:client_id/tokens/:access_token\"},\"revokeAuthorizationForApplication\":{\"method\":\"DELETE\",\"params\":{\"access_token\":{\"required\":true,\"type\":\"string\"},\"client_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/applications/:client_id/tokens/:access_token\"},\"revokeGrantForApplication\":{\"method\":\"DELETE\",\"params\":{\"access_token\":{\"required\":true,\"type\":\"string\"},\"client_id\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/applications/:client_id/grants/:access_token\"},\"updateAuthorization\":{\"method\":\"PATCH\",\"params\":{\"add_scopes\":{\"type\":\"string[]\"},\"authorization_id\":{\"required\":true,\"type\":\"integer\"},\"fingerprint\":{\"type\":\"string\"},\"note\":{\"type\":\"string\"},\"note_url\":{\"type\":\"string\"},\"remove_scopes\":{\"type\":\"string[]\"},\"scopes\":{\"type\":\"string[]\"}},\"url\":\"/authorizations/:authorization_id\"}},\"orgs\":{\"addOrUpdateMembership\":{\"method\":\"PUT\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"role\":{\"enum\":[\"admin\",\"member\"],\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/memberships/:username\"},\"blockUser\":{\"method\":\"PUT\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/blocks/:username\"},\"checkBlockedUser\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/blocks/:username\"},\"checkMembership\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/members/:username\"},\"checkPublicMembership\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/public_members/:username\"},\"concealMembership\":{\"method\":\"DELETE\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/public_members/:username\"},\"convertMemberToOutsideCollaborator\":{\"method\":\"PUT\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/outside_collaborators/:username\"},\"createHook\":{\"method\":\"POST\",\"params\":{\"active\":{\"type\":\"boolean\"},\"config\":{\"required\":true,\"type\":\"object\"},\"config.content_type\":{\"type\":\"string\"},\"config.insecure_ssl\":{\"type\":\"string\"},\"config.secret\":{\"type\":\"string\"},\"config.url\":{\"required\":true,\"type\":\"string\"},\"events\":{\"type\":\"string[]\"},\"name\":{\"required\":true,\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/hooks\"},\"createInvitation\":{\"method\":\"POST\",\"params\":{\"email\":{\"type\":\"string\"},\"invitee_id\":{\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"},\"role\":{\"enum\":[\"admin\",\"direct_member\",\"billing_manager\"],\"type\":\"string\"},\"team_ids\":{\"type\":\"integer[]\"}},\"url\":\"/orgs/:org/invitations\"},\"deleteHook\":{\"method\":\"DELETE\",\"params\":{\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/hooks/:hook_id\"},\"get\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org\"},\"getHook\":{\"method\":\"GET\",\"params\":{\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/hooks/:hook_id\"},\"getMembership\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/memberships/:username\"},\"getMembershipForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/memberships/orgs/:org\"},\"list\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"}},\"url\":\"/organizations\"},\"listBlockedUsers\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/blocks\"},\"listForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/orgs\"},\"listForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/orgs\"},\"listHooks\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/hooks\"},\"listInvitationTeams\":{\"method\":\"GET\",\"params\":{\"invitation_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/invitations/:invitation_id/teams\"},\"listMembers\":{\"method\":\"GET\",\"params\":{\"filter\":{\"enum\":[\"2fa_disabled\",\"all\"],\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"role\":{\"enum\":[\"all\",\"admin\",\"member\"],\"type\":\"string\"}},\"url\":\"/orgs/:org/members\"},\"listMemberships\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"state\":{\"enum\":[\"active\",\"pending\"],\"type\":\"string\"}},\"url\":\"/user/memberships/orgs\"},\"listOutsideCollaborators\":{\"method\":\"GET\",\"params\":{\"filter\":{\"enum\":[\"2fa_disabled\",\"all\"],\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/outside_collaborators\"},\"listPendingInvitations\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/invitations\"},\"listPublicMembers\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/public_members\"},\"pingHook\":{\"method\":\"POST\",\"params\":{\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/hooks/:hook_id/pings\"},\"publicizeMembership\":{\"method\":\"PUT\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/public_members/:username\"},\"removeMember\":{\"method\":\"DELETE\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/members/:username\"},\"removeMembership\":{\"method\":\"DELETE\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/memberships/:username\"},\"removeOutsideCollaborator\":{\"method\":\"DELETE\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/outside_collaborators/:username\"},\"unblockUser\":{\"method\":\"DELETE\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/blocks/:username\"},\"update\":{\"method\":\"PATCH\",\"params\":{\"billing_email\":{\"type\":\"string\"},\"company\":{\"type\":\"string\"},\"default_repository_permission\":{\"enum\":[\"read\",\"write\",\"admin\",\"none\"],\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"email\":{\"type\":\"string\"},\"has_organization_projects\":{\"type\":\"boolean\"},\"has_repository_projects\":{\"type\":\"boolean\"},\"location\":{\"type\":\"string\"},\"members_allowed_repository_creation_type\":{\"enum\":[\"all\",\"private\",\"none\"],\"type\":\"string\"},\"members_can_create_repositories\":{\"type\":\"boolean\"},\"name\":{\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org\"},\"updateHook\":{\"method\":\"PATCH\",\"params\":{\"active\":{\"type\":\"boolean\"},\"config\":{\"type\":\"object\"},\"config.content_type\":{\"type\":\"string\"},\"config.insecure_ssl\":{\"type\":\"string\"},\"config.secret\":{\"type\":\"string\"},\"config.url\":{\"required\":true,\"type\":\"string\"},\"events\":{\"type\":\"string[]\"},\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/hooks/:hook_id\"},\"updateMembership\":{\"method\":\"PATCH\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"active\"],\"required\":true,\"type\":\"string\"}},\"url\":\"/user/memberships/orgs/:org\"}},\"projects\":{\"addCollaborator\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"PUT\",\"params\":{\"permission\":{\"enum\":[\"read\",\"write\",\"admin\"],\"type\":\"string\"},\"project_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/projects/:project_id/collaborators/:username\"},\"createCard\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"POST\",\"params\":{\"column_id\":{\"required\":true,\"type\":\"integer\"},\"content_id\":{\"type\":\"integer\"},\"content_type\":{\"type\":\"string\"},\"note\":{\"type\":\"string\"}},\"url\":\"/projects/columns/:column_id/cards\"},\"createColumn\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"POST\",\"params\":{\"name\":{\"required\":true,\"type\":\"string\"},\"project_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/:project_id/columns\"},\"createForAuthenticatedUser\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"POST\",\"params\":{\"body\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/projects\"},\"createForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"POST\",\"params\":{\"body\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/projects\"},\"createForRepo\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"POST\",\"params\":{\"body\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/projects\"},\"delete\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"DELETE\",\"params\":{\"project_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/:project_id\"},\"deleteCard\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"DELETE\",\"params\":{\"card_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/columns/cards/:card_id\"},\"deleteColumn\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"DELETE\",\"params\":{\"column_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/columns/:column_id\"},\"get\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"project_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/:project_id\"},\"getCard\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"card_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/columns/cards/:card_id\"},\"getColumn\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"column_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/columns/:column_id\"},\"listCards\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"archived_state\":{\"enum\":[\"all\",\"archived\",\"not_archived\"],\"type\":\"string\"},\"column_id\":{\"required\":true,\"type\":\"integer\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/projects/columns/:column_id/cards\"},\"listCollaborators\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"affiliation\":{\"enum\":[\"outside\",\"direct\",\"all\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"project_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/:project_id/collaborators\"},\"listColumns\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"project_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/projects/:project_id/columns\"},\"listForOrg\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/orgs/:org/projects\"},\"listForRepo\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/projects\"},\"listForUser\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/projects\"},\"moveCard\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"POST\",\"params\":{\"card_id\":{\"required\":true,\"type\":\"integer\"},\"column_id\":{\"type\":\"integer\"},\"position\":{\"required\":true,\"type\":\"string\",\"validation\":\"^(top|bottom|after:\\\\d+)$\"}},\"url\":\"/projects/columns/cards/:card_id/moves\"},\"moveColumn\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"POST\",\"params\":{\"column_id\":{\"required\":true,\"type\":\"integer\"},\"position\":{\"required\":true,\"type\":\"string\",\"validation\":\"^(first|last|after:\\\\d+)$\"}},\"url\":\"/projects/columns/:column_id/moves\"},\"removeCollaborator\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"DELETE\",\"params\":{\"project_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/projects/:project_id/collaborators/:username\"},\"reviewUserPermissionLevel\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"project_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/projects/:project_id/collaborators/:username/permission\"},\"update\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"PATCH\",\"params\":{\"body\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"organization_permission\":{\"type\":\"string\"},\"private\":{\"type\":\"boolean\"},\"project_id\":{\"required\":true,\"type\":\"integer\"},\"state\":{\"enum\":[\"open\",\"closed\"],\"type\":\"string\"}},\"url\":\"/projects/:project_id\"},\"updateCard\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"PATCH\",\"params\":{\"archived\":{\"type\":\"boolean\"},\"card_id\":{\"required\":true,\"type\":\"integer\"},\"note\":{\"type\":\"string\"}},\"url\":\"/projects/columns/cards/:card_id\"},\"updateColumn\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"PATCH\",\"params\":{\"column_id\":{\"required\":true,\"type\":\"integer\"},\"name\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/projects/columns/:column_id\"}},\"pulls\":{\"checkIfMerged\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/merge\"},\"create\":{\"method\":\"POST\",\"params\":{\"base\":{\"required\":true,\"type\":\"string\"},\"body\":{\"type\":\"string\"},\"draft\":{\"type\":\"boolean\"},\"head\":{\"required\":true,\"type\":\"string\"},\"maintainer_can_modify\":{\"type\":\"boolean\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"title\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls\"},\"createComment\":{\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"commit_id\":{\"required\":true,\"type\":\"string\"},\"in_reply_to\":{\"deprecated\":true,\"description\":\"The comment ID to reply to. **Note**: This must be the ID of a top-level comment, not a reply to that comment. Replies to replies are not supported.\",\"type\":\"integer\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"required\":true,\"type\":\"string\"},\"position\":{\"required\":true,\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/comments\"},\"createCommentReply\":{\"deprecated\":\"octokit.pulls.createCommentReply() has been renamed to octokit.pulls.createComment() (2019-09-09)\",\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"commit_id\":{\"required\":true,\"type\":\"string\"},\"in_reply_to\":{\"deprecated\":true,\"description\":\"The comment ID to reply to. **Note**: This must be the ID of a top-level comment, not a reply to that comment. Replies to replies are not supported.\",\"type\":\"integer\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"required\":true,\"type\":\"string\"},\"position\":{\"required\":true,\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/comments\"},\"createFromIssue\":{\"deprecated\":\"octokit.pulls.createFromIssue() has been deprecated. Use octokit.pulls.create() instead.\",\"method\":\"POST\",\"params\":{\"base\":{\"required\":true,\"type\":\"string\"},\"draft\":{\"type\":\"boolean\"},\"head\":{\"required\":true,\"type\":\"string\"},\"issue\":{\"required\":true,\"type\":\"integer\"},\"maintainer_can_modify\":{\"type\":\"boolean\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls\"},\"createReview\":{\"method\":\"POST\",\"params\":{\"body\":{\"type\":\"string\"},\"comments\":{\"type\":\"object[]\"},\"comments[].body\":{\"required\":true,\"type\":\"string\"},\"comments[].path\":{\"required\":true,\"type\":\"string\"},\"comments[].position\":{\"required\":true,\"type\":\"integer\"},\"commit_id\":{\"type\":\"string\"},\"event\":{\"enum\":[\"APPROVE\",\"REQUEST_CHANGES\",\"COMMENT\"],\"type\":\"string\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews\"},\"createReviewCommentReply\":{\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies\"},\"createReviewRequest\":{\"method\":\"POST\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"reviewers\":{\"type\":\"string[]\"},\"team_reviewers\":{\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/requested_reviewers\"},\"deleteComment\":{\"method\":\"DELETE\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/comments/:comment_id\"},\"deletePendingReview\":{\"method\":\"DELETE\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"review_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id\"},\"deleteReviewRequest\":{\"method\":\"DELETE\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"reviewers\":{\"type\":\"string[]\"},\"team_reviewers\":{\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/requested_reviewers\"},\"dismissReview\":{\"method\":\"PUT\",\"params\":{\"message\":{\"required\":true,\"type\":\"string\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"review_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals\"},\"get\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number\"},\"getComment\":{\"method\":\"GET\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/comments/:comment_id\"},\"getCommentsForReview\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"review_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments\"},\"getReview\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"review_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id\"},\"list\":{\"method\":\"GET\",\"params\":{\"base\":{\"type\":\"string\"},\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"head\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"popularity\",\"long-running\"],\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\",\"all\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls\"},\"listComments\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"since\":{\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/comments\"},\"listCommentsForRepo\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"since\":{\"type\":\"string\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/comments\"},\"listCommits\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/commits\"},\"listFiles\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/files\"},\"listReviewRequests\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/requested_reviewers\"},\"listReviews\":{\"method\":\"GET\",\"params\":{\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews\"},\"merge\":{\"method\":\"PUT\",\"params\":{\"commit_message\":{\"type\":\"string\"},\"commit_title\":{\"type\":\"string\"},\"merge_method\":{\"enum\":[\"merge\",\"squash\",\"rebase\"],\"type\":\"string\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/merge\"},\"submitReview\":{\"method\":\"POST\",\"params\":{\"body\":{\"type\":\"string\"},\"event\":{\"enum\":[\"APPROVE\",\"REQUEST_CHANGES\",\"COMMENT\"],\"required\":true,\"type\":\"string\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"review_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events\"},\"update\":{\"method\":\"PATCH\",\"params\":{\"base\":{\"type\":\"string\"},\"body\":{\"type\":\"string\"},\"maintainer_can_modify\":{\"type\":\"boolean\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"open\",\"closed\"],\"type\":\"string\"},\"title\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number\"},\"updateBranch\":{\"headers\":{\"accept\":\"application/vnd.github.lydian-preview+json\"},\"method\":\"PUT\",\"params\":{\"expected_head_sha\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/update-branch\"},\"updateComment\":{\"method\":\"PATCH\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/comments/:comment_id\"},\"updateReview\":{\"method\":\"PUT\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"number\":{\"alias\":\"pull_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"pull_number\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"review_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id\"}},\"rateLimit\":{\"get\":{\"method\":\"GET\",\"params\":{},\"url\":\"/rate_limit\"}},\"reactions\":{\"createForCommitComment\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"POST\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/comments/:comment_id/reactions\"},\"createForIssue\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"POST\",\"params\":{\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"required\":true,\"type\":\"string\"},\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/reactions\"},\"createForIssueComment\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"POST\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/comments/:comment_id/reactions\"},\"createForPullRequestReviewComment\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"POST\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/comments/:comment_id/reactions\"},\"createForTeamDiscussion\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"POST\",\"params\":{\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"required\":true,\"type\":\"string\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/reactions\"},\"createForTeamDiscussionComment\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"POST\",\"params\":{\"comment_number\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"required\":true,\"type\":\"string\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions\"},\"delete\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"DELETE\",\"params\":{\"reaction_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/reactions/:reaction_id\"},\"listForCommitComment\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"GET\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/comments/:comment_id/reactions\"},\"listForIssue\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"GET\",\"params\":{\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"type\":\"string\"},\"issue_number\":{\"required\":true,\"type\":\"integer\"},\"number\":{\"alias\":\"issue_number\",\"deprecated\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/:issue_number/reactions\"},\"listForIssueComment\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"GET\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/issues/comments/:comment_id/reactions\"},\"listForPullRequestReviewComment\":{\"headers\":{\"accept\":\"application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"GET\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pulls/comments/:comment_id/reactions\"},\"listForTeamDiscussion\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"GET\",\"params\":{\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"type\":\"string\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/reactions\"},\"listForTeamDiscussionComment\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json\"},\"method\":\"GET\",\"params\":{\"comment_number\":{\"required\":true,\"type\":\"integer\"},\"content\":{\"enum\":[\"+1\",\"-1\",\"laugh\",\"confused\",\"heart\",\"hooray\",\"rocket\",\"eyes\"],\"type\":\"string\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions\"}},\"repos\":{\"acceptInvitation\":{\"method\":\"PATCH\",\"params\":{\"invitation_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/repository_invitations/:invitation_id\"},\"addCollaborator\":{\"method\":\"PUT\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"permission\":{\"enum\":[\"pull\",\"push\",\"admin\"],\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/collaborators/:username\"},\"addDeployKey\":{\"method\":\"POST\",\"params\":{\"key\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"read_only\":{\"type\":\"boolean\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"title\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/keys\"},\"addProtectedBranchAdminEnforcement\":{\"method\":\"POST\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/enforce_admins\"},\"addProtectedBranchAppRestrictions\":{\"method\":\"POST\",\"params\":{\"apps\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"},\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps\"},\"addProtectedBranchRequiredSignatures\":{\"headers\":{\"accept\":\"application/vnd.github.zzzax-preview+json\"},\"method\":\"POST\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_signatures\"},\"addProtectedBranchRequiredStatusChecksContexts\":{\"method\":\"POST\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"contexts\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts\"},\"addProtectedBranchTeamRestrictions\":{\"method\":\"POST\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"teams\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams\"},\"addProtectedBranchUserRestrictions\":{\"method\":\"POST\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"users\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/users\"},\"checkCollaborator\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/collaborators/:username\"},\"checkVulnerabilityAlerts\":{\"headers\":{\"accept\":\"application/vnd.github.dorian-preview+json\"},\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/vulnerability-alerts\"},\"compareCommits\":{\"method\":\"GET\",\"params\":{\"base\":{\"required\":true,\"type\":\"string\"},\"head\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/compare/:base...:head\"},\"createCommitComment\":{\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"commit_sha\":{\"required\":true,\"type\":\"string\"},\"line\":{\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"type\":\"string\"},\"position\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"alias\":\"commit_sha\",\"deprecated\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:commit_sha/comments\"},\"createDeployment\":{\"method\":\"POST\",\"params\":{\"auto_merge\":{\"type\":\"boolean\"},\"description\":{\"type\":\"string\"},\"environment\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"payload\":{\"type\":\"string\"},\"production_environment\":{\"type\":\"boolean\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"required_contexts\":{\"type\":\"string[]\"},\"task\":{\"type\":\"string\"},\"transient_environment\":{\"type\":\"boolean\"}},\"url\":\"/repos/:owner/:repo/deployments\"},\"createDeploymentStatus\":{\"method\":\"POST\",\"params\":{\"auto_inactive\":{\"type\":\"boolean\"},\"deployment_id\":{\"required\":true,\"type\":\"integer\"},\"description\":{\"type\":\"string\"},\"environment\":{\"enum\":[\"production\",\"staging\",\"qa\"],\"type\":\"string\"},\"environment_url\":{\"type\":\"string\"},\"log_url\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"error\",\"failure\",\"inactive\",\"in_progress\",\"queued\",\"pending\",\"success\"],\"required\":true,\"type\":\"string\"},\"target_url\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/deployments/:deployment_id/statuses\"},\"createDispatchEvent\":{\"headers\":{\"accept\":\"application/vnd.github.everest-preview+json\"},\"method\":\"POST\",\"params\":{\"event_type\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/dispatches\"},\"createFile\":{\"deprecated\":\"octokit.repos.createFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)\",\"method\":\"PUT\",\"params\":{\"author\":{\"type\":\"object\"},\"author.email\":{\"required\":true,\"type\":\"string\"},\"author.name\":{\"required\":true,\"type\":\"string\"},\"branch\":{\"type\":\"string\"},\"committer\":{\"type\":\"object\"},\"committer.email\":{\"required\":true,\"type\":\"string\"},\"committer.name\":{\"required\":true,\"type\":\"string\"},\"content\":{\"required\":true,\"type\":\"string\"},\"message\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/contents/:path\"},\"createForAuthenticatedUser\":{\"method\":\"POST\",\"params\":{\"allow_merge_commit\":{\"type\":\"boolean\"},\"allow_rebase_merge\":{\"type\":\"boolean\"},\"allow_squash_merge\":{\"type\":\"boolean\"},\"auto_init\":{\"type\":\"boolean\"},\"description\":{\"type\":\"string\"},\"gitignore_template\":{\"type\":\"string\"},\"has_issues\":{\"type\":\"boolean\"},\"has_projects\":{\"type\":\"boolean\"},\"has_wiki\":{\"type\":\"boolean\"},\"homepage\":{\"type\":\"string\"},\"is_template\":{\"type\":\"boolean\"},\"license_template\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"private\":{\"type\":\"boolean\"},\"team_id\":{\"type\":\"integer\"}},\"url\":\"/user/repos\"},\"createFork\":{\"method\":\"POST\",\"params\":{\"organization\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/forks\"},\"createHook\":{\"method\":\"POST\",\"params\":{\"active\":{\"type\":\"boolean\"},\"config\":{\"required\":true,\"type\":\"object\"},\"config.content_type\":{\"type\":\"string\"},\"config.insecure_ssl\":{\"type\":\"string\"},\"config.secret\":{\"type\":\"string\"},\"config.url\":{\"required\":true,\"type\":\"string\"},\"events\":{\"type\":\"string[]\"},\"name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/hooks\"},\"createInOrg\":{\"method\":\"POST\",\"params\":{\"allow_merge_commit\":{\"type\":\"boolean\"},\"allow_rebase_merge\":{\"type\":\"boolean\"},\"allow_squash_merge\":{\"type\":\"boolean\"},\"auto_init\":{\"type\":\"boolean\"},\"description\":{\"type\":\"string\"},\"gitignore_template\":{\"type\":\"string\"},\"has_issues\":{\"type\":\"boolean\"},\"has_projects\":{\"type\":\"boolean\"},\"has_wiki\":{\"type\":\"boolean\"},\"homepage\":{\"type\":\"string\"},\"is_template\":{\"type\":\"boolean\"},\"license_template\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"},\"private\":{\"type\":\"boolean\"},\"team_id\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/repos\"},\"createOrUpdateFile\":{\"method\":\"PUT\",\"params\":{\"author\":{\"type\":\"object\"},\"author.email\":{\"required\":true,\"type\":\"string\"},\"author.name\":{\"required\":true,\"type\":\"string\"},\"branch\":{\"type\":\"string\"},\"committer\":{\"type\":\"object\"},\"committer.email\":{\"required\":true,\"type\":\"string\"},\"committer.name\":{\"required\":true,\"type\":\"string\"},\"content\":{\"required\":true,\"type\":\"string\"},\"message\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/contents/:path\"},\"createRelease\":{\"method\":\"POST\",\"params\":{\"body\":{\"type\":\"string\"},\"draft\":{\"type\":\"boolean\"},\"name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"prerelease\":{\"type\":\"boolean\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tag_name\":{\"required\":true,\"type\":\"string\"},\"target_commitish\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases\"},\"createStatus\":{\"method\":\"POST\",\"params\":{\"context\":{\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"required\":true,\"type\":\"string\"},\"state\":{\"enum\":[\"error\",\"failure\",\"pending\",\"success\"],\"required\":true,\"type\":\"string\"},\"target_url\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/statuses/:sha\"},\"createUsingTemplate\":{\"headers\":{\"accept\":\"application/vnd.github.baptiste-preview+json\"},\"method\":\"POST\",\"params\":{\"description\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"type\":\"string\"},\"private\":{\"type\":\"boolean\"},\"template_owner\":{\"required\":true,\"type\":\"string\"},\"template_repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:template_owner/:template_repo/generate\"},\"declineInvitation\":{\"method\":\"DELETE\",\"params\":{\"invitation_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/repository_invitations/:invitation_id\"},\"delete\":{\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo\"},\"deleteCommitComment\":{\"method\":\"DELETE\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/comments/:comment_id\"},\"deleteDownload\":{\"method\":\"DELETE\",\"params\":{\"download_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/downloads/:download_id\"},\"deleteFile\":{\"method\":\"DELETE\",\"params\":{\"author\":{\"type\":\"object\"},\"author.email\":{\"type\":\"string\"},\"author.name\":{\"type\":\"string\"},\"branch\":{\"type\":\"string\"},\"committer\":{\"type\":\"object\"},\"committer.email\":{\"type\":\"string\"},\"committer.name\":{\"type\":\"string\"},\"message\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/contents/:path\"},\"deleteHook\":{\"method\":\"DELETE\",\"params\":{\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/hooks/:hook_id\"},\"deleteInvitation\":{\"method\":\"DELETE\",\"params\":{\"invitation_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/invitations/:invitation_id\"},\"deleteRelease\":{\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"release_id\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/:release_id\"},\"deleteReleaseAsset\":{\"method\":\"DELETE\",\"params\":{\"asset_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/assets/:asset_id\"},\"disableAutomatedSecurityFixes\":{\"headers\":{\"accept\":\"application/vnd.github.london-preview+json\"},\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/automated-security-fixes\"},\"disablePagesSite\":{\"headers\":{\"accept\":\"application/vnd.github.switcheroo-preview+json\"},\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages\"},\"disableVulnerabilityAlerts\":{\"headers\":{\"accept\":\"application/vnd.github.dorian-preview+json\"},\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/vulnerability-alerts\"},\"enableAutomatedSecurityFixes\":{\"headers\":{\"accept\":\"application/vnd.github.london-preview+json\"},\"method\":\"PUT\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/automated-security-fixes\"},\"enablePagesSite\":{\"headers\":{\"accept\":\"application/vnd.github.switcheroo-preview+json\"},\"method\":\"POST\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"source\":{\"type\":\"object\"},\"source.branch\":{\"enum\":[\"master\",\"gh-pages\"],\"type\":\"string\"},\"source.path\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages\"},\"enableVulnerabilityAlerts\":{\"headers\":{\"accept\":\"application/vnd.github.dorian-preview+json\"},\"method\":\"PUT\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/vulnerability-alerts\"},\"get\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo\"},\"getAppsWithAccessToProtectedBranch\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps\"},\"getArchiveLink\":{\"method\":\"GET\",\"params\":{\"archive_format\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/:archive_format/:ref\"},\"getBranch\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch\"},\"getBranchProtection\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection\"},\"getClones\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"per\":{\"enum\":[\"day\",\"week\"],\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/traffic/clones\"},\"getCodeFrequencyStats\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/stats/code_frequency\"},\"getCollaboratorPermissionLevel\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/collaborators/:username/permission\"},\"getCombinedStatusForRef\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:ref/status\"},\"getCommit\":{\"method\":\"GET\",\"params\":{\"commit_sha\":{\"alias\":\"ref\",\"deprecated\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"alias\":\"ref\",\"deprecated\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:ref\"},\"getCommitActivityStats\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/stats/commit_activity\"},\"getCommitComment\":{\"method\":\"GET\",\"params\":{\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/comments/:comment_id\"},\"getCommitRefSha\":{\"deprecated\":\"\\\"Get the SHA-1 of a commit reference\\\" will be removed. Use \\\"Get a single commit\\\" instead with media type format set to \\\"sha\\\" instead.\",\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:ref\"},\"getContents\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/contents/:path\"},\"getContributorsStats\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/stats/contributors\"},\"getDeployKey\":{\"method\":\"GET\",\"params\":{\"key_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/keys/:key_id\"},\"getDeployment\":{\"method\":\"GET\",\"params\":{\"deployment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/deployments/:deployment_id\"},\"getDeploymentStatus\":{\"method\":\"GET\",\"params\":{\"deployment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"status_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id\"},\"getDownload\":{\"method\":\"GET\",\"params\":{\"download_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/downloads/:download_id\"},\"getHook\":{\"method\":\"GET\",\"params\":{\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/hooks/:hook_id\"},\"getLatestPagesBuild\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages/builds/latest\"},\"getLatestRelease\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/latest\"},\"getPages\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages\"},\"getPagesBuild\":{\"method\":\"GET\",\"params\":{\"build_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages/builds/:build_id\"},\"getParticipationStats\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/stats/participation\"},\"getProtectedBranchAdminEnforcement\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/enforce_admins\"},\"getProtectedBranchPullRequestReviewEnforcement\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews\"},\"getProtectedBranchRequiredSignatures\":{\"headers\":{\"accept\":\"application/vnd.github.zzzax-preview+json\"},\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_signatures\"},\"getProtectedBranchRequiredStatusChecks\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_status_checks\"},\"getProtectedBranchRestrictions\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions\"},\"getPunchCardStats\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/stats/punch_card\"},\"getReadme\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"ref\":{\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/readme\"},\"getRelease\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"release_id\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/:release_id\"},\"getReleaseAsset\":{\"method\":\"GET\",\"params\":{\"asset_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/assets/:asset_id\"},\"getReleaseByTag\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tag\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/tags/:tag\"},\"getTeamsWithAccessToProtectedBranch\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams\"},\"getTopPaths\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/traffic/popular/paths\"},\"getTopReferrers\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/traffic/popular/referrers\"},\"getUsersWithAccessToProtectedBranch\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/users\"},\"getViews\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"per\":{\"enum\":[\"day\",\"week\"],\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/traffic/views\"},\"list\":{\"method\":\"GET\",\"params\":{\"affiliation\":{\"type\":\"string\"},\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"pushed\",\"full_name\"],\"type\":\"string\"},\"type\":{\"enum\":[\"all\",\"owner\",\"public\",\"private\",\"member\"],\"type\":\"string\"},\"visibility\":{\"enum\":[\"all\",\"public\",\"private\"],\"type\":\"string\"}},\"url\":\"/user/repos\"},\"listAppsWithAccessToProtectedBranch\":{\"deprecated\":\"octokit.repos.listAppsWithAccessToProtectedBranch() has been renamed to octokit.repos.getAppsWithAccessToProtectedBranch() (2019-09-13)\",\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps\"},\"listAssetsForRelease\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"release_id\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/:release_id/assets\"},\"listBranches\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"protected\":{\"type\":\"boolean\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches\"},\"listBranchesForHeadCommit\":{\"headers\":{\"accept\":\"application/vnd.github.groot-preview+json\"},\"method\":\"GET\",\"params\":{\"commit_sha\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:commit_sha/branches-where-head\"},\"listCollaborators\":{\"method\":\"GET\",\"params\":{\"affiliation\":{\"enum\":[\"outside\",\"direct\",\"all\"],\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/collaborators\"},\"listCommentsForCommit\":{\"method\":\"GET\",\"params\":{\"commit_sha\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"ref\":{\"alias\":\"commit_sha\",\"deprecated\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:commit_sha/comments\"},\"listCommitComments\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/comments\"},\"listCommits\":{\"method\":\"GET\",\"params\":{\"author\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"path\":{\"type\":\"string\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"type\":\"string\"},\"since\":{\"type\":\"string\"},\"until\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits\"},\"listContributors\":{\"method\":\"GET\",\"params\":{\"anon\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/contributors\"},\"listDeployKeys\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/keys\"},\"listDeploymentStatuses\":{\"method\":\"GET\",\"params\":{\"deployment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/deployments/:deployment_id/statuses\"},\"listDeployments\":{\"method\":\"GET\",\"params\":{\"environment\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"ref\":{\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"type\":\"string\"},\"task\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/deployments\"},\"listDownloads\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/downloads\"},\"listForOrg\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"pushed\",\"full_name\"],\"type\":\"string\"},\"type\":{\"enum\":[\"all\",\"public\",\"private\",\"forks\",\"sources\",\"member\"],\"type\":\"string\"}},\"url\":\"/orgs/:org/repos\"},\"listForUser\":{\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\",\"pushed\",\"full_name\"],\"type\":\"string\"},\"type\":{\"enum\":[\"all\",\"owner\",\"member\"],\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/repos\"},\"listForks\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"newest\",\"oldest\",\"stargazers\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/forks\"},\"listHooks\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/hooks\"},\"listInvitations\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/invitations\"},\"listInvitationsForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/repository_invitations\"},\"listLanguages\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/languages\"},\"listPagesBuilds\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages/builds\"},\"listProtectedBranchRequiredStatusChecksContexts\":{\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts\"},\"listProtectedBranchTeamRestrictions\":{\"deprecated\":\"octokit.repos.listProtectedBranchTeamRestrictions() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-09)\",\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams\"},\"listProtectedBranchUserRestrictions\":{\"deprecated\":\"octokit.repos.listProtectedBranchUserRestrictions() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-09)\",\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/users\"},\"listPublic\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"}},\"url\":\"/repositories\"},\"listPullRequestsAssociatedWithCommit\":{\"headers\":{\"accept\":\"application/vnd.github.groot-preview+json\"},\"method\":\"GET\",\"params\":{\"commit_sha\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:commit_sha/pulls\"},\"listReleases\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases\"},\"listStatusesForRef\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"ref\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/commits/:ref/statuses\"},\"listTags\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/tags\"},\"listTeams\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/teams\"},\"listTeamsWithAccessToProtectedBranch\":{\"deprecated\":\"octokit.repos.listTeamsWithAccessToProtectedBranch() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-13)\",\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams\"},\"listTopics\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/topics\"},\"listUsersWithAccessToProtectedBranch\":{\"deprecated\":\"octokit.repos.listUsersWithAccessToProtectedBranch() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-13)\",\"method\":\"GET\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/users\"},\"merge\":{\"method\":\"POST\",\"params\":{\"base\":{\"required\":true,\"type\":\"string\"},\"commit_message\":{\"type\":\"string\"},\"head\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/merges\"},\"pingHook\":{\"method\":\"POST\",\"params\":{\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/hooks/:hook_id/pings\"},\"removeBranchProtection\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection\"},\"removeCollaborator\":{\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/collaborators/:username\"},\"removeDeployKey\":{\"method\":\"DELETE\",\"params\":{\"key_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/keys/:key_id\"},\"removeProtectedBranchAdminEnforcement\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/enforce_admins\"},\"removeProtectedBranchAppRestrictions\":{\"method\":\"DELETE\",\"params\":{\"apps\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"},\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps\"},\"removeProtectedBranchPullRequestReviewEnforcement\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews\"},\"removeProtectedBranchRequiredSignatures\":{\"headers\":{\"accept\":\"application/vnd.github.zzzax-preview+json\"},\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_signatures\"},\"removeProtectedBranchRequiredStatusChecks\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_status_checks\"},\"removeProtectedBranchRequiredStatusChecksContexts\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"contexts\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts\"},\"removeProtectedBranchRestrictions\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions\"},\"removeProtectedBranchTeamRestrictions\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"teams\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams\"},\"removeProtectedBranchUserRestrictions\":{\"method\":\"DELETE\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"users\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/users\"},\"replaceProtectedBranchAppRestrictions\":{\"method\":\"PUT\",\"params\":{\"apps\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"},\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps\"},\"replaceProtectedBranchRequiredStatusChecksContexts\":{\"method\":\"PUT\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"contexts\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts\"},\"replaceProtectedBranchTeamRestrictions\":{\"method\":\"PUT\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"teams\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams\"},\"replaceProtectedBranchUserRestrictions\":{\"method\":\"PUT\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"users\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/restrictions/users\"},\"replaceTopics\":{\"method\":\"PUT\",\"params\":{\"names\":{\"required\":true,\"type\":\"string[]\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/topics\"},\"requestPageBuild\":{\"headers\":{\"accept\":\"application/vnd.github.mister-fantastic-preview+json\"},\"method\":\"POST\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages/builds\"},\"retrieveCommunityProfileMetrics\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/community/profile\"},\"testPushHook\":{\"method\":\"POST\",\"params\":{\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/hooks/:hook_id/tests\"},\"transfer\":{\"headers\":{\"accept\":\"application/vnd.github.nightshade-preview+json\"},\"method\":\"POST\",\"params\":{\"new_owner\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"team_ids\":{\"type\":\"integer[]\"}},\"url\":\"/repos/:owner/:repo/transfer\"},\"update\":{\"method\":\"PATCH\",\"params\":{\"allow_merge_commit\":{\"type\":\"boolean\"},\"allow_rebase_merge\":{\"type\":\"boolean\"},\"allow_squash_merge\":{\"type\":\"boolean\"},\"archived\":{\"type\":\"boolean\"},\"default_branch\":{\"type\":\"string\"},\"description\":{\"type\":\"string\"},\"has_issues\":{\"type\":\"boolean\"},\"has_projects\":{\"type\":\"boolean\"},\"has_wiki\":{\"type\":\"boolean\"},\"homepage\":{\"type\":\"string\"},\"is_template\":{\"type\":\"boolean\"},\"name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"private\":{\"type\":\"boolean\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo\"},\"updateBranchProtection\":{\"method\":\"PUT\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"enforce_admins\":{\"allowNull\":true,\"required\":true,\"type\":\"boolean\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"required_pull_request_reviews\":{\"allowNull\":true,\"required\":true,\"type\":\"object\"},\"required_pull_request_reviews.dismiss_stale_reviews\":{\"type\":\"boolean\"},\"required_pull_request_reviews.dismissal_restrictions\":{\"type\":\"object\"},\"required_pull_request_reviews.dismissal_restrictions.teams\":{\"type\":\"string[]\"},\"required_pull_request_reviews.dismissal_restrictions.users\":{\"type\":\"string[]\"},\"required_pull_request_reviews.require_code_owner_reviews\":{\"type\":\"boolean\"},\"required_pull_request_reviews.required_approving_review_count\":{\"type\":\"integer\"},\"required_status_checks\":{\"allowNull\":true,\"required\":true,\"type\":\"object\"},\"required_status_checks.contexts\":{\"required\":true,\"type\":\"string[]\"},\"required_status_checks.strict\":{\"required\":true,\"type\":\"boolean\"},\"restrictions\":{\"allowNull\":true,\"required\":true,\"type\":\"object\"},\"restrictions.apps\":{\"type\":\"string[]\"},\"restrictions.teams\":{\"required\":true,\"type\":\"string[]\"},\"restrictions.users\":{\"required\":true,\"type\":\"string[]\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection\"},\"updateCommitComment\":{\"method\":\"PATCH\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"comment_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/comments/:comment_id\"},\"updateFile\":{\"deprecated\":\"octokit.repos.updateFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)\",\"method\":\"PUT\",\"params\":{\"author\":{\"type\":\"object\"},\"author.email\":{\"required\":true,\"type\":\"string\"},\"author.name\":{\"required\":true,\"type\":\"string\"},\"branch\":{\"type\":\"string\"},\"committer\":{\"type\":\"object\"},\"committer.email\":{\"required\":true,\"type\":\"string\"},\"committer.name\":{\"required\":true,\"type\":\"string\"},\"content\":{\"required\":true,\"type\":\"string\"},\"message\":{\"required\":true,\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"path\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"sha\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/contents/:path\"},\"updateHook\":{\"method\":\"PATCH\",\"params\":{\"active\":{\"type\":\"boolean\"},\"add_events\":{\"type\":\"string[]\"},\"config\":{\"type\":\"object\"},\"config.content_type\":{\"type\":\"string\"},\"config.insecure_ssl\":{\"type\":\"string\"},\"config.secret\":{\"type\":\"string\"},\"config.url\":{\"required\":true,\"type\":\"string\"},\"events\":{\"type\":\"string[]\"},\"hook_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"remove_events\":{\"type\":\"string[]\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/hooks/:hook_id\"},\"updateInformationAboutPagesSite\":{\"method\":\"PUT\",\"params\":{\"cname\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"source\":{\"enum\":[\"\\\"gh-pages\\\"\",\"\\\"master\\\"\",\"\\\"master /docs\\\"\"],\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/pages\"},\"updateInvitation\":{\"method\":\"PATCH\",\"params\":{\"invitation_id\":{\"required\":true,\"type\":\"integer\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"permissions\":{\"enum\":[\"read\",\"write\",\"admin\"],\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/invitations/:invitation_id\"},\"updateProtectedBranchPullRequestReviewEnforcement\":{\"method\":\"PATCH\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"dismiss_stale_reviews\":{\"type\":\"boolean\"},\"dismissal_restrictions\":{\"type\":\"object\"},\"dismissal_restrictions.teams\":{\"type\":\"string[]\"},\"dismissal_restrictions.users\":{\"type\":\"string[]\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"require_code_owner_reviews\":{\"type\":\"boolean\"},\"required_approving_review_count\":{\"type\":\"integer\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews\"},\"updateProtectedBranchRequiredStatusChecks\":{\"method\":\"PATCH\",\"params\":{\"branch\":{\"required\":true,\"type\":\"string\"},\"contexts\":{\"type\":\"string[]\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"strict\":{\"type\":\"boolean\"}},\"url\":\"/repos/:owner/:repo/branches/:branch/protection/required_status_checks\"},\"updateRelease\":{\"method\":\"PATCH\",\"params\":{\"body\":{\"type\":\"string\"},\"draft\":{\"type\":\"boolean\"},\"name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"prerelease\":{\"type\":\"boolean\"},\"release_id\":{\"required\":true,\"type\":\"integer\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"tag_name\":{\"type\":\"string\"},\"target_commitish\":{\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/:release_id\"},\"updateReleaseAsset\":{\"method\":\"PATCH\",\"params\":{\"asset_id\":{\"required\":true,\"type\":\"integer\"},\"label\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/repos/:owner/:repo/releases/assets/:asset_id\"},\"uploadReleaseAsset\":{\"method\":\"POST\",\"params\":{\"file\":{\"mapTo\":\"data\",\"required\":true,\"type\":\"string | object\"},\"headers\":{\"required\":true,\"type\":\"object\"},\"headers.content-length\":{\"required\":true,\"type\":\"integer\"},\"headers.content-type\":{\"required\":true,\"type\":\"string\"},\"label\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"url\":{\"required\":true,\"type\":\"string\"}},\"url\":\":url\"}},\"search\":{\"code\":{\"method\":\"GET\",\"params\":{\"order\":{\"enum\":[\"desc\",\"asc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"q\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"indexed\"],\"type\":\"string\"}},\"url\":\"/search/code\"},\"commits\":{\"headers\":{\"accept\":\"application/vnd.github.cloak-preview+json\"},\"method\":\"GET\",\"params\":{\"order\":{\"enum\":[\"desc\",\"asc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"q\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"author-date\",\"committer-date\"],\"type\":\"string\"}},\"url\":\"/search/commits\"},\"issues\":{\"deprecated\":\"octokit.search.issues() has been renamed to octokit.search.issuesAndPullRequests() (2018-12-27)\",\"method\":\"GET\",\"params\":{\"order\":{\"enum\":[\"desc\",\"asc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"q\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"comments\",\"reactions\",\"reactions-+1\",\"reactions--1\",\"reactions-smile\",\"reactions-thinking_face\",\"reactions-heart\",\"reactions-tada\",\"interactions\",\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/search/issues\"},\"issuesAndPullRequests\":{\"method\":\"GET\",\"params\":{\"order\":{\"enum\":[\"desc\",\"asc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"q\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"comments\",\"reactions\",\"reactions-+1\",\"reactions--1\",\"reactions-smile\",\"reactions-thinking_face\",\"reactions-heart\",\"reactions-tada\",\"interactions\",\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/search/issues\"},\"labels\":{\"method\":\"GET\",\"params\":{\"order\":{\"enum\":[\"desc\",\"asc\"],\"type\":\"string\"},\"q\":{\"required\":true,\"type\":\"string\"},\"repository_id\":{\"required\":true,\"type\":\"integer\"},\"sort\":{\"enum\":[\"created\",\"updated\"],\"type\":\"string\"}},\"url\":\"/search/labels\"},\"repos\":{\"method\":\"GET\",\"params\":{\"order\":{\"enum\":[\"desc\",\"asc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"q\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"stars\",\"forks\",\"help-wanted-issues\",\"updated\"],\"type\":\"string\"}},\"url\":\"/search/repositories\"},\"topics\":{\"method\":\"GET\",\"params\":{\"q\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/search/topics\"},\"users\":{\"method\":\"GET\",\"params\":{\"order\":{\"enum\":[\"desc\",\"asc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"q\":{\"required\":true,\"type\":\"string\"},\"sort\":{\"enum\":[\"followers\",\"repositories\",\"joined\"],\"type\":\"string\"}},\"url\":\"/search/users\"}},\"teams\":{\"addMember\":{\"deprecated\":\"octokit.teams.addMember() is deprecated, see https://developer.github.com/v3/teams/members/#add-team-member\",\"method\":\"PUT\",\"params\":{\"team_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/teams/:team_id/members/:username\"},\"addOrUpdateMembership\":{\"method\":\"PUT\",\"params\":{\"role\":{\"enum\":[\"member\",\"maintainer\"],\"type\":\"string\"},\"team_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/teams/:team_id/memberships/:username\"},\"addOrUpdateProject\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"PUT\",\"params\":{\"permission\":{\"enum\":[\"read\",\"write\",\"admin\"],\"type\":\"string\"},\"project_id\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/projects/:project_id\"},\"addOrUpdateRepo\":{\"method\":\"PUT\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"permission\":{\"enum\":[\"pull\",\"push\",\"admin\"],\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/repos/:owner/:repo\"},\"checkManagesRepo\":{\"method\":\"GET\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/repos/:owner/:repo\"},\"create\":{\"method\":\"POST\",\"params\":{\"description\":{\"type\":\"string\"},\"maintainers\":{\"type\":\"string[]\"},\"name\":{\"required\":true,\"type\":\"string\"},\"org\":{\"required\":true,\"type\":\"string\"},\"parent_team_id\":{\"type\":\"integer\"},\"permission\":{\"enum\":[\"pull\",\"push\",\"admin\"],\"type\":\"string\"},\"privacy\":{\"enum\":[\"secret\",\"closed\"],\"type\":\"string\"},\"repo_names\":{\"type\":\"string[]\"}},\"url\":\"/orgs/:org/teams\"},\"createDiscussion\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"private\":{\"type\":\"boolean\"},\"team_id\":{\"required\":true,\"type\":\"integer\"},\"title\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/teams/:team_id/discussions\"},\"createDiscussionComment\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"POST\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/comments\"},\"delete\":{\"method\":\"DELETE\",\"params\":{\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id\"},\"deleteDiscussion\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"DELETE\",\"params\":{\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number\"},\"deleteDiscussionComment\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"DELETE\",\"params\":{\"comment_number\":{\"required\":true,\"type\":\"integer\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/comments/:comment_number\"},\"get\":{\"method\":\"GET\",\"params\":{\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id\"},\"getByName\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"team_slug\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/orgs/:org/teams/:team_slug\"},\"getDiscussion\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"GET\",\"params\":{\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number\"},\"getDiscussionComment\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"GET\",\"params\":{\"comment_number\":{\"required\":true,\"type\":\"integer\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/comments/:comment_number\"},\"getMember\":{\"deprecated\":\"octokit.teams.getMember() is deprecated, see https://developer.github.com/v3/teams/members/#get-team-member\",\"method\":\"GET\",\"params\":{\"team_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/teams/:team_id/members/:username\"},\"getMembership\":{\"method\":\"GET\",\"params\":{\"team_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/teams/:team_id/memberships/:username\"},\"list\":{\"method\":\"GET\",\"params\":{\"org\":{\"required\":true,\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/orgs/:org/teams\"},\"listChild\":{\"headers\":{\"accept\":\"application/vnd.github.hellcat-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/teams\"},\"listDiscussionComments\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/comments\"},\"listDiscussions\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"GET\",\"params\":{\"direction\":{\"enum\":[\"asc\",\"desc\"],\"type\":\"string\"},\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions\"},\"listForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/teams\"},\"listMembers\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"role\":{\"enum\":[\"member\",\"maintainer\",\"all\"],\"type\":\"string\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/members\"},\"listPendingInvitations\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/invitations\"},\"listProjects\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/projects\"},\"listRepos\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/repos\"},\"removeMember\":{\"deprecated\":\"octokit.teams.removeMember() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-member\",\"method\":\"DELETE\",\"params\":{\"team_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/teams/:team_id/members/:username\"},\"removeMembership\":{\"method\":\"DELETE\",\"params\":{\"team_id\":{\"required\":true,\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/teams/:team_id/memberships/:username\"},\"removeProject\":{\"method\":\"DELETE\",\"params\":{\"project_id\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/projects/:project_id\"},\"removeRepo\":{\"method\":\"DELETE\",\"params\":{\"owner\":{\"required\":true,\"type\":\"string\"},\"repo\":{\"required\":true,\"type\":\"string\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/repos/:owner/:repo\"},\"reviewProject\":{\"headers\":{\"accept\":\"application/vnd.github.inertia-preview+json\"},\"method\":\"GET\",\"params\":{\"project_id\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/projects/:project_id\"},\"update\":{\"method\":\"PATCH\",\"params\":{\"description\":{\"type\":\"string\"},\"name\":{\"required\":true,\"type\":\"string\"},\"parent_team_id\":{\"type\":\"integer\"},\"permission\":{\"enum\":[\"pull\",\"push\",\"admin\"],\"type\":\"string\"},\"privacy\":{\"enum\":[\"secret\",\"closed\"],\"type\":\"string\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id\"},\"updateDiscussion\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"PATCH\",\"params\":{\"body\":{\"type\":\"string\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"},\"title\":{\"type\":\"string\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number\"},\"updateDiscussionComment\":{\"headers\":{\"accept\":\"application/vnd.github.echo-preview+json\"},\"method\":\"PATCH\",\"params\":{\"body\":{\"required\":true,\"type\":\"string\"},\"comment_number\":{\"required\":true,\"type\":\"integer\"},\"discussion_number\":{\"required\":true,\"type\":\"integer\"},\"team_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/teams/:team_id/discussions/:discussion_number/comments/:comment_number\"}},\"users\":{\"addEmails\":{\"method\":\"POST\",\"params\":{\"emails\":{\"required\":true,\"type\":\"string[]\"}},\"url\":\"/user/emails\"},\"block\":{\"method\":\"PUT\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/blocks/:username\"},\"checkBlocked\":{\"method\":\"GET\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/blocks/:username\"},\"checkFollowing\":{\"method\":\"GET\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/following/:username\"},\"checkFollowingForUser\":{\"method\":\"GET\",\"params\":{\"target_user\":{\"required\":true,\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/following/:target_user\"},\"createGpgKey\":{\"method\":\"POST\",\"params\":{\"armored_public_key\":{\"type\":\"string\"}},\"url\":\"/user/gpg_keys\"},\"createPublicKey\":{\"method\":\"POST\",\"params\":{\"key\":{\"type\":\"string\"},\"title\":{\"type\":\"string\"}},\"url\":\"/user/keys\"},\"deleteEmails\":{\"method\":\"DELETE\",\"params\":{\"emails\":{\"required\":true,\"type\":\"string[]\"}},\"url\":\"/user/emails\"},\"deleteGpgKey\":{\"method\":\"DELETE\",\"params\":{\"gpg_key_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/gpg_keys/:gpg_key_id\"},\"deletePublicKey\":{\"method\":\"DELETE\",\"params\":{\"key_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/keys/:key_id\"},\"follow\":{\"method\":\"PUT\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/following/:username\"},\"getAuthenticated\":{\"method\":\"GET\",\"params\":{},\"url\":\"/user\"},\"getByUsername\":{\"method\":\"GET\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username\"},\"getContextForUser\":{\"headers\":{\"accept\":\"application/vnd.github.hagar-preview+json\"},\"method\":\"GET\",\"params\":{\"subject_id\":{\"type\":\"string\"},\"subject_type\":{\"enum\":[\"organization\",\"repository\",\"issue\",\"pull_request\"],\"type\":\"string\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/hovercard\"},\"getGpgKey\":{\"method\":\"GET\",\"params\":{\"gpg_key_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/gpg_keys/:gpg_key_id\"},\"getPublicKey\":{\"method\":\"GET\",\"params\":{\"key_id\":{\"required\":true,\"type\":\"integer\"}},\"url\":\"/user/keys/:key_id\"},\"list\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"since\":{\"type\":\"string\"}},\"url\":\"/users\"},\"listBlocked\":{\"method\":\"GET\",\"params\":{},\"url\":\"/user/blocks\"},\"listEmails\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/emails\"},\"listFollowersForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/followers\"},\"listFollowersForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/followers\"},\"listFollowingForAuthenticatedUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/following\"},\"listFollowingForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/following\"},\"listGpgKeys\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/gpg_keys\"},\"listGpgKeysForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/gpg_keys\"},\"listPublicEmails\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/public_emails\"},\"listPublicKeys\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"}},\"url\":\"/user/keys\"},\"listPublicKeysForUser\":{\"method\":\"GET\",\"params\":{\"page\":{\"type\":\"integer\"},\"per_page\":{\"type\":\"integer\"},\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/users/:username/keys\"},\"togglePrimaryEmailVisibility\":{\"method\":\"PATCH\",\"params\":{\"email\":{\"required\":true,\"type\":\"string\"},\"visibility\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/email/visibility\"},\"unblock\":{\"method\":\"DELETE\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/blocks/:username\"},\"unfollow\":{\"method\":\"DELETE\",\"params\":{\"username\":{\"required\":true,\"type\":\"string\"}},\"url\":\"/user/following/:username\"},\"updateAuthenticated\":{\"method\":\"PATCH\",\"params\":{\"bio\":{\"type\":\"string\"},\"blog\":{\"type\":\"string\"},\"company\":{\"type\":\"string\"},\"email\":{\"type\":\"string\"},\"hireable\":{\"type\":\"boolean\"},\"location\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"url\":\"/user\"}}}");
-
-/***/ }),
-
-/***/ 1201:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 5130:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
@@ -61,15 +36,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.handlePullRequest = void 0;
-const core = __importStar(__webpack_require__(2186));
-const utils = __importStar(__webpack_require__(918));
-const pull_request_1 = __webpack_require__(1162);
+const core = __importStar(__nccwpck_require__(5127));
+const utils = __importStar(__nccwpck_require__(9202));
+const pull_request_1 = __nccwpck_require__(6886);
 function handlePullRequest(client, context, config) {
     return __awaiter(this, void 0, void 0, function* () {
         if (!context.payload.pull_request) {
             throw new Error('the webhook payload is not exist');
         }
-        const { title, draft, user, number } = context.payload.pull_request;
+        const { pull_request: event } = context.payload;
+        const { title, draft, user, number } = event;
         const { skipKeywords, useReviewGroups, useAssigneeGroups, reviewGroups, assigneeGroups, addReviewers, addAssignees, filterLabels, runOnDraft, } = config;
         if (skipKeywords && utils.includesSkipKeywords(title, skipKeywords)) {
             core.info('Skips the process to add reviewers/assignees since PR title includes skip-keywords');
@@ -112,7 +88,9 @@ function handlePullRequest(client, context, config) {
                 }
             }
             catch (error) {
-                core.warning(error.message);
+                if (error instanceof Error) {
+                    core.warning(error.message);
+                }
             }
         }
         if (addAssignees) {
@@ -124,7 +102,9 @@ function handlePullRequest(client, context, config) {
                 }
             }
             catch (error) {
-                core.warning(error.message);
+                if (error instanceof Error) {
+                    core.warning(error.message);
+                }
             }
         }
     });
@@ -134,20 +114,8 @@ exports.handlePullRequest = handlePullRequest;
 
 /***/ }),
 
-/***/ 3109:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const run_1 = __webpack_require__(7884);
-run_1.run();
-
-
-/***/ }),
-
-/***/ 1162:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 6886:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
@@ -181,7 +149,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PullRequest = void 0;
-const core = __importStar(__webpack_require__(2186));
+const core = __importStar(__nccwpck_require__(5127));
 class PullRequest {
     constructor(client, context) {
         this.client = client;
@@ -224,8 +192,8 @@ exports.PullRequest = PullRequest;
 
 /***/ }),
 
-/***/ 7884:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 3863:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
@@ -259,10 +227,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.run = void 0;
-const core = __importStar(__webpack_require__(2186));
-const github = __importStar(__webpack_require__(5438));
-const utils = __importStar(__webpack_require__(918));
-const handler = __importStar(__webpack_require__(1201));
+const core = __importStar(__nccwpck_require__(5127));
+const github = __importStar(__nccwpck_require__(3134));
+const utils = __importStar(__nccwpck_require__(9202));
+const handler = __importStar(__nccwpck_require__(5130));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -281,7 +249,9 @@ function run() {
             yield handler.handlePullRequest(client, github.context, config);
         }
         catch (error) {
-            core.setFailed(error.message);
+            if (error instanceof Error) {
+                core.setFailed(error.message);
+            }
         }
     });
 }
@@ -290,8 +260,8 @@ exports.run = run;
 
 /***/ }),
 
-/***/ 918:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 9202:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
@@ -328,8 +298,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fetchConfigurationFile = exports.chooseUsersFromGroups = exports.includesSkipKeywords = exports.chooseUsers = exports.chooseAssignees = exports.chooseReviewers = void 0;
-const lodash_1 = __importDefault(__webpack_require__(250));
-const yaml = __importStar(__webpack_require__(1917));
+const lodash_1 = __importDefault(__nccwpck_require__(5817));
+const yaml = __importStar(__nccwpck_require__(9818));
 function chooseReviewers(owner, config) {
     const { useReviewGroups, reviewGroups, numberOfReviewers, reviewers } = config;
     let chosenReviewers = [];
@@ -414,21 +384,34 @@ exports.fetchConfigurationFile = fetchConfigurationFile;
 
 /***/ }),
 
-/***/ 7351:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 5604:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const os = __importStar(__webpack_require__(2087));
-const utils_1 = __webpack_require__(5278);
+exports.issue = exports.issueCommand = void 0;
+const os = __importStar(__nccwpck_require__(2037));
+const utils_1 = __nccwpck_require__(1245);
 /**
  * Commands
  *
@@ -500,11 +483,30 @@ function escapeProperty(s) {
 
 /***/ }),
 
-/***/ 2186:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 5127:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -514,19 +516,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const command_1 = __webpack_require__(7351);
-const file_command_1 = __webpack_require__(717);
-const utils_1 = __webpack_require__(5278);
-const os = __importStar(__webpack_require__(2087));
-const path = __importStar(__webpack_require__(5622));
+exports.getIDToken = exports.getState = exports.saveState = exports.group = exports.endGroup = exports.startGroup = exports.info = exports.notice = exports.warning = exports.error = exports.debug = exports.isDebug = exports.setFailed = exports.setCommandEcho = exports.setOutput = exports.getBooleanInput = exports.getMultilineInput = exports.getInput = exports.addPath = exports.setSecret = exports.exportVariable = exports.ExitCode = void 0;
+const command_1 = __nccwpck_require__(5604);
+const file_command_1 = __nccwpck_require__(7352);
+const utils_1 = __nccwpck_require__(1245);
+const os = __importStar(__nccwpck_require__(2037));
+const path = __importStar(__nccwpck_require__(1017));
+const oidc_utils_1 = __nccwpck_require__(4457);
 /**
  * The code to exit an action
  */
@@ -588,7 +585,9 @@ function addPath(inputPath) {
 }
 exports.addPath = addPath;
 /**
- * Gets the value of an input.  The value is also trimmed.
+ * Gets the value of an input.
+ * Unless trimWhitespace is set to false in InputOptions, the value is also trimmed.
+ * Returns an empty string if the value is not defined.
  *
  * @param     name     name of the input to get
  * @param     options  optional. See InputOptions.
@@ -599,9 +598,49 @@ function getInput(name, options) {
     if (options && options.required && !val) {
         throw new Error(`Input required and not supplied: ${name}`);
     }
+    if (options && options.trimWhitespace === false) {
+        return val;
+    }
     return val.trim();
 }
 exports.getInput = getInput;
+/**
+ * Gets the values of an multiline input.  Each value is also trimmed.
+ *
+ * @param     name     name of the input to get
+ * @param     options  optional. See InputOptions.
+ * @returns   string[]
+ *
+ */
+function getMultilineInput(name, options) {
+    const inputs = getInput(name, options)
+        .split('\n')
+        .filter(x => x !== '');
+    return inputs;
+}
+exports.getMultilineInput = getMultilineInput;
+/**
+ * Gets the input value of the boolean type in the YAML 1.2 "core schema" specification.
+ * Support boolean input list: `true | True | TRUE | false | False | FALSE` .
+ * The return value is also in boolean type.
+ * ref: https://yaml.org/spec/1.2/spec.html#id2804923
+ *
+ * @param     name     name of the input to get
+ * @param     options  optional. See InputOptions.
+ * @returns   boolean
+ */
+function getBooleanInput(name, options) {
+    const trueValue = ['true', 'True', 'TRUE'];
+    const falseValue = ['false', 'False', 'FALSE'];
+    const val = getInput(name, options);
+    if (trueValue.includes(val))
+        return true;
+    if (falseValue.includes(val))
+        return false;
+    throw new TypeError(`Input does not meet YAML 1.2 "Core Schema" specification: ${name}\n` +
+        `Support boolean input list: \`true | True | TRUE | false | False | FALSE\``);
+}
+exports.getBooleanInput = getBooleanInput;
 /**
  * Sets the value of an output.
  *
@@ -610,6 +649,7 @@ exports.getInput = getInput;
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function setOutput(name, value) {
+    process.stdout.write(os.EOL);
     command_1.issueCommand('set-output', { name }, value);
 }
 exports.setOutput = setOutput;
@@ -656,19 +696,30 @@ exports.debug = debug;
 /**
  * Adds an error issue
  * @param message error issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
  */
-function error(message) {
-    command_1.issue('error', message instanceof Error ? message.toString() : message);
+function error(message, properties = {}) {
+    command_1.issueCommand('error', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
 }
 exports.error = error;
 /**
- * Adds an warning issue
+ * Adds a warning issue
  * @param message warning issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
  */
-function warning(message) {
-    command_1.issue('warning', message instanceof Error ? message.toString() : message);
+function warning(message, properties = {}) {
+    command_1.issueCommand('warning', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
 }
 exports.warning = warning;
+/**
+ * Adds a notice issue
+ * @param message notice issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
+ */
+function notice(message, properties = {}) {
+    command_1.issueCommand('notice', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
+}
+exports.notice = notice;
 /**
  * Writes info to log with console.log.
  * @param message info message
@@ -741,29 +792,48 @@ function getState(name) {
     return process.env[`STATE_${name}`] || '';
 }
 exports.getState = getState;
+function getIDToken(aud) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return yield oidc_utils_1.OidcClient.getIDToken(aud);
+    });
+}
+exports.getIDToken = getIDToken;
 //# sourceMappingURL=core.js.map
 
 /***/ }),
 
-/***/ 717:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 7352:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
 // For internal use, subject to change.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.issueCommand = void 0;
 // We use any as a valid input type
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const fs = __importStar(__webpack_require__(5747));
-const os = __importStar(__webpack_require__(2087));
-const utils_1 = __webpack_require__(5278);
+const fs = __importStar(__nccwpck_require__(7147));
+const os = __importStar(__nccwpck_require__(2037));
+const utils_1 = __nccwpck_require__(1245);
 function issueCommand(command, message) {
     const filePath = process.env[`GITHUB_${command}`];
     if (!filePath) {
@@ -781,7 +851,91 @@ exports.issueCommand = issueCommand;
 
 /***/ }),
 
-/***/ 5278:
+/***/ 4457:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.OidcClient = void 0;
+const http_client_1 = __nccwpck_require__(1840);
+const auth_1 = __nccwpck_require__(9421);
+const core_1 = __nccwpck_require__(5127);
+class OidcClient {
+    static createHttpClient(allowRetry = true, maxRetry = 10) {
+        const requestOptions = {
+            allowRetries: allowRetry,
+            maxRetries: maxRetry
+        };
+        return new http_client_1.HttpClient('actions/oidc-client', [new auth_1.BearerCredentialHandler(OidcClient.getRequestToken())], requestOptions);
+    }
+    static getRequestToken() {
+        const token = process.env['ACTIONS_ID_TOKEN_REQUEST_TOKEN'];
+        if (!token) {
+            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_TOKEN env variable');
+        }
+        return token;
+    }
+    static getIDTokenUrl() {
+        const runtimeUrl = process.env['ACTIONS_ID_TOKEN_REQUEST_URL'];
+        if (!runtimeUrl) {
+            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable');
+        }
+        return runtimeUrl;
+    }
+    static getCall(id_token_url) {
+        var _a;
+        return __awaiter(this, void 0, void 0, function* () {
+            const httpclient = OidcClient.createHttpClient();
+            const res = yield httpclient
+                .getJson(id_token_url)
+                .catch(error => {
+                throw new Error(`Failed to get ID Token. \n 
+        Error Code : ${error.statusCode}\n 
+        Error Message: ${error.result.message}`);
+            });
+            const id_token = (_a = res.result) === null || _a === void 0 ? void 0 : _a.value;
+            if (!id_token) {
+                throw new Error('Response json body do not have ID Token field');
+            }
+            return id_token;
+        });
+    }
+    static getIDToken(audience) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                // New ID Token is requested from action service
+                let id_token_url = OidcClient.getIDTokenUrl();
+                if (audience) {
+                    const encodedAudience = encodeURIComponent(audience);
+                    id_token_url = `${id_token_url}&audience=${encodedAudience}`;
+                }
+                core_1.debug(`ID token url is ${id_token_url}`);
+                const id_token = yield OidcClient.getCall(id_token_url);
+                core_1.setSecret(id_token);
+                return id_token;
+            }
+            catch (error) {
+                throw new Error(`Error message: ${error.message}`);
+            }
+        });
+    }
+}
+exports.OidcClient = OidcClient;
+//# sourceMappingURL=oidc-utils.js.map
+
+/***/ }),
+
+/***/ 1245:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -789,6 +943,7 @@ exports.issueCommand = issueCommand;
 // We use any as a valid input type
 /* eslint-disable @typescript-eslint/no-explicit-any */
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toCommandProperties = exports.toCommandValue = void 0;
 /**
  * Sanitizes an input into a string so it can be passed into issueCommand safely
  * @param input input to sanitize into a string
@@ -803,18 +958,38 @@ function toCommandValue(input) {
     return JSON.stringify(input);
 }
 exports.toCommandValue = toCommandValue;
+/**
+ *
+ * @param annotationProperties
+ * @returns The command properties to send with the actual annotation command
+ * See IssueCommandProperties: https://github.com/actions/runner/blob/main/src/Runner.Worker/ActionCommandManager.cs#L646
+ */
+function toCommandProperties(annotationProperties) {
+    if (!Object.keys(annotationProperties).length) {
+        return {};
+    }
+    return {
+        title: annotationProperties.title,
+        file: annotationProperties.file,
+        line: annotationProperties.startLine,
+        endLine: annotationProperties.endLine,
+        col: annotationProperties.startColumn,
+        endColumn: annotationProperties.endColumn
+    };
+}
+exports.toCommandProperties = toCommandProperties;
 //# sourceMappingURL=utils.js.map
 
 /***/ }),
 
-/***/ 4087:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 5210:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const fs_1 = __webpack_require__(5747);
-const os_1 = __webpack_require__(2087);
+const fs_1 = __nccwpck_require__(7147);
+const os_1 = __nccwpck_require__(2037);
 class Context {
     /**
      * Hydrate the context from the environment
@@ -859,8 +1034,8 @@ exports.Context = Context;
 
 /***/ }),
 
-/***/ 5438:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ 3134:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
@@ -876,9 +1051,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 // Originally pulled from https://github.com/JasonEtco/actions-toolkit/blob/master/src/github.ts
-const graphql_1 = __webpack_require__(2535);
-const rest_1 = __importDefault(__webpack_require__(9351));
-const Context = __importStar(__webpack_require__(4087));
+const graphql_1 = __nccwpck_require__(583);
+const rest_1 = __importDefault(__nccwpck_require__(4190));
+const Context = __importStar(__nccwpck_require__(5210));
 // We need this in order to extend Octokit
 rest_1.default.prototype = new rest_1.default();
 exports.context = new Context.Context();
@@ -895,8 +1070,684 @@ exports.GitHub = GitHub;
 
 /***/ }),
 
-/***/ 9440:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 9421:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+class BasicCredentialHandler {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+    prepareRequest(options) {
+        options.headers['Authorization'] =
+            'Basic ' +
+                Buffer.from(this.username + ':' + this.password).toString('base64');
+    }
+    // This handler cannot handle 401
+    canHandleAuthentication(response) {
+        return false;
+    }
+    handleAuthentication(httpClient, requestInfo, objs) {
+        return null;
+    }
+}
+exports.BasicCredentialHandler = BasicCredentialHandler;
+class BearerCredentialHandler {
+    constructor(token) {
+        this.token = token;
+    }
+    // currently implements pre-authorization
+    // TODO: support preAuth = false where it hooks on 401
+    prepareRequest(options) {
+        options.headers['Authorization'] = 'Bearer ' + this.token;
+    }
+    // This handler cannot handle 401
+    canHandleAuthentication(response) {
+        return false;
+    }
+    handleAuthentication(httpClient, requestInfo, objs) {
+        return null;
+    }
+}
+exports.BearerCredentialHandler = BearerCredentialHandler;
+class PersonalAccessTokenCredentialHandler {
+    constructor(token) {
+        this.token = token;
+    }
+    // currently implements pre-authorization
+    // TODO: support preAuth = false where it hooks on 401
+    prepareRequest(options) {
+        options.headers['Authorization'] =
+            'Basic ' + Buffer.from('PAT:' + this.token).toString('base64');
+    }
+    // This handler cannot handle 401
+    canHandleAuthentication(response) {
+        return false;
+    }
+    handleAuthentication(httpClient, requestInfo, objs) {
+        return null;
+    }
+}
+exports.PersonalAccessTokenCredentialHandler = PersonalAccessTokenCredentialHandler;
+
+
+/***/ }),
+
+/***/ 1840:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const http = __nccwpck_require__(3685);
+const https = __nccwpck_require__(5687);
+const pm = __nccwpck_require__(8045);
+let tunnel;
+var HttpCodes;
+(function (HttpCodes) {
+    HttpCodes[HttpCodes["OK"] = 200] = "OK";
+    HttpCodes[HttpCodes["MultipleChoices"] = 300] = "MultipleChoices";
+    HttpCodes[HttpCodes["MovedPermanently"] = 301] = "MovedPermanently";
+    HttpCodes[HttpCodes["ResourceMoved"] = 302] = "ResourceMoved";
+    HttpCodes[HttpCodes["SeeOther"] = 303] = "SeeOther";
+    HttpCodes[HttpCodes["NotModified"] = 304] = "NotModified";
+    HttpCodes[HttpCodes["UseProxy"] = 305] = "UseProxy";
+    HttpCodes[HttpCodes["SwitchProxy"] = 306] = "SwitchProxy";
+    HttpCodes[HttpCodes["TemporaryRedirect"] = 307] = "TemporaryRedirect";
+    HttpCodes[HttpCodes["PermanentRedirect"] = 308] = "PermanentRedirect";
+    HttpCodes[HttpCodes["BadRequest"] = 400] = "BadRequest";
+    HttpCodes[HttpCodes["Unauthorized"] = 401] = "Unauthorized";
+    HttpCodes[HttpCodes["PaymentRequired"] = 402] = "PaymentRequired";
+    HttpCodes[HttpCodes["Forbidden"] = 403] = "Forbidden";
+    HttpCodes[HttpCodes["NotFound"] = 404] = "NotFound";
+    HttpCodes[HttpCodes["MethodNotAllowed"] = 405] = "MethodNotAllowed";
+    HttpCodes[HttpCodes["NotAcceptable"] = 406] = "NotAcceptable";
+    HttpCodes[HttpCodes["ProxyAuthenticationRequired"] = 407] = "ProxyAuthenticationRequired";
+    HttpCodes[HttpCodes["RequestTimeout"] = 408] = "RequestTimeout";
+    HttpCodes[HttpCodes["Conflict"] = 409] = "Conflict";
+    HttpCodes[HttpCodes["Gone"] = 410] = "Gone";
+    HttpCodes[HttpCodes["TooManyRequests"] = 429] = "TooManyRequests";
+    HttpCodes[HttpCodes["InternalServerError"] = 500] = "InternalServerError";
+    HttpCodes[HttpCodes["NotImplemented"] = 501] = "NotImplemented";
+    HttpCodes[HttpCodes["BadGateway"] = 502] = "BadGateway";
+    HttpCodes[HttpCodes["ServiceUnavailable"] = 503] = "ServiceUnavailable";
+    HttpCodes[HttpCodes["GatewayTimeout"] = 504] = "GatewayTimeout";
+})(HttpCodes = exports.HttpCodes || (exports.HttpCodes = {}));
+var Headers;
+(function (Headers) {
+    Headers["Accept"] = "accept";
+    Headers["ContentType"] = "content-type";
+})(Headers = exports.Headers || (exports.Headers = {}));
+var MediaTypes;
+(function (MediaTypes) {
+    MediaTypes["ApplicationJson"] = "application/json";
+})(MediaTypes = exports.MediaTypes || (exports.MediaTypes = {}));
+/**
+ * Returns the proxy URL, depending upon the supplied url and proxy environment variables.
+ * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
+ */
+function getProxyUrl(serverUrl) {
+    let proxyUrl = pm.getProxyUrl(new URL(serverUrl));
+    return proxyUrl ? proxyUrl.href : '';
+}
+exports.getProxyUrl = getProxyUrl;
+const HttpRedirectCodes = [
+    HttpCodes.MovedPermanently,
+    HttpCodes.ResourceMoved,
+    HttpCodes.SeeOther,
+    HttpCodes.TemporaryRedirect,
+    HttpCodes.PermanentRedirect
+];
+const HttpResponseRetryCodes = [
+    HttpCodes.BadGateway,
+    HttpCodes.ServiceUnavailable,
+    HttpCodes.GatewayTimeout
+];
+const RetryableHttpVerbs = ['OPTIONS', 'GET', 'DELETE', 'HEAD'];
+const ExponentialBackoffCeiling = 10;
+const ExponentialBackoffTimeSlice = 5;
+class HttpClientError extends Error {
+    constructor(message, statusCode) {
+        super(message);
+        this.name = 'HttpClientError';
+        this.statusCode = statusCode;
+        Object.setPrototypeOf(this, HttpClientError.prototype);
+    }
+}
+exports.HttpClientError = HttpClientError;
+class HttpClientResponse {
+    constructor(message) {
+        this.message = message;
+    }
+    readBody() {
+        return new Promise(async (resolve, reject) => {
+            let output = Buffer.alloc(0);
+            this.message.on('data', (chunk) => {
+                output = Buffer.concat([output, chunk]);
+            });
+            this.message.on('end', () => {
+                resolve(output.toString());
+            });
+        });
+    }
+}
+exports.HttpClientResponse = HttpClientResponse;
+function isHttps(requestUrl) {
+    let parsedUrl = new URL(requestUrl);
+    return parsedUrl.protocol === 'https:';
+}
+exports.isHttps = isHttps;
+class HttpClient {
+    constructor(userAgent, handlers, requestOptions) {
+        this._ignoreSslError = false;
+        this._allowRedirects = true;
+        this._allowRedirectDowngrade = false;
+        this._maxRedirects = 50;
+        this._allowRetries = false;
+        this._maxRetries = 1;
+        this._keepAlive = false;
+        this._disposed = false;
+        this.userAgent = userAgent;
+        this.handlers = handlers || [];
+        this.requestOptions = requestOptions;
+        if (requestOptions) {
+            if (requestOptions.ignoreSslError != null) {
+                this._ignoreSslError = requestOptions.ignoreSslError;
+            }
+            this._socketTimeout = requestOptions.socketTimeout;
+            if (requestOptions.allowRedirects != null) {
+                this._allowRedirects = requestOptions.allowRedirects;
+            }
+            if (requestOptions.allowRedirectDowngrade != null) {
+                this._allowRedirectDowngrade = requestOptions.allowRedirectDowngrade;
+            }
+            if (requestOptions.maxRedirects != null) {
+                this._maxRedirects = Math.max(requestOptions.maxRedirects, 0);
+            }
+            if (requestOptions.keepAlive != null) {
+                this._keepAlive = requestOptions.keepAlive;
+            }
+            if (requestOptions.allowRetries != null) {
+                this._allowRetries = requestOptions.allowRetries;
+            }
+            if (requestOptions.maxRetries != null) {
+                this._maxRetries = requestOptions.maxRetries;
+            }
+        }
+    }
+    options(requestUrl, additionalHeaders) {
+        return this.request('OPTIONS', requestUrl, null, additionalHeaders || {});
+    }
+    get(requestUrl, additionalHeaders) {
+        return this.request('GET', requestUrl, null, additionalHeaders || {});
+    }
+    del(requestUrl, additionalHeaders) {
+        return this.request('DELETE', requestUrl, null, additionalHeaders || {});
+    }
+    post(requestUrl, data, additionalHeaders) {
+        return this.request('POST', requestUrl, data, additionalHeaders || {});
+    }
+    patch(requestUrl, data, additionalHeaders) {
+        return this.request('PATCH', requestUrl, data, additionalHeaders || {});
+    }
+    put(requestUrl, data, additionalHeaders) {
+        return this.request('PUT', requestUrl, data, additionalHeaders || {});
+    }
+    head(requestUrl, additionalHeaders) {
+        return this.request('HEAD', requestUrl, null, additionalHeaders || {});
+    }
+    sendStream(verb, requestUrl, stream, additionalHeaders) {
+        return this.request(verb, requestUrl, stream, additionalHeaders);
+    }
+    /**
+     * Gets a typed object from an endpoint
+     * Be aware that not found returns a null.  Other errors (4xx, 5xx) reject the promise
+     */
+    async getJson(requestUrl, additionalHeaders = {}) {
+        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
+        let res = await this.get(requestUrl, additionalHeaders);
+        return this._processResponse(res, this.requestOptions);
+    }
+    async postJson(requestUrl, obj, additionalHeaders = {}) {
+        let data = JSON.stringify(obj, null, 2);
+        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
+        additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
+        let res = await this.post(requestUrl, data, additionalHeaders);
+        return this._processResponse(res, this.requestOptions);
+    }
+    async putJson(requestUrl, obj, additionalHeaders = {}) {
+        let data = JSON.stringify(obj, null, 2);
+        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
+        additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
+        let res = await this.put(requestUrl, data, additionalHeaders);
+        return this._processResponse(res, this.requestOptions);
+    }
+    async patchJson(requestUrl, obj, additionalHeaders = {}) {
+        let data = JSON.stringify(obj, null, 2);
+        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
+        additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
+        let res = await this.patch(requestUrl, data, additionalHeaders);
+        return this._processResponse(res, this.requestOptions);
+    }
+    /**
+     * Makes a raw http request.
+     * All other methods such as get, post, patch, and request ultimately call this.
+     * Prefer get, del, post and patch
+     */
+    async request(verb, requestUrl, data, headers) {
+        if (this._disposed) {
+            throw new Error('Client has already been disposed.');
+        }
+        let parsedUrl = new URL(requestUrl);
+        let info = this._prepareRequest(verb, parsedUrl, headers);
+        // Only perform retries on reads since writes may not be idempotent.
+        let maxTries = this._allowRetries && RetryableHttpVerbs.indexOf(verb) != -1
+            ? this._maxRetries + 1
+            : 1;
+        let numTries = 0;
+        let response;
+        while (numTries < maxTries) {
+            response = await this.requestRaw(info, data);
+            // Check if it's an authentication challenge
+            if (response &&
+                response.message &&
+                response.message.statusCode === HttpCodes.Unauthorized) {
+                let authenticationHandler;
+                for (let i = 0; i < this.handlers.length; i++) {
+                    if (this.handlers[i].canHandleAuthentication(response)) {
+                        authenticationHandler = this.handlers[i];
+                        break;
+                    }
+                }
+                if (authenticationHandler) {
+                    return authenticationHandler.handleAuthentication(this, info, data);
+                }
+                else {
+                    // We have received an unauthorized response but have no handlers to handle it.
+                    // Let the response return to the caller.
+                    return response;
+                }
+            }
+            let redirectsRemaining = this._maxRedirects;
+            while (HttpRedirectCodes.indexOf(response.message.statusCode) != -1 &&
+                this._allowRedirects &&
+                redirectsRemaining > 0) {
+                const redirectUrl = response.message.headers['location'];
+                if (!redirectUrl) {
+                    // if there's no location to redirect to, we won't
+                    break;
+                }
+                let parsedRedirectUrl = new URL(redirectUrl);
+                if (parsedUrl.protocol == 'https:' &&
+                    parsedUrl.protocol != parsedRedirectUrl.protocol &&
+                    !this._allowRedirectDowngrade) {
+                    throw new Error('Redirect from HTTPS to HTTP protocol. This downgrade is not allowed for security reasons. If you want to allow this behavior, set the allowRedirectDowngrade option to true.');
+                }
+                // we need to finish reading the response before reassigning response
+                // which will leak the open socket.
+                await response.readBody();
+                // strip authorization header if redirected to a different hostname
+                if (parsedRedirectUrl.hostname !== parsedUrl.hostname) {
+                    for (let header in headers) {
+                        // header names are case insensitive
+                        if (header.toLowerCase() === 'authorization') {
+                            delete headers[header];
+                        }
+                    }
+                }
+                // let's make the request with the new redirectUrl
+                info = this._prepareRequest(verb, parsedRedirectUrl, headers);
+                response = await this.requestRaw(info, data);
+                redirectsRemaining--;
+            }
+            if (HttpResponseRetryCodes.indexOf(response.message.statusCode) == -1) {
+                // If not a retry code, return immediately instead of retrying
+                return response;
+            }
+            numTries += 1;
+            if (numTries < maxTries) {
+                await response.readBody();
+                await this._performExponentialBackoff(numTries);
+            }
+        }
+        return response;
+    }
+    /**
+     * Needs to be called if keepAlive is set to true in request options.
+     */
+    dispose() {
+        if (this._agent) {
+            this._agent.destroy();
+        }
+        this._disposed = true;
+    }
+    /**
+     * Raw request.
+     * @param info
+     * @param data
+     */
+    requestRaw(info, data) {
+        return new Promise((resolve, reject) => {
+            let callbackForResult = function (err, res) {
+                if (err) {
+                    reject(err);
+                }
+                resolve(res);
+            };
+            this.requestRawWithCallback(info, data, callbackForResult);
+        });
+    }
+    /**
+     * Raw request with callback.
+     * @param info
+     * @param data
+     * @param onResult
+     */
+    requestRawWithCallback(info, data, onResult) {
+        let socket;
+        if (typeof data === 'string') {
+            info.options.headers['Content-Length'] = Buffer.byteLength(data, 'utf8');
+        }
+        let callbackCalled = false;
+        let handleResult = (err, res) => {
+            if (!callbackCalled) {
+                callbackCalled = true;
+                onResult(err, res);
+            }
+        };
+        let req = info.httpModule.request(info.options, (msg) => {
+            let res = new HttpClientResponse(msg);
+            handleResult(null, res);
+        });
+        req.on('socket', sock => {
+            socket = sock;
+        });
+        // If we ever get disconnected, we want the socket to timeout eventually
+        req.setTimeout(this._socketTimeout || 3 * 60000, () => {
+            if (socket) {
+                socket.end();
+            }
+            handleResult(new Error('Request timeout: ' + info.options.path), null);
+        });
+        req.on('error', function (err) {
+            // err has statusCode property
+            // res should have headers
+            handleResult(err, null);
+        });
+        if (data && typeof data === 'string') {
+            req.write(data, 'utf8');
+        }
+        if (data && typeof data !== 'string') {
+            data.on('close', function () {
+                req.end();
+            });
+            data.pipe(req);
+        }
+        else {
+            req.end();
+        }
+    }
+    /**
+     * Gets an http agent. This function is useful when you need an http agent that handles
+     * routing through a proxy server - depending upon the url and proxy environment variables.
+     * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
+     */
+    getAgent(serverUrl) {
+        let parsedUrl = new URL(serverUrl);
+        return this._getAgent(parsedUrl);
+    }
+    _prepareRequest(method, requestUrl, headers) {
+        const info = {};
+        info.parsedUrl = requestUrl;
+        const usingSsl = info.parsedUrl.protocol === 'https:';
+        info.httpModule = usingSsl ? https : http;
+        const defaultPort = usingSsl ? 443 : 80;
+        info.options = {};
+        info.options.host = info.parsedUrl.hostname;
+        info.options.port = info.parsedUrl.port
+            ? parseInt(info.parsedUrl.port)
+            : defaultPort;
+        info.options.path =
+            (info.parsedUrl.pathname || '') + (info.parsedUrl.search || '');
+        info.options.method = method;
+        info.options.headers = this._mergeHeaders(headers);
+        if (this.userAgent != null) {
+            info.options.headers['user-agent'] = this.userAgent;
+        }
+        info.options.agent = this._getAgent(info.parsedUrl);
+        // gives handlers an opportunity to participate
+        if (this.handlers) {
+            this.handlers.forEach(handler => {
+                handler.prepareRequest(info.options);
+            });
+        }
+        return info;
+    }
+    _mergeHeaders(headers) {
+        const lowercaseKeys = obj => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
+        if (this.requestOptions && this.requestOptions.headers) {
+            return Object.assign({}, lowercaseKeys(this.requestOptions.headers), lowercaseKeys(headers));
+        }
+        return lowercaseKeys(headers || {});
+    }
+    _getExistingOrDefaultHeader(additionalHeaders, header, _default) {
+        const lowercaseKeys = obj => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
+        let clientHeader;
+        if (this.requestOptions && this.requestOptions.headers) {
+            clientHeader = lowercaseKeys(this.requestOptions.headers)[header];
+        }
+        return additionalHeaders[header] || clientHeader || _default;
+    }
+    _getAgent(parsedUrl) {
+        let agent;
+        let proxyUrl = pm.getProxyUrl(parsedUrl);
+        let useProxy = proxyUrl && proxyUrl.hostname;
+        if (this._keepAlive && useProxy) {
+            agent = this._proxyAgent;
+        }
+        if (this._keepAlive && !useProxy) {
+            agent = this._agent;
+        }
+        // if agent is already assigned use that agent.
+        if (!!agent) {
+            return agent;
+        }
+        const usingSsl = parsedUrl.protocol === 'https:';
+        let maxSockets = 100;
+        if (!!this.requestOptions) {
+            maxSockets = this.requestOptions.maxSockets || http.globalAgent.maxSockets;
+        }
+        if (useProxy) {
+            // If using proxy, need tunnel
+            if (!tunnel) {
+                tunnel = __nccwpck_require__(7265);
+            }
+            const agentOptions = {
+                maxSockets: maxSockets,
+                keepAlive: this._keepAlive,
+                proxy: {
+                    ...((proxyUrl.username || proxyUrl.password) && {
+                        proxyAuth: `${proxyUrl.username}:${proxyUrl.password}`
+                    }),
+                    host: proxyUrl.hostname,
+                    port: proxyUrl.port
+                }
+            };
+            let tunnelAgent;
+            const overHttps = proxyUrl.protocol === 'https:';
+            if (usingSsl) {
+                tunnelAgent = overHttps ? tunnel.httpsOverHttps : tunnel.httpsOverHttp;
+            }
+            else {
+                tunnelAgent = overHttps ? tunnel.httpOverHttps : tunnel.httpOverHttp;
+            }
+            agent = tunnelAgent(agentOptions);
+            this._proxyAgent = agent;
+        }
+        // if reusing agent across request and tunneling agent isn't assigned create a new agent
+        if (this._keepAlive && !agent) {
+            const options = { keepAlive: this._keepAlive, maxSockets: maxSockets };
+            agent = usingSsl ? new https.Agent(options) : new http.Agent(options);
+            this._agent = agent;
+        }
+        // if not using private agent and tunnel agent isn't setup then use global agent
+        if (!agent) {
+            agent = usingSsl ? https.globalAgent : http.globalAgent;
+        }
+        if (usingSsl && this._ignoreSslError) {
+            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
+            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
+            // we have to cast it to any and change it directly
+            agent.options = Object.assign(agent.options || {}, {
+                rejectUnauthorized: false
+            });
+        }
+        return agent;
+    }
+    _performExponentialBackoff(retryNumber) {
+        retryNumber = Math.min(ExponentialBackoffCeiling, retryNumber);
+        const ms = ExponentialBackoffTimeSlice * Math.pow(2, retryNumber);
+        return new Promise(resolve => setTimeout(() => resolve(), ms));
+    }
+    static dateTimeDeserializer(key, value) {
+        if (typeof value === 'string') {
+            let a = new Date(value);
+            if (!isNaN(a.valueOf())) {
+                return a;
+            }
+        }
+        return value;
+    }
+    async _processResponse(res, options) {
+        return new Promise(async (resolve, reject) => {
+            const statusCode = res.message.statusCode;
+            const response = {
+                statusCode: statusCode,
+                result: null,
+                headers: {}
+            };
+            // not found leads to null obj returned
+            if (statusCode == HttpCodes.NotFound) {
+                resolve(response);
+            }
+            let obj;
+            let contents;
+            // get the result from the body
+            try {
+                contents = await res.readBody();
+                if (contents && contents.length > 0) {
+                    if (options && options.deserializeDates) {
+                        obj = JSON.parse(contents, HttpClient.dateTimeDeserializer);
+                    }
+                    else {
+                        obj = JSON.parse(contents);
+                    }
+                    response.result = obj;
+                }
+                response.headers = res.message.headers;
+            }
+            catch (err) {
+                // Invalid resource (contents not json);  leaving result obj null
+            }
+            // note that 3xx redirects are handled by the http layer.
+            if (statusCode > 299) {
+                let msg;
+                // if exception/error in body, attempt to get better error
+                if (obj && obj.message) {
+                    msg = obj.message;
+                }
+                else if (contents && contents.length > 0) {
+                    // it may be the case that the exception is in the body message as string
+                    msg = contents;
+                }
+                else {
+                    msg = 'Failed request: (' + statusCode + ')';
+                }
+                let err = new HttpClientError(msg, statusCode);
+                err.result = response.result;
+                reject(err);
+            }
+            else {
+                resolve(response);
+            }
+        });
+    }
+}
+exports.HttpClient = HttpClient;
+
+
+/***/ }),
+
+/***/ 8045:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+function getProxyUrl(reqUrl) {
+    let usingSsl = reqUrl.protocol === 'https:';
+    let proxyUrl;
+    if (checkBypass(reqUrl)) {
+        return proxyUrl;
+    }
+    let proxyVar;
+    if (usingSsl) {
+        proxyVar = process.env['https_proxy'] || process.env['HTTPS_PROXY'];
+    }
+    else {
+        proxyVar = process.env['http_proxy'] || process.env['HTTP_PROXY'];
+    }
+    if (proxyVar) {
+        proxyUrl = new URL(proxyVar);
+    }
+    return proxyUrl;
+}
+exports.getProxyUrl = getProxyUrl;
+function checkBypass(reqUrl) {
+    if (!reqUrl.hostname) {
+        return false;
+    }
+    let noProxy = process.env['no_proxy'] || process.env['NO_PROXY'] || '';
+    if (!noProxy) {
+        return false;
+    }
+    // Determine the request port
+    let reqPort;
+    if (reqUrl.port) {
+        reqPort = Number(reqUrl.port);
+    }
+    else if (reqUrl.protocol === 'http:') {
+        reqPort = 80;
+    }
+    else if (reqUrl.protocol === 'https:') {
+        reqPort = 443;
+    }
+    // Format the request hostname and hostname with port
+    let upperReqHosts = [reqUrl.hostname.toUpperCase()];
+    if (typeof reqPort === 'number') {
+        upperReqHosts.push(`${upperReqHosts[0]}:${reqPort}`);
+    }
+    // Compare request host against noproxy
+    for (let upperNoProxyItem of noProxy
+        .split(',')
+        .map(x => x.trim().toUpperCase())
+        .filter(x => x)) {
+        if (upperReqHosts.some(x => x === upperNoProxyItem)) {
+            return true;
+        }
+    }
+    return false;
+}
+exports.checkBypass = checkBypass;
+
+
+/***/ }),
+
+/***/ 2995:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -905,8 +1756,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var isPlainObject = _interopDefault(__webpack_require__(8840));
-var universalUserAgent = __webpack_require__(1292);
+var isPlainObject = _interopDefault(__nccwpck_require__(5962));
+var universalUserAgent = __nccwpck_require__(5626);
 
 function lowercaseKeys(object) {
   if (!object) {
@@ -1280,8 +2131,8 @@ exports.endpoint = endpoint;
 
 /***/ }),
 
-/***/ 1292:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 5626:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -1290,7 +2141,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var osName = _interopDefault(__webpack_require__(4824));
+var osName = _interopDefault(__nccwpck_require__(6529));
 
 function getUserAgent() {
   try {
@@ -1310,16 +2161,16 @@ exports.getUserAgent = getUserAgent;
 
 /***/ }),
 
-/***/ 2535:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 583:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const { request } = __webpack_require__(6234)
-const getUserAgent = __webpack_require__(2280)
+const { request } = __nccwpck_require__(3986)
+const getUserAgent = __nccwpck_require__(1453)
 
-const version = __webpack_require__(8444)/* .version */ .i8
+const version = (__nccwpck_require__(6601)/* .version */ .i8)
 const userAgent = `octokit-graphql.js/${version} ${getUserAgent()}`
 
-const withDefaults = __webpack_require__(645)
+const withDefaults = __nccwpck_require__(4306)
 
 module.exports = withDefaults(request, {
   method: 'POST',
@@ -1332,7 +2183,7 @@ module.exports = withDefaults(request, {
 
 /***/ }),
 
-/***/ 329:
+/***/ 8677:
 /***/ ((module) => {
 
 module.exports = class GraphqlError extends Error {
@@ -1355,12 +2206,12 @@ module.exports = class GraphqlError extends Error {
 
 /***/ }),
 
-/***/ 2721:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9940:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = graphql
 
-const GraphqlError = __webpack_require__(329)
+const GraphqlError = __nccwpck_require__(8677)
 
 const NON_VARIABLE_OPTIONS = ['method', 'baseUrl', 'url', 'headers', 'request', 'query']
 
@@ -1398,12 +2249,12 @@ function graphql (request, query, options) {
 
 /***/ }),
 
-/***/ 645:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4306:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = withDefaults
 
-const graphql = __webpack_require__(2721)
+const graphql = __nccwpck_require__(9940)
 
 function withDefaults (request, newDefaults) {
   const newRequest = request.defaults(newDefaults)
@@ -1418,8 +2269,8 @@ function withDefaults (request, newDefaults) {
 
 /***/ }),
 
-/***/ 537:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 3190:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -1428,8 +2279,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var deprecation = __webpack_require__(8932);
-var once = _interopDefault(__webpack_require__(1223));
+var deprecation = __nccwpck_require__(5800);
+var once = _interopDefault(__nccwpck_require__(8666));
 
 const logOnce = once(deprecation => console.warn(deprecation));
 /**
@@ -1480,8 +2331,8 @@ exports.RequestError = RequestError;
 
 /***/ }),
 
-/***/ 6234:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 3986:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -1490,11 +2341,11 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var endpoint = __webpack_require__(9440);
-var universalUserAgent = __webpack_require__(1441);
-var isPlainObject = _interopDefault(__webpack_require__(8840));
-var nodeFetch = _interopDefault(__webpack_require__(467));
-var requestError = __webpack_require__(537);
+var endpoint = __nccwpck_require__(2995);
+var universalUserAgent = __nccwpck_require__(5860);
+var isPlainObject = _interopDefault(__nccwpck_require__(5962));
+var nodeFetch = _interopDefault(__nccwpck_require__(8534));
+var requestError = __nccwpck_require__(3190);
 
 const VERSION = "0.0.0-development";
 
@@ -1632,8 +2483,8 @@ exports.request = request;
 
 /***/ }),
 
-/***/ 1441:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 5860:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -1642,7 +2493,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var osName = _interopDefault(__webpack_require__(4824));
+var osName = _interopDefault(__nccwpck_require__(6529));
 
 function getUserAgent() {
   try {
@@ -1662,22 +2513,22 @@ exports.getUserAgent = getUserAgent;
 
 /***/ }),
 
-/***/ 9351:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4190:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const Octokit = __webpack_require__(9833);
+const Octokit = __nccwpck_require__(5500);
 
 const CORE_PLUGINS = [
-  __webpack_require__(5272),
-  __webpack_require__(3691), // deprecated: remove in v17
-  __webpack_require__(4555),
-  __webpack_require__(8579),
-  __webpack_require__(6237),
-  __webpack_require__(4495),
-  __webpack_require__(8727),
-  __webpack_require__(2657),
+  __nccwpck_require__(6937),
+  __nccwpck_require__(5598), // deprecated: remove in v17
+  __nccwpck_require__(5226),
+  __nccwpck_require__(4147),
+  __nccwpck_require__(4012),
+  __nccwpck_require__(6392),
+  __nccwpck_require__(8915),
+  __nccwpck_require__(9044),
 
-  __webpack_require__(2072) // deprecated: remove in v17
+  __nccwpck_require__(6192) // deprecated: remove in v17
 ];
 
 module.exports = Octokit.plugin(CORE_PLUGINS);
@@ -1685,15 +2536,15 @@ module.exports = Octokit.plugin(CORE_PLUGINS);
 
 /***/ }),
 
-/***/ 823:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9758:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = Octokit;
 
-const { request } = __webpack_require__(6234);
-const Hook = __webpack_require__(3682);
+const { request } = __nccwpck_require__(3986);
+const Hook = __nccwpck_require__(3108);
 
-const parseClientOptions = __webpack_require__(4613);
+const parseClientOptions = __nccwpck_require__(6773);
 
 function Octokit(plugins, options) {
   options = options || {};
@@ -1721,23 +2572,23 @@ function Octokit(plugins, options) {
 
 /***/ }),
 
-/***/ 9833:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5500:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const factory = __webpack_require__(5320);
+const factory = __nccwpck_require__(5631);
 
 module.exports = factory();
 
 
 /***/ }),
 
-/***/ 5320:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5631:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = factory;
 
-const Octokit = __webpack_require__(823);
-const registerPlugin = __webpack_require__(7826);
+const Octokit = __nccwpck_require__(9758);
+const registerPlugin = __nccwpck_require__(3590);
 
 function factory(plugins) {
   const Api = Octokit.bind(null, plugins || []);
@@ -1748,16 +2599,16 @@ function factory(plugins) {
 
 /***/ }),
 
-/***/ 4613:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6773:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = parseOptions;
 
-const { Deprecation } = __webpack_require__(8932);
-const { getUserAgent } = __webpack_require__(3318);
-const once = __webpack_require__(1223);
+const { Deprecation } = __nccwpck_require__(5800);
+const { getUserAgent } = __nccwpck_require__(4840);
+const once = __nccwpck_require__(8666);
 
-const pkg = __webpack_require__(9674);
+const pkg = __nccwpck_require__(1322);
 
 const deprecateOptionsTimeout = once((log, deprecation) =>
   log.warn(deprecation)
@@ -1840,12 +2691,12 @@ function parseOptions(options, log, hook) {
 
 /***/ }),
 
-/***/ 7826:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3590:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = registerPlugin;
 
-const factory = __webpack_require__(5320);
+const factory = __nccwpck_require__(5631);
 
 function registerPlugin(plugins, pluginFunction) {
   return factory(
@@ -1856,8 +2707,8 @@ function registerPlugin(plugins, pluginFunction) {
 
 /***/ }),
 
-/***/ 3318:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 4840:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -1866,7 +2717,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var osName = _interopDefault(__webpack_require__(4824));
+var osName = _interopDefault(__nccwpck_require__(6529));
 
 function getUserAgent() {
   try {
@@ -1886,13 +2737,13 @@ exports.getUserAgent = getUserAgent;
 
 /***/ }),
 
-/***/ 795:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3623:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = authenticate;
 
-const { Deprecation } = __webpack_require__(8932);
-const once = __webpack_require__(1223);
+const { Deprecation } = __nccwpck_require__(5800);
+const once = __nccwpck_require__(8666);
 
 const deprecateAuthenticate = once((log, deprecation) => log.warn(deprecation));
 
@@ -1945,13 +2796,13 @@ function authenticate(state, options) {
 
 /***/ }),
 
-/***/ 7578:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5937:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = authenticationBeforeRequest;
 
-const btoa = __webpack_require__(2358);
-const uniq = __webpack_require__(8216);
+const btoa = __nccwpck_require__(7972);
+const uniq = __nccwpck_require__(5357);
 
 function authenticationBeforeRequest(state, options) {
   if (!state.auth.type) {
@@ -1995,19 +2846,19 @@ function authenticationBeforeRequest(state, options) {
 
 /***/ }),
 
-/***/ 3691:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5598:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = authenticationPlugin;
 
-const { Deprecation } = __webpack_require__(8932);
-const once = __webpack_require__(1223);
+const { Deprecation } = __nccwpck_require__(5800);
+const once = __nccwpck_require__(8666);
 
 const deprecateAuthenticate = once((log, deprecation) => log.warn(deprecation));
 
-const authenticate = __webpack_require__(795);
-const beforeRequest = __webpack_require__(7578);
-const requestError = __webpack_require__(4275);
+const authenticate = __nccwpck_require__(3623);
+const beforeRequest = __nccwpck_require__(5937);
+const requestError = __nccwpck_require__(3263);
 
 function authenticationPlugin(octokit, options) {
   if (options.auth) {
@@ -2033,12 +2884,12 @@ function authenticationPlugin(octokit, options) {
 
 /***/ }),
 
-/***/ 4275:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3263:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = authenticationRequestError;
 
-const { RequestError } = __webpack_require__(537);
+const { RequestError } = __nccwpck_require__(3190);
 
 function authenticationRequestError(state, error, options) {
   /* istanbul ignore next */
@@ -2095,14 +2946,14 @@ function authenticationRequestError(state, error, options) {
 
 /***/ }),
 
-/***/ 9733:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4136:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = authenticationBeforeRequest;
 
-const btoa = __webpack_require__(2358);
+const btoa = __nccwpck_require__(7972);
 
-const withAuthorizationPrefix = __webpack_require__(9603);
+const withAuthorizationPrefix = __nccwpck_require__(9325);
 
 function authenticationBeforeRequest(state, options) {
   if (typeof state.auth === "string") {
@@ -2167,14 +3018,14 @@ function authenticationBeforeRequest(state, options) {
 
 /***/ }),
 
-/***/ 4555:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5226:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = authenticationPlugin;
 
-const beforeRequest = __webpack_require__(9733);
-const requestError = __webpack_require__(3217);
-const validate = __webpack_require__(8997);
+const beforeRequest = __nccwpck_require__(4136);
+const requestError = __nccwpck_require__(823);
+const validate = __nccwpck_require__(7698);
 
 function authenticationPlugin(octokit, options) {
   if (!options.auth) {
@@ -2195,12 +3046,12 @@ function authenticationPlugin(octokit, options) {
 
 /***/ }),
 
-/***/ 3217:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 823:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = authenticationRequestError;
 
-const { RequestError } = __webpack_require__(537);
+const { RequestError } = __nccwpck_require__(3190);
 
 function authenticationRequestError(state, error, options) {
   if (!error.headers) throw error;
@@ -2263,7 +3114,7 @@ function authenticationRequestError(state, error, options) {
 
 /***/ }),
 
-/***/ 8997:
+/***/ 7698:
 /***/ ((module) => {
 
 module.exports = validateAuth;
@@ -2291,12 +3142,12 @@ function validateAuth(auth) {
 
 /***/ }),
 
-/***/ 9603:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9325:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = withAuthorizationPrefix;
 
-const atob = __webpack_require__(5224);
+const atob = __nccwpck_require__(6680);
 
 const REGEX_IS_BASIC_AUTH = /^[\w-]+:/;
 
@@ -2321,7 +3172,7 @@ function withAuthorizationPrefix(authorization) {
 
 /***/ }),
 
-/***/ 5272:
+/***/ 6937:
 /***/ ((module) => {
 
 module.exports = octokitDebug;
@@ -2356,12 +3207,12 @@ function octokitDebug(octokit) {
 
 /***/ }),
 
-/***/ 6237:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4012:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = octokitRestNormalizeGitReferenceResponses;
 
-const { RequestError } = __webpack_require__(537);
+const { RequestError } = __nccwpck_require__(3190);
 
 function octokitRestNormalizeGitReferenceResponses(octokit) {
   octokit.hook.wrap("request", (request, options) => {
@@ -2422,13 +3273,13 @@ function octokitRestNormalizeGitReferenceResponses(octokit) {
 
 /***/ }),
 
-/***/ 8579:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4147:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = paginatePlugin;
 
-const iterator = __webpack_require__(851);
-const paginate = __webpack_require__(9238);
+const iterator = __nccwpck_require__(8993);
+const paginate = __nccwpck_require__(8102);
 
 function paginatePlugin(octokit) {
   octokit.paginate = paginate.bind(null, octokit);
@@ -2438,12 +3289,12 @@ function paginatePlugin(octokit) {
 
 /***/ }),
 
-/***/ 851:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8993:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = iterator;
 
-const normalizePaginatedListResponse = __webpack_require__(3417);
+const normalizePaginatedListResponse = __nccwpck_require__(3559);
 
 function iterator(octokit, options) {
   const headers = options.headers;
@@ -2479,8 +3330,8 @@ function iterator(octokit, options) {
 
 /***/ }),
 
-/***/ 3417:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3559:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /**
  * Some “list” response that can be paginated have a different response structure
@@ -2505,8 +3356,8 @@ function iterator(octokit, options) {
 
 module.exports = normalizePaginatedListResponse;
 
-const { Deprecation } = __webpack_require__(8932);
-const once = __webpack_require__(1223);
+const { Deprecation } = __nccwpck_require__(5800);
+const once = __nccwpck_require__(8666);
 
 const deprecateIncompleteResults = once((log, deprecation) =>
   log.warn(deprecation)
@@ -2599,12 +3450,12 @@ function normalizePaginatedListResponse(octokit, url, response) {
 
 /***/ }),
 
-/***/ 9238:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8102:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = paginate;
 
-const iterator = __webpack_require__(851);
+const iterator = __nccwpck_require__(8993);
 
 function paginate(octokit, route, options, mapFn) {
   if (typeof options === "function") {
@@ -2646,12 +3497,12 @@ function gather(octokit, results, iterator, mapFn) {
 
 /***/ }),
 
-/***/ 4495:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6392:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = octokitRegisterEndpoints;
 
-const registerEndpoints = __webpack_require__(2359);
+const registerEndpoints = __nccwpck_require__(1164);
 
 function octokitRegisterEndpoints(octokit) {
   octokit.registerEndpoints = registerEndpoints.bind(null, octokit);
@@ -2660,12 +3511,12 @@ function octokitRegisterEndpoints(octokit) {
 
 /***/ }),
 
-/***/ 2359:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 1164:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = registerEndpoints;
 
-const { Deprecation } = __webpack_require__(8932);
+const { Deprecation } = __nccwpck_require__(5800);
 
 function registerEndpoints(octokit, routes) {
   Object.keys(routes).forEach(namespaceName => {
@@ -2765,12 +3616,12 @@ function patchForDeprecation(octokit, apiOptions, method, methodName) {
 
 /***/ }),
 
-/***/ 8727:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8915:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = octokitRestApiEndpoints;
 
-const ROUTES = __webpack_require__(3923);
+const ROUTES = __nccwpck_require__(1608);
 
 function octokitRestApiEndpoints(octokit) {
   // Aliasing scopes for backward compatibility
@@ -2785,12 +3636,12 @@ function octokitRestApiEndpoints(octokit) {
 
 /***/ }),
 
-/***/ 2657:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9044:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = octokitValidate;
 
-const validate = __webpack_require__(6132);
+const validate = __nccwpck_require__(9144);
 
 function octokitValidate(octokit) {
   octokit.hook.before("request", validate.bind(null, octokit));
@@ -2799,17 +3650,17 @@ function octokitValidate(octokit) {
 
 /***/ }),
 
-/***/ 6132:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9144:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 module.exports = validate;
 
-const { RequestError } = __webpack_require__(537);
-const get = __webpack_require__(9197);
-const set = __webpack_require__(1552);
+const { RequestError } = __nccwpck_require__(3190);
+const get = __nccwpck_require__(1578);
+const set = __nccwpck_require__(5196);
 
 function validate(octokit, options) {
   if (!options.request.validate) {
@@ -2958,7 +3809,7 @@ function validate(octokit, options) {
 
 /***/ }),
 
-/***/ 5224:
+/***/ 6680:
 /***/ ((module) => {
 
 module.exports = function atob(str) {
@@ -2968,12 +3819,12 @@ module.exports = function atob(str) {
 
 /***/ }),
 
-/***/ 3682:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3108:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-var register = __webpack_require__(4670)
-var addHook = __webpack_require__(5549)
-var removeHook = __webpack_require__(6819)
+var register = __nccwpck_require__(9676)
+var addHook = __nccwpck_require__(3862)
+var removeHook = __nccwpck_require__(7704)
 
 // bind with array of arguments: https://stackoverflow.com/a/21792913
 var bind = Function.bind
@@ -3032,7 +3883,7 @@ module.exports.Collection = Hook.Collection
 
 /***/ }),
 
-/***/ 5549:
+/***/ 3862:
 /***/ ((module) => {
 
 module.exports = addHook
@@ -3085,7 +3936,7 @@ function addHook (state, kind, name, hook) {
 
 /***/ }),
 
-/***/ 4670:
+/***/ 9676:
 /***/ ((module) => {
 
 module.exports = register
@@ -3120,7 +3971,7 @@ function register (state, name, method, options) {
 
 /***/ }),
 
-/***/ 6819:
+/***/ 7704:
 /***/ ((module) => {
 
 module.exports = removeHook
@@ -3144,7 +3995,7 @@ function removeHook (state, name, method) {
 
 /***/ }),
 
-/***/ 2358:
+/***/ 7972:
 /***/ ((module) => {
 
 module.exports = function btoa(str) {
@@ -3154,15 +4005,15 @@ module.exports = function btoa(str) {
 
 /***/ }),
 
-/***/ 2746:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5775:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-const cp = __webpack_require__(3129);
-const parse = __webpack_require__(6855);
-const enoent = __webpack_require__(4101);
+const cp = __nccwpck_require__(2081);
+const parse = __nccwpck_require__(4810);
+const enoent = __nccwpck_require__(8496);
 
 function spawn(command, args, options) {
     // Parse the arguments
@@ -3201,7 +4052,7 @@ module.exports._enoent = enoent;
 
 /***/ }),
 
-/***/ 4101:
+/***/ 8496:
 /***/ ((module) => {
 
 "use strict";
@@ -3268,18 +4119,18 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6855:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4810:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-const path = __webpack_require__(5622);
-const niceTry = __webpack_require__(8560);
-const resolveCommand = __webpack_require__(7274);
-const escape = __webpack_require__(4274);
-const readShebang = __webpack_require__(1252);
-const semver = __webpack_require__(5911);
+const path = __nccwpck_require__(1017);
+const niceTry = __nccwpck_require__(5526);
+const resolveCommand = __nccwpck_require__(1463);
+const escape = __nccwpck_require__(7358);
+const readShebang = __nccwpck_require__(6409);
+const semver = __nccwpck_require__(1156);
 
 const isWin = process.platform === 'win32';
 const isExecutableRegExp = /\.(?:com|exe)$/i;
@@ -3401,7 +4252,7 @@ module.exports = parse;
 
 /***/ }),
 
-/***/ 4274:
+/***/ 7358:
 /***/ ((module) => {
 
 "use strict";
@@ -3454,14 +4305,14 @@ module.exports.argument = escapeArgument;
 
 /***/ }),
 
-/***/ 1252:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6409:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-const fs = __webpack_require__(5747);
-const shebangCommand = __webpack_require__(7032);
+const fs = __nccwpck_require__(7147);
+const shebangCommand = __nccwpck_require__(8701);
 
 function readShebang(command) {
     // Read the first 150 bytes from the file
@@ -3494,15 +4345,15 @@ module.exports = readShebang;
 
 /***/ }),
 
-/***/ 7274:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 1463:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-const path = __webpack_require__(5622);
-const which = __webpack_require__(4207);
-const pathKey = __webpack_require__(539)();
+const path = __nccwpck_require__(1017);
+const which = __nccwpck_require__(6446);
+const pathKey = __nccwpck_require__(5200)();
 
 function resolveCommandAttempt(parsed, withoutPathExt) {
     const cwd = process.cwd();
@@ -3549,7 +4400,7 @@ module.exports = resolveCommand;
 
 /***/ }),
 
-/***/ 8932:
+/***/ 5800:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -3577,10 +4428,10 @@ exports.Deprecation = Deprecation;
 
 /***/ }),
 
-/***/ 1205:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 7242:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-var once = __webpack_require__(1223);
+var once = __nccwpck_require__(8666);
 
 var noop = function() {};
 
@@ -3678,22 +4529,22 @@ module.exports = eos;
 
 /***/ }),
 
-/***/ 5447:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 1910:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-const path = __webpack_require__(5622);
-const childProcess = __webpack_require__(3129);
-const crossSpawn = __webpack_require__(2746);
-const stripEof = __webpack_require__(5515);
-const npmRunPath = __webpack_require__(502);
-const isStream = __webpack_require__(1554);
-const _getStream = __webpack_require__(1766);
-const pFinally = __webpack_require__(1330);
-const onExit = __webpack_require__(4931);
-const errname = __webpack_require__(4689);
-const stdio = __webpack_require__(166);
+const path = __nccwpck_require__(1017);
+const childProcess = __nccwpck_require__(2081);
+const crossSpawn = __nccwpck_require__(5775);
+const stripEof = __nccwpck_require__(8226);
+const npmRunPath = __nccwpck_require__(1513);
+const isStream = __nccwpck_require__(6425);
+const _getStream = __nccwpck_require__(152);
+const pFinally = __nccwpck_require__(732);
+const onExit = __nccwpck_require__(3056);
+const errname = __nccwpck_require__(8546);
+const stdio = __nccwpck_require__(6464);
 
 const TEN_MEGABYTES = 1000 * 1000 * 10;
 
@@ -4047,14 +4898,14 @@ module.exports.shellSync = (cmd, opts) => handleShell(module.exports.sync, cmd, 
 
 /***/ }),
 
-/***/ 4689:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8546:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 // Older verions of Node.js might not have `util.getSystemErrorName()`.
 // In that case, fall back to a deprecated internal.
-const util = __webpack_require__(1669);
+const util = __nccwpck_require__(3837);
 
 let uv;
 
@@ -4094,7 +4945,7 @@ function errname(uv, code) {
 
 /***/ }),
 
-/***/ 166:
+/***/ 6464:
 /***/ ((module) => {
 
 "use strict";
@@ -4143,12 +4994,12 @@ module.exports = opts => {
 
 /***/ }),
 
-/***/ 1585:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 1191:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-const {PassThrough} = __webpack_require__(2413);
+const {PassThrough} = __nccwpck_require__(2781);
 
 module.exports = options => {
 	options = Object.assign({}, options);
@@ -4202,13 +5053,13 @@ module.exports = options => {
 
 /***/ }),
 
-/***/ 1766:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 152:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-const pump = __webpack_require__(8341);
-const bufferStream = __webpack_require__(1585);
+const pump = __nccwpck_require__(1410);
+const bufferStream = __nccwpck_require__(1191);
 
 class MaxBufferError extends Error {
 	constructor() {
@@ -4260,7 +5111,7 @@ module.exports.MaxBufferError = MaxBufferError;
 
 /***/ }),
 
-/***/ 8840:
+/***/ 5962:
 /***/ ((module) => {
 
 "use strict";
@@ -4316,7 +5167,7 @@ module.exports = isPlainObject;
 
 /***/ }),
 
-/***/ 1554:
+/***/ 6425:
 /***/ ((module) => {
 
 "use strict";
@@ -4345,15 +5196,15 @@ isStream.transform = function (stream) {
 
 /***/ }),
 
-/***/ 7126:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8068:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-var fs = __webpack_require__(5747)
+var fs = __nccwpck_require__(7147)
 var core
 if (process.platform === 'win32' || global.TESTING_WINDOWS) {
-  core = __webpack_require__(2001)
+  core = __nccwpck_require__(2665)
 } else {
-  core = __webpack_require__(9728)
+  core = __nccwpck_require__(2093)
 }
 
 module.exports = isexe
@@ -4409,13 +5260,13 @@ function sync (path, options) {
 
 /***/ }),
 
-/***/ 9728:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 2093:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = isexe
 isexe.sync = sync
 
-var fs = __webpack_require__(5747)
+var fs = __nccwpck_require__(7147)
 
 function isexe (path, options, cb) {
   fs.stat(path, function (er, stat) {
@@ -4457,13 +5308,13 @@ function checkMode (stat, options) {
 
 /***/ }),
 
-/***/ 2001:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 2665:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = isexe
 isexe.sync = sync
 
-var fs = __webpack_require__(5747)
+var fs = __nccwpck_require__(7147)
 
 function checkPathExt (path, options) {
   var pathext = options.pathExt !== undefined ?
@@ -4506,14 +5357,14 @@ function sync (path, options) {
 
 /***/ }),
 
-/***/ 1917:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9818:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 
-var yaml = __webpack_require__(916);
+var yaml = __nccwpck_require__(650);
 
 
 module.exports = yaml;
@@ -4521,15 +5372,15 @@ module.exports = yaml;
 
 /***/ }),
 
-/***/ 916:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 650:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 
-var loader = __webpack_require__(5190);
-var dumper = __webpack_require__(3034);
+var loader = __nccwpck_require__(2635);
+var dumper = __nccwpck_require__(9016);
 
 
 function deprecated(name) {
@@ -4539,25 +5390,25 @@ function deprecated(name) {
 }
 
 
-module.exports.Type = __webpack_require__(967);
-module.exports.Schema = __webpack_require__(6514);
-module.exports.FAILSAFE_SCHEMA = __webpack_require__(6037);
-module.exports.JSON_SCHEMA = __webpack_require__(1571);
-module.exports.CORE_SCHEMA = __webpack_require__(2183);
-module.exports.DEFAULT_SAFE_SCHEMA = __webpack_require__(8949);
-module.exports.DEFAULT_FULL_SCHEMA = __webpack_require__(6874);
+module.exports.Type = __nccwpck_require__(4162);
+module.exports.Schema = __nccwpck_require__(5770);
+module.exports.FAILSAFE_SCHEMA = __nccwpck_require__(445);
+module.exports.JSON_SCHEMA = __nccwpck_require__(5135);
+module.exports.CORE_SCHEMA = __nccwpck_require__(8047);
+module.exports.DEFAULT_SAFE_SCHEMA = __nccwpck_require__(7427);
+module.exports.DEFAULT_FULL_SCHEMA = __nccwpck_require__(5187);
 module.exports.load                = loader.load;
 module.exports.loadAll             = loader.loadAll;
 module.exports.safeLoad            = loader.safeLoad;
 module.exports.safeLoadAll         = loader.safeLoadAll;
 module.exports.dump                = dumper.dump;
 module.exports.safeDump            = dumper.safeDump;
-module.exports.YAMLException = __webpack_require__(5199);
+module.exports.YAMLException = __nccwpck_require__(5484);
 
 // Deprecated schema names from JS-YAML 2.0.x
-module.exports.MINIMAL_SCHEMA = __webpack_require__(6037);
-module.exports.SAFE_SCHEMA = __webpack_require__(8949);
-module.exports.DEFAULT_SCHEMA = __webpack_require__(6874);
+module.exports.MINIMAL_SCHEMA = __nccwpck_require__(445);
+module.exports.SAFE_SCHEMA = __nccwpck_require__(7427);
+module.exports.DEFAULT_SCHEMA = __nccwpck_require__(5187);
 
 // Deprecated functions from JS-YAML 1.x.x
 module.exports.scan           = deprecated('scan');
@@ -4568,7 +5419,7 @@ module.exports.addConstructor = deprecated('addConstructor');
 
 /***/ }),
 
-/***/ 9136:
+/***/ 9860:
 /***/ ((module) => {
 
 "use strict";
@@ -4635,18 +5486,18 @@ module.exports.extend         = extend;
 
 /***/ }),
 
-/***/ 3034:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9016:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 /*eslint-disable no-use-before-define*/
 
-var common              = __webpack_require__(9136);
-var YAMLException       = __webpack_require__(5199);
-var DEFAULT_FULL_SCHEMA = __webpack_require__(6874);
-var DEFAULT_SAFE_SCHEMA = __webpack_require__(8949);
+var common              = __nccwpck_require__(9860);
+var YAMLException       = __nccwpck_require__(5484);
+var DEFAULT_FULL_SCHEMA = __nccwpck_require__(5187);
+var DEFAULT_SAFE_SCHEMA = __nccwpck_require__(7427);
 
 var _toString       = Object.prototype.toString;
 var _hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -5470,7 +6321,7 @@ module.exports.safeDump = safeDump;
 
 /***/ }),
 
-/***/ 5199:
+/***/ 5484:
 /***/ ((module) => {
 
 "use strict";
@@ -5521,19 +6372,19 @@ module.exports = YAMLException;
 
 /***/ }),
 
-/***/ 5190:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 2635:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 /*eslint-disable max-len,no-use-before-define*/
 
-var common              = __webpack_require__(9136);
-var YAMLException       = __webpack_require__(5199);
-var Mark                = __webpack_require__(5426);
-var DEFAULT_SAFE_SCHEMA = __webpack_require__(8949);
-var DEFAULT_FULL_SCHEMA = __webpack_require__(6874);
+var common              = __nccwpck_require__(9860);
+var YAMLException       = __nccwpck_require__(5484);
+var Mark                = __nccwpck_require__(9320);
+var DEFAULT_SAFE_SCHEMA = __nccwpck_require__(7427);
+var DEFAULT_FULL_SCHEMA = __nccwpck_require__(5187);
 
 
 var _hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -7154,14 +8005,14 @@ module.exports.safeLoad    = safeLoad;
 
 /***/ }),
 
-/***/ 5426:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9320:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 
-var common = __webpack_require__(9136);
+var common = __nccwpck_require__(9860);
 
 
 function Mark(name, buffer, position, line, column) {
@@ -7238,17 +8089,17 @@ module.exports = Mark;
 
 /***/ }),
 
-/***/ 6514:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5770:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 /*eslint-disable max-len*/
 
-var common        = __webpack_require__(9136);
-var YAMLException = __webpack_require__(5199);
-var Type          = __webpack_require__(967);
+var common        = __nccwpck_require__(9860);
+var YAMLException = __nccwpck_require__(5484);
+var Type          = __nccwpck_require__(4162);
 
 
 function compileList(schema, name, result) {
@@ -7354,8 +8205,8 @@ module.exports = Schema;
 
 /***/ }),
 
-/***/ 2183:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8047:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 // Standard YAML's Core schema.
@@ -7368,20 +8219,20 @@ module.exports = Schema;
 
 
 
-var Schema = __webpack_require__(6514);
+var Schema = __nccwpck_require__(5770);
 
 
 module.exports = new Schema({
   include: [
-    __webpack_require__(1571)
+    __nccwpck_require__(5135)
   ]
 });
 
 
 /***/ }),
 
-/***/ 6874:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5187:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 // JS-YAML's default schema for `load` function.
@@ -7396,25 +8247,25 @@ module.exports = new Schema({
 
 
 
-var Schema = __webpack_require__(6514);
+var Schema = __nccwpck_require__(5770);
 
 
 module.exports = Schema.DEFAULT = new Schema({
   include: [
-    __webpack_require__(8949)
+    __nccwpck_require__(7427)
   ],
   explicit: [
-    __webpack_require__(5914),
-    __webpack_require__(9242),
-    __webpack_require__(7278)
+    __nccwpck_require__(614),
+    __nccwpck_require__(3612),
+    __nccwpck_require__(8146)
   ]
 });
 
 
 /***/ }),
 
-/***/ 8949:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 7427:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 // JS-YAML's default schema for `safeLoad` function.
@@ -7427,30 +8278,30 @@ module.exports = Schema.DEFAULT = new Schema({
 
 
 
-var Schema = __webpack_require__(6514);
+var Schema = __nccwpck_require__(5770);
 
 
 module.exports = new Schema({
   include: [
-    __webpack_require__(2183)
+    __nccwpck_require__(8047)
   ],
   implicit: [
-    __webpack_require__(3714),
-    __webpack_require__(1393)
+    __nccwpck_require__(8516),
+    __nccwpck_require__(3492)
   ],
   explicit: [
-    __webpack_require__(2551),
-    __webpack_require__(6668),
-    __webpack_require__(6039),
-    __webpack_require__(9237)
+    __nccwpck_require__(4231),
+    __nccwpck_require__(2467),
+    __nccwpck_require__(8198),
+    __nccwpck_require__(3596)
   ]
 });
 
 
 /***/ }),
 
-/***/ 6037:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 445:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 // Standard YAML's Failsafe schema.
@@ -7460,22 +8311,22 @@ module.exports = new Schema({
 
 
 
-var Schema = __webpack_require__(6514);
+var Schema = __nccwpck_require__(5770);
 
 
 module.exports = new Schema({
   explicit: [
-    __webpack_require__(2672),
-    __webpack_require__(5490),
-    __webpack_require__(1173)
+    __nccwpck_require__(8169),
+    __nccwpck_require__(6275),
+    __nccwpck_require__(5380)
   ]
 });
 
 
 /***/ }),
 
-/***/ 1571:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5135:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 // Standard YAML's JSON schema.
@@ -7489,31 +8340,31 @@ module.exports = new Schema({
 
 
 
-var Schema = __webpack_require__(6514);
+var Schema = __nccwpck_require__(5770);
 
 
 module.exports = new Schema({
   include: [
-    __webpack_require__(6037)
+    __nccwpck_require__(445)
   ],
   implicit: [
-    __webpack_require__(2671),
-    __webpack_require__(4675),
-    __webpack_require__(9963),
-    __webpack_require__(5564)
+    __nccwpck_require__(5318),
+    __nccwpck_require__(3420),
+    __nccwpck_require__(5203),
+    __nccwpck_require__(9612)
   ]
 });
 
 
 /***/ }),
 
-/***/ 967:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4162:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var YAMLException = __webpack_require__(5199);
+var YAMLException = __nccwpck_require__(5484);
 
 var TYPE_CONSTRUCTOR_OPTIONS = [
   'kind',
@@ -7576,8 +8427,8 @@ module.exports = Type;
 
 /***/ }),
 
-/***/ 2551:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4231:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -7592,7 +8443,7 @@ try {
   NodeBuffer = _require('buffer').Buffer;
 } catch (__) {}
 
-var Type       = __webpack_require__(967);
+var Type       = __nccwpck_require__(4162);
 
 
 // [ 64, 65, 66 ] -> [ padding, CR, LF ]
@@ -7722,13 +8573,13 @@ module.exports = new Type('tag:yaml.org,2002:binary', {
 
 /***/ }),
 
-/***/ 4675:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3420:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 function resolveYamlBoolean(data) {
   if (data === null) return false;
@@ -7765,14 +8616,14 @@ module.exports = new Type('tag:yaml.org,2002:bool', {
 
 /***/ }),
 
-/***/ 5564:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9612:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var common = __webpack_require__(9136);
-var Type   = __webpack_require__(967);
+var common = __nccwpck_require__(9860);
+var Type   = __nccwpck_require__(4162);
 
 var YAML_FLOAT_PATTERN = new RegExp(
   // 2.5e4, 2.5 and integers
@@ -7889,14 +8740,14 @@ module.exports = new Type('tag:yaml.org,2002:float', {
 
 /***/ }),
 
-/***/ 9963:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5203:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var common = __webpack_require__(9136);
-var Type   = __webpack_require__(967);
+var common = __nccwpck_require__(9860);
+var Type   = __nccwpck_require__(4162);
 
 function isHexCode(c) {
   return ((0x30/* 0 */ <= c) && (c <= 0x39/* 9 */)) ||
@@ -8070,8 +8921,8 @@ module.exports = new Type('tag:yaml.org,2002:int', {
 
 /***/ }),
 
-/***/ 7278:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8146:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -8094,7 +8945,7 @@ try {
   if (typeof window !== 'undefined') esprima = window.esprima;
 }
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 function resolveJavascriptFunction(data) {
   if (data === null) return false;
@@ -8170,13 +9021,13 @@ module.exports = new Type('tag:yaml.org,2002:js/function', {
 
 /***/ }),
 
-/***/ 9242:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3612:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 function resolveJavascriptRegExp(data) {
   if (data === null) return false;
@@ -8238,13 +9089,13 @@ module.exports = new Type('tag:yaml.org,2002:js/regexp', {
 
 /***/ }),
 
-/***/ 5914:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 614:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 function resolveJavascriptUndefined() {
   return true;
@@ -8274,13 +9125,13 @@ module.exports = new Type('tag:yaml.org,2002:js/undefined', {
 
 /***/ }),
 
-/***/ 1173:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5380:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 module.exports = new Type('tag:yaml.org,2002:map', {
   kind: 'mapping',
@@ -8290,13 +9141,13 @@ module.exports = new Type('tag:yaml.org,2002:map', {
 
 /***/ }),
 
-/***/ 1393:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3492:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 function resolveYamlMerge(data) {
   return data === '<<' || data === null;
@@ -8310,13 +9161,13 @@ module.exports = new Type('tag:yaml.org,2002:merge', {
 
 /***/ }),
 
-/***/ 2671:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 5318:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 function resolveYamlNull(data) {
   if (data === null) return true;
@@ -8352,13 +9203,13 @@ module.exports = new Type('tag:yaml.org,2002:null', {
 
 /***/ }),
 
-/***/ 6668:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 2467:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 var _hasOwnProperty = Object.prototype.hasOwnProperty;
 var _toString       = Object.prototype.toString;
@@ -8404,13 +9255,13 @@ module.exports = new Type('tag:yaml.org,2002:omap', {
 
 /***/ }),
 
-/***/ 6039:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8198:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 var _toString = Object.prototype.toString;
 
@@ -8465,13 +9316,13 @@ module.exports = new Type('tag:yaml.org,2002:pairs', {
 
 /***/ }),
 
-/***/ 5490:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6275:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 module.exports = new Type('tag:yaml.org,2002:seq', {
   kind: 'sequence',
@@ -8481,13 +9332,13 @@ module.exports = new Type('tag:yaml.org,2002:seq', {
 
 /***/ }),
 
-/***/ 9237:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3596:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 var _hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -8518,13 +9369,13 @@ module.exports = new Type('tag:yaml.org,2002:set', {
 
 /***/ }),
 
-/***/ 2672:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8169:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 module.exports = new Type('tag:yaml.org,2002:str', {
   kind: 'scalar',
@@ -8534,13 +9385,13 @@ module.exports = new Type('tag:yaml.org,2002:str', {
 
 /***/ }),
 
-/***/ 3714:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8516:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-var Type = __webpack_require__(967);
+var Type = __nccwpck_require__(4162);
 
 var YAML_DATE_REGEXP = new RegExp(
   '^([0-9][0-9][0-9][0-9])'          + // [1] year
@@ -8630,7 +9481,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
 
 /***/ }),
 
-/***/ 9197:
+/***/ 1578:
 /***/ ((module) => {
 
 /**
@@ -9568,7 +10419,7 @@ module.exports = get;
 
 /***/ }),
 
-/***/ 1552:
+/***/ 5196:
 /***/ ((module) => {
 
 /**
@@ -10565,7 +11416,7 @@ module.exports = set;
 
 /***/ }),
 
-/***/ 8216:
+/***/ 5357:
 /***/ ((module) => {
 
 /**
@@ -11468,10 +12319,10 @@ module.exports = uniq;
 
 /***/ }),
 
-/***/ 250:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 5817:
+/***/ (function(module, exports, __nccwpck_require__) {
 
-/* module decorator */ module = __webpack_require__.nmd(module);
+/* module decorator */ module = __nccwpck_require__.nmd(module);
 /**
  * @license
  * Lodash <https://lodash.com/>
@@ -28685,12 +29536,12 @@ module.exports = uniq;
 
 /***/ }),
 
-/***/ 7493:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 7993:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-const os = __webpack_require__(2087);
+const os = __nccwpck_require__(2037);
 
 const nameMap = new Map([
 	[19, 'Catalina'],
@@ -28720,12 +29571,12 @@ const macosRelease = release => {
 
 module.exports = macosRelease;
 // TODO: remove this in the next major version
-module.exports.default = macosRelease;
+module.exports["default"] = macosRelease;
 
 
 /***/ }),
 
-/***/ 8560:
+/***/ 5526:
 /***/ ((module) => {
 
 "use strict";
@@ -28744,8 +29595,8 @@ module.exports = function(fn) {
 
 /***/ }),
 
-/***/ 467:
-/***/ ((module, exports, __webpack_require__) => {
+/***/ 8534:
+/***/ ((module, exports, __nccwpck_require__) => {
 
 "use strict";
 
@@ -28754,11 +29605,11 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var Stream = _interopDefault(__webpack_require__(2413));
-var http = _interopDefault(__webpack_require__(8605));
-var Url = _interopDefault(__webpack_require__(8835));
-var https = _interopDefault(__webpack_require__(7211));
-var zlib = _interopDefault(__webpack_require__(8761));
+var Stream = _interopDefault(__nccwpck_require__(2781));
+var http = _interopDefault(__nccwpck_require__(3685));
+var Url = _interopDefault(__nccwpck_require__(7310));
+var https = _interopDefault(__nccwpck_require__(5687));
+var zlib = _interopDefault(__nccwpck_require__(9796));
 
 // Based on https://github.com/tmpvar/jsdom/blob/aa85b2abf07766ff7bf5c1f6daafb3726f2f2db5/lib/jsdom/living/blob.js
 
@@ -28909,7 +29760,7 @@ FetchError.prototype.name = 'FetchError';
 
 let convert;
 try {
-	convert = __webpack_require__(2877).convert;
+	convert = (__nccwpck_require__(2431).convert);
 } catch (e) {}
 
 const INTERNALS = Symbol('Body internals');
@@ -30392,7 +31243,7 @@ fetch.Promise = global.Promise;
 
 module.exports = exports = fetch;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.default = exports;
+exports["default"] = exports;
 exports.Headers = Headers;
 exports.Request = Request;
 exports.Response = Response;
@@ -30401,13 +31252,13 @@ exports.FetchError = FetchError;
 
 /***/ }),
 
-/***/ 502:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 1513:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-const path = __webpack_require__(5622);
-const pathKey = __webpack_require__(539);
+const path = __nccwpck_require__(1017);
+const pathKey = __nccwpck_require__(5200);
 
 module.exports = opts => {
 	opts = Object.assign({
@@ -30448,26 +31299,26 @@ module.exports.env = opts => {
 
 /***/ }),
 
-/***/ 2072:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6192:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = paginationMethodsPlugin
 
 function paginationMethodsPlugin (octokit) {
-  octokit.getFirstPage = __webpack_require__(9555).bind(null, octokit)
-  octokit.getLastPage = __webpack_require__(2203).bind(null, octokit)
-  octokit.getNextPage = __webpack_require__(6655).bind(null, octokit)
-  octokit.getPreviousPage = __webpack_require__(3032).bind(null, octokit)
-  octokit.hasFirstPage = __webpack_require__(9631)
-  octokit.hasLastPage = __webpack_require__(4286)
-  octokit.hasNextPage = __webpack_require__(500)
-  octokit.hasPreviousPage = __webpack_require__(5996)
+  octokit.getFirstPage = (__nccwpck_require__(9042).bind)(null, octokit)
+  octokit.getLastPage = (__nccwpck_require__(4640).bind)(null, octokit)
+  octokit.getNextPage = (__nccwpck_require__(7346).bind)(null, octokit)
+  octokit.getPreviousPage = (__nccwpck_require__(2053).bind)(null, octokit)
+  octokit.hasFirstPage = __nccwpck_require__(7753)
+  octokit.hasLastPage = __nccwpck_require__(4680)
+  octokit.hasNextPage = __nccwpck_require__(660)
+  octokit.hasPreviousPage = __nccwpck_require__(194)
 }
 
 
 /***/ }),
 
-/***/ 191:
+/***/ 7671:
 /***/ ((module) => {
 
 module.exports = deprecate
@@ -30486,12 +31337,12 @@ function deprecate (message) {
 
 /***/ }),
 
-/***/ 9555:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 9042:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = getFirstPage
 
-const getPage = __webpack_require__(8604)
+const getPage = __nccwpck_require__(6732)
 
 function getFirstPage (octokit, link, headers) {
   return getPage(octokit, link, 'first', headers)
@@ -30500,12 +31351,12 @@ function getFirstPage (octokit, link, headers) {
 
 /***/ }),
 
-/***/ 2203:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4640:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = getLastPage
 
-const getPage = __webpack_require__(8604)
+const getPage = __nccwpck_require__(6732)
 
 function getLastPage (octokit, link, headers) {
   return getPage(octokit, link, 'last', headers)
@@ -30514,12 +31365,12 @@ function getLastPage (octokit, link, headers) {
 
 /***/ }),
 
-/***/ 6655:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 7346:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = getNextPage
 
-const getPage = __webpack_require__(8604)
+const getPage = __nccwpck_require__(6732)
 
 function getNextPage (octokit, link, headers) {
   return getPage(octokit, link, 'next', headers)
@@ -30528,7 +31379,7 @@ function getNextPage (octokit, link, headers) {
 
 /***/ }),
 
-/***/ 7889:
+/***/ 4888:
 /***/ ((module) => {
 
 module.exports = getPageLinks
@@ -30550,14 +31401,14 @@ function getPageLinks (link) {
 
 /***/ }),
 
-/***/ 8604:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6732:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = getPage
 
-const deprecate = __webpack_require__(191)
-const getPageLinks = __webpack_require__(7889)
-const HttpError = __webpack_require__(6058)
+const deprecate = __nccwpck_require__(7671)
+const getPageLinks = __nccwpck_require__(4888)
+const HttpError = __nccwpck_require__(9190)
 
 function getPage (octokit, link, which, headers) {
   deprecate(`octokit.get${which.charAt(0).toUpperCase() + which.slice(1)}Page() – You can use octokit.paginate or async iterators instead: https://github.com/octokit/rest.js#pagination.`)
@@ -30595,12 +31446,12 @@ function applyAcceptHeader (res, headers) {
 
 /***/ }),
 
-/***/ 3032:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 2053:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = getPreviousPage
 
-const getPage = __webpack_require__(8604)
+const getPage = __nccwpck_require__(6732)
 
 function getPreviousPage (octokit, link, headers) {
   return getPage(octokit, link, 'prev', headers)
@@ -30609,13 +31460,13 @@ function getPreviousPage (octokit, link, headers) {
 
 /***/ }),
 
-/***/ 9631:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 7753:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = hasFirstPage
 
-const deprecate = __webpack_require__(191)
-const getPageLinks = __webpack_require__(7889)
+const deprecate = __nccwpck_require__(7671)
+const getPageLinks = __nccwpck_require__(4888)
 
 function hasFirstPage (link) {
   deprecate(`octokit.hasFirstPage() – You can use octokit.paginate or async iterators instead: https://github.com/octokit/rest.js#pagination.`)
@@ -30625,13 +31476,13 @@ function hasFirstPage (link) {
 
 /***/ }),
 
-/***/ 4286:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4680:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = hasLastPage
 
-const deprecate = __webpack_require__(191)
-const getPageLinks = __webpack_require__(7889)
+const deprecate = __nccwpck_require__(7671)
+const getPageLinks = __nccwpck_require__(4888)
 
 function hasLastPage (link) {
   deprecate(`octokit.hasLastPage() – You can use octokit.paginate or async iterators instead: https://github.com/octokit/rest.js#pagination.`)
@@ -30641,13 +31492,13 @@ function hasLastPage (link) {
 
 /***/ }),
 
-/***/ 500:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 660:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = hasNextPage
 
-const deprecate = __webpack_require__(191)
-const getPageLinks = __webpack_require__(7889)
+const deprecate = __nccwpck_require__(7671)
+const getPageLinks = __nccwpck_require__(4888)
 
 function hasNextPage (link) {
   deprecate(`octokit.hasNextPage() – You can use octokit.paginate or async iterators instead: https://github.com/octokit/rest.js#pagination.`)
@@ -30657,13 +31508,13 @@ function hasNextPage (link) {
 
 /***/ }),
 
-/***/ 5996:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 194:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = hasPreviousPage
 
-const deprecate = __webpack_require__(191)
-const getPageLinks = __webpack_require__(7889)
+const deprecate = __nccwpck_require__(7671)
+const getPageLinks = __nccwpck_require__(4888)
 
 function hasPreviousPage (link) {
   deprecate(`octokit.hasPreviousPage() – You can use octokit.paginate or async iterators instead: https://github.com/octokit/rest.js#pagination.`)
@@ -30673,7 +31524,7 @@ function hasPreviousPage (link) {
 
 /***/ }),
 
-/***/ 6058:
+/***/ 9190:
 /***/ ((module) => {
 
 module.exports = class HttpError extends Error {
@@ -30695,10 +31546,10 @@ module.exports = class HttpError extends Error {
 
 /***/ }),
 
-/***/ 1223:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8666:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-var wrappy = __webpack_require__(2940)
+var wrappy = __nccwpck_require__(9002)
 module.exports = wrappy(once)
 module.exports.strict = wrappy(onceStrict)
 
@@ -30744,14 +31595,14 @@ function onceStrict (fn) {
 
 /***/ }),
 
-/***/ 4824:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6529:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-const os = __webpack_require__(2087);
-const macosRelease = __webpack_require__(7493);
-const winRelease = __webpack_require__(3515);
+const os = __nccwpck_require__(2037);
+const macosRelease = __nccwpck_require__(7993);
+const winRelease = __nccwpck_require__(2956);
 
 const osName = (platform, release) => {
 	if (!platform && release) {
@@ -30798,7 +31649,7 @@ module.exports = osName;
 
 /***/ }),
 
-/***/ 1330:
+/***/ 732:
 /***/ ((module) => {
 
 "use strict";
@@ -30821,7 +31672,7 @@ module.exports = (promise, onFinally) => {
 
 /***/ }),
 
-/***/ 539:
+/***/ 5200:
 /***/ ((module) => {
 
 "use strict";
@@ -30842,12 +31693,12 @@ module.exports = opts => {
 
 /***/ }),
 
-/***/ 8341:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 1410:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-var once = __webpack_require__(1223)
-var eos = __webpack_require__(1205)
-var fs = __webpack_require__(5747) // we only need fs to get the ReadStream and WriteStream prototypes
+var once = __nccwpck_require__(8666)
+var eos = __nccwpck_require__(7242)
+var fs = __nccwpck_require__(7147) // we only need fs to get the ReadStream and WriteStream prototypes
 
 var noop = function () {}
 var ancient = /^v?\.0/.test(process.version)
@@ -30931,7 +31782,7 @@ module.exports = pump
 
 /***/ }),
 
-/***/ 5911:
+/***/ 1156:
 /***/ ((module, exports) => {
 
 exports = module.exports = SemVer
@@ -32421,12 +33272,12 @@ function coerce (version) {
 
 /***/ }),
 
-/***/ 7032:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 8701:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-var shebangRegex = __webpack_require__(2638);
+var shebangRegex = __nccwpck_require__(9440);
 
 module.exports = function (str) {
 	var match = str.match(shebangRegex);
@@ -32448,7 +33299,7 @@ module.exports = function (str) {
 
 /***/ }),
 
-/***/ 2638:
+/***/ 9440:
 /***/ ((module) => {
 
 "use strict";
@@ -32458,8 +33309,8 @@ module.exports = /^#!.*/;
 
 /***/ }),
 
-/***/ 4931:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 3056:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // Note: since nyc uses this module to output coverage, any lines
 // that are in the direct sync flow of nyc's outputCoverage are
@@ -32484,11 +33335,11 @@ const processOk = function (process) {
 if (!processOk(process)) {
   module.exports = function () {}
 } else {
-  var assert = __webpack_require__(2357)
-  var signals = __webpack_require__(3710)
+  var assert = __nccwpck_require__(9491)
+  var signals = __nccwpck_require__(3791)
   var isWin = /^win/i.test(process.platform)
 
-  var EE = __webpack_require__(8614)
+  var EE = __nccwpck_require__(2361)
   /* istanbul ignore if */
   if (typeof EE !== 'function') {
     EE = EE.EventEmitter
@@ -32665,7 +33516,7 @@ if (!processOk(process)) {
 
 /***/ }),
 
-/***/ 3710:
+/***/ 3791:
 /***/ ((module) => {
 
 // This is not the set of all possible signals.
@@ -32725,7 +33576,7 @@ if (process.platform === 'linux') {
 
 /***/ }),
 
-/***/ 5515:
+/***/ 8226:
 /***/ ((module) => {
 
 "use strict";
@@ -32748,12 +33599,292 @@ module.exports = function (x) {
 
 /***/ }),
 
-/***/ 2280:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 7265:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+module.exports = __nccwpck_require__(2686);
+
+
+/***/ }),
+
+/***/ 2686:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+var net = __nccwpck_require__(1808);
+var tls = __nccwpck_require__(4404);
+var http = __nccwpck_require__(3685);
+var https = __nccwpck_require__(5687);
+var events = __nccwpck_require__(2361);
+var assert = __nccwpck_require__(9491);
+var util = __nccwpck_require__(3837);
+
+
+exports.httpOverHttp = httpOverHttp;
+exports.httpsOverHttp = httpsOverHttp;
+exports.httpOverHttps = httpOverHttps;
+exports.httpsOverHttps = httpsOverHttps;
+
+
+function httpOverHttp(options) {
+  var agent = new TunnelingAgent(options);
+  agent.request = http.request;
+  return agent;
+}
+
+function httpsOverHttp(options) {
+  var agent = new TunnelingAgent(options);
+  agent.request = http.request;
+  agent.createSocket = createSecureSocket;
+  agent.defaultPort = 443;
+  return agent;
+}
+
+function httpOverHttps(options) {
+  var agent = new TunnelingAgent(options);
+  agent.request = https.request;
+  return agent;
+}
+
+function httpsOverHttps(options) {
+  var agent = new TunnelingAgent(options);
+  agent.request = https.request;
+  agent.createSocket = createSecureSocket;
+  agent.defaultPort = 443;
+  return agent;
+}
+
+
+function TunnelingAgent(options) {
+  var self = this;
+  self.options = options || {};
+  self.proxyOptions = self.options.proxy || {};
+  self.maxSockets = self.options.maxSockets || http.Agent.defaultMaxSockets;
+  self.requests = [];
+  self.sockets = [];
+
+  self.on('free', function onFree(socket, host, port, localAddress) {
+    var options = toOptions(host, port, localAddress);
+    for (var i = 0, len = self.requests.length; i < len; ++i) {
+      var pending = self.requests[i];
+      if (pending.host === options.host && pending.port === options.port) {
+        // Detect the request to connect same origin server,
+        // reuse the connection.
+        self.requests.splice(i, 1);
+        pending.request.onSocket(socket);
+        return;
+      }
+    }
+    socket.destroy();
+    self.removeSocket(socket);
+  });
+}
+util.inherits(TunnelingAgent, events.EventEmitter);
+
+TunnelingAgent.prototype.addRequest = function addRequest(req, host, port, localAddress) {
+  var self = this;
+  var options = mergeOptions({request: req}, self.options, toOptions(host, port, localAddress));
+
+  if (self.sockets.length >= this.maxSockets) {
+    // We are over limit so we'll add it to the queue.
+    self.requests.push(options);
+    return;
+  }
+
+  // If we are under maxSockets create a new one.
+  self.createSocket(options, function(socket) {
+    socket.on('free', onFree);
+    socket.on('close', onCloseOrRemove);
+    socket.on('agentRemove', onCloseOrRemove);
+    req.onSocket(socket);
+
+    function onFree() {
+      self.emit('free', socket, options);
+    }
+
+    function onCloseOrRemove(err) {
+      self.removeSocket(socket);
+      socket.removeListener('free', onFree);
+      socket.removeListener('close', onCloseOrRemove);
+      socket.removeListener('agentRemove', onCloseOrRemove);
+    }
+  });
+};
+
+TunnelingAgent.prototype.createSocket = function createSocket(options, cb) {
+  var self = this;
+  var placeholder = {};
+  self.sockets.push(placeholder);
+
+  var connectOptions = mergeOptions({}, self.proxyOptions, {
+    method: 'CONNECT',
+    path: options.host + ':' + options.port,
+    agent: false,
+    headers: {
+      host: options.host + ':' + options.port
+    }
+  });
+  if (options.localAddress) {
+    connectOptions.localAddress = options.localAddress;
+  }
+  if (connectOptions.proxyAuth) {
+    connectOptions.headers = connectOptions.headers || {};
+    connectOptions.headers['Proxy-Authorization'] = 'Basic ' +
+        new Buffer(connectOptions.proxyAuth).toString('base64');
+  }
+
+  debug('making CONNECT request');
+  var connectReq = self.request(connectOptions);
+  connectReq.useChunkedEncodingByDefault = false; // for v0.6
+  connectReq.once('response', onResponse); // for v0.6
+  connectReq.once('upgrade', onUpgrade);   // for v0.6
+  connectReq.once('connect', onConnect);   // for v0.7 or later
+  connectReq.once('error', onError);
+  connectReq.end();
+
+  function onResponse(res) {
+    // Very hacky. This is necessary to avoid http-parser leaks.
+    res.upgrade = true;
+  }
+
+  function onUpgrade(res, socket, head) {
+    // Hacky.
+    process.nextTick(function() {
+      onConnect(res, socket, head);
+    });
+  }
+
+  function onConnect(res, socket, head) {
+    connectReq.removeAllListeners();
+    socket.removeAllListeners();
+
+    if (res.statusCode !== 200) {
+      debug('tunneling socket could not be established, statusCode=%d',
+        res.statusCode);
+      socket.destroy();
+      var error = new Error('tunneling socket could not be established, ' +
+        'statusCode=' + res.statusCode);
+      error.code = 'ECONNRESET';
+      options.request.emit('error', error);
+      self.removeSocket(placeholder);
+      return;
+    }
+    if (head.length > 0) {
+      debug('got illegal response body from proxy');
+      socket.destroy();
+      var error = new Error('got illegal response body from proxy');
+      error.code = 'ECONNRESET';
+      options.request.emit('error', error);
+      self.removeSocket(placeholder);
+      return;
+    }
+    debug('tunneling connection has established');
+    self.sockets[self.sockets.indexOf(placeholder)] = socket;
+    return cb(socket);
+  }
+
+  function onError(cause) {
+    connectReq.removeAllListeners();
+
+    debug('tunneling socket could not be established, cause=%s\n',
+          cause.message, cause.stack);
+    var error = new Error('tunneling socket could not be established, ' +
+                          'cause=' + cause.message);
+    error.code = 'ECONNRESET';
+    options.request.emit('error', error);
+    self.removeSocket(placeholder);
+  }
+};
+
+TunnelingAgent.prototype.removeSocket = function removeSocket(socket) {
+  var pos = this.sockets.indexOf(socket)
+  if (pos === -1) {
+    return;
+  }
+  this.sockets.splice(pos, 1);
+
+  var pending = this.requests.shift();
+  if (pending) {
+    // If we have pending requests and a socket gets closed a new one
+    // needs to be created to take over in the pool for the one that closed.
+    this.createSocket(pending, function(socket) {
+      pending.request.onSocket(socket);
+    });
+  }
+};
+
+function createSecureSocket(options, cb) {
+  var self = this;
+  TunnelingAgent.prototype.createSocket.call(self, options, function(socket) {
+    var hostHeader = options.request.getHeader('host');
+    var tlsOptions = mergeOptions({}, self.options, {
+      socket: socket,
+      servername: hostHeader ? hostHeader.replace(/:.*$/, '') : options.host
+    });
+
+    // 0 is dummy port for v0.6
+    var secureSocket = tls.connect(0, tlsOptions);
+    self.sockets[self.sockets.indexOf(socket)] = secureSocket;
+    cb(secureSocket);
+  });
+}
+
+
+function toOptions(host, port, localAddress) {
+  if (typeof host === 'string') { // since v0.10
+    return {
+      host: host,
+      port: port,
+      localAddress: localAddress
+    };
+  }
+  return host; // for v0.11 or later
+}
+
+function mergeOptions(target) {
+  for (var i = 1, len = arguments.length; i < len; ++i) {
+    var overrides = arguments[i];
+    if (typeof overrides === 'object') {
+      var keys = Object.keys(overrides);
+      for (var j = 0, keyLen = keys.length; j < keyLen; ++j) {
+        var k = keys[j];
+        if (overrides[k] !== undefined) {
+          target[k] = overrides[k];
+        }
+      }
+    }
+  }
+  return target;
+}
+
+
+var debug;
+if (process.env.NODE_DEBUG && /\btunnel\b/.test(process.env.NODE_DEBUG)) {
+  debug = function() {
+    var args = Array.prototype.slice.call(arguments);
+    if (typeof args[0] === 'string') {
+      args[0] = 'TUNNEL: ' + args[0];
+    } else {
+      args.unshift('TUNNEL:');
+    }
+    console.error.apply(console, args);
+  }
+} else {
+  debug = function() {};
+}
+exports.debug = debug; // for test
+
+
+/***/ }),
+
+/***/ 1453:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = getUserAgentNode
 
-const osName = __webpack_require__(4824)
+const osName = __nccwpck_require__(6529)
 
 function getUserAgentNode () {
   try {
@@ -32770,8 +33901,8 @@ function getUserAgentNode () {
 
 /***/ }),
 
-/***/ 4207:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6446:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = which
 which.sync = whichSync
@@ -32780,9 +33911,9 @@ var isWindows = process.platform === 'win32' ||
     process.env.OSTYPE === 'cygwin' ||
     process.env.OSTYPE === 'msys'
 
-var path = __webpack_require__(5622)
+var path = __nccwpck_require__(1017)
 var COLON = isWindows ? ';' : ':'
-var isexe = __webpack_require__(7126)
+var isexe = __nccwpck_require__(8068)
 
 function getNotFoundError (cmd) {
   var er = new Error('not found: ' + cmd)
@@ -32912,13 +34043,13 @@ function whichSync (cmd, opt) {
 
 /***/ }),
 
-/***/ 3515:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 2956:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-const os = __webpack_require__(2087);
-const execa = __webpack_require__(5447);
+const os = __nccwpck_require__(2037);
+const execa = __nccwpck_require__(1910);
 
 // Reference: https://www.gaijin.at/en/lstwinver.php
 const names = new Map([
@@ -32964,7 +34095,7 @@ module.exports = windowsRelease;
 
 /***/ }),
 
-/***/ 2940:
+/***/ 9002:
 /***/ ((module) => {
 
 // Returns a wrapper function that returns a wrapped callback
@@ -33004,7 +34135,7 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
-/***/ 2877:
+/***/ 2431:
 /***/ ((module) => {
 
 module.exports = eval("require")("encoding");
@@ -33012,7 +34143,7 @@ module.exports = eval("require")("encoding");
 
 /***/ }),
 
-/***/ 2357:
+/***/ 9491:
 /***/ ((module) => {
 
 "use strict";
@@ -33020,7 +34151,7 @@ module.exports = require("assert");
 
 /***/ }),
 
-/***/ 3129:
+/***/ 2081:
 /***/ ((module) => {
 
 "use strict";
@@ -33028,7 +34159,7 @@ module.exports = require("child_process");
 
 /***/ }),
 
-/***/ 8614:
+/***/ 2361:
 /***/ ((module) => {
 
 "use strict";
@@ -33036,7 +34167,7 @@ module.exports = require("events");
 
 /***/ }),
 
-/***/ 5747:
+/***/ 7147:
 /***/ ((module) => {
 
 "use strict";
@@ -33044,7 +34175,7 @@ module.exports = require("fs");
 
 /***/ }),
 
-/***/ 8605:
+/***/ 3685:
 /***/ ((module) => {
 
 "use strict";
@@ -33052,7 +34183,7 @@ module.exports = require("http");
 
 /***/ }),
 
-/***/ 7211:
+/***/ 5687:
 /***/ ((module) => {
 
 "use strict";
@@ -33060,7 +34191,15 @@ module.exports = require("https");
 
 /***/ }),
 
-/***/ 2087:
+/***/ 1808:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("net");
+
+/***/ }),
+
+/***/ 2037:
 /***/ ((module) => {
 
 "use strict";
@@ -33068,7 +34207,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 5622:
+/***/ 1017:
 /***/ ((module) => {
 
 "use strict";
@@ -33076,7 +34215,7 @@ module.exports = require("path");
 
 /***/ }),
 
-/***/ 2413:
+/***/ 2781:
 /***/ ((module) => {
 
 "use strict";
@@ -33084,7 +34223,15 @@ module.exports = require("stream");
 
 /***/ }),
 
-/***/ 8835:
+/***/ 4404:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tls");
+
+/***/ }),
+
+/***/ 7310:
 /***/ ((module) => {
 
 "use strict";
@@ -33092,7 +34239,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 1669:
+/***/ 3837:
 /***/ ((module) => {
 
 "use strict";
@@ -33100,11 +34247,35 @@ module.exports = require("util");
 
 /***/ }),
 
-/***/ 8761:
+/***/ 9796:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("zlib");
+
+/***/ }),
+
+/***/ 6601:
+/***/ ((module) => {
+
+"use strict";
+module.exports = {"i8":"2.1.3"};
+
+/***/ }),
+
+/***/ 1322:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"name":"@octokit/rest","version":"16.30.1","publishConfig":{"access":"public"},"description":"GitHub REST API client for Node.js","keywords":["octokit","github","rest","api-client"],"author":"Gregor Martynus (https://github.com/gr2m)","contributors":[{"name":"Mike de Boer","email":"info@mikedeboer.nl"},{"name":"Fabian Jakobs","email":"fabian@c9.io"},{"name":"Joe Gallo","email":"joe@brassafrax.com"},{"name":"Gregor Martynus","url":"https://github.com/gr2m"}],"repository":"https://github.com/octokit/rest.js","dependencies":{"@octokit/request":"^5.0.0","@octokit/request-error":"^1.0.2","atob-lite":"^2.0.0","before-after-hook":"^2.0.0","btoa-lite":"^1.0.0","deprecation":"^2.0.0","lodash.get":"^4.4.2","lodash.set":"^4.3.2","lodash.uniq":"^4.5.0","octokit-pagination-methods":"^1.1.0","once":"^1.4.0","universal-user-agent":"^4.0.0"},"devDependencies":{"@gimenete/type-writer":"^0.1.3","@octokit/fixtures-server":"^5.0.6","@octokit/graphql":"^4.2.0","@types/node":"^12.0.0","bundlesize":"^0.18.0","chai":"^4.1.2","compression-webpack-plugin":"^3.0.0","cypress":"^3.0.0","glob":"^7.1.2","http-proxy-agent":"^2.1.0","lodash.camelcase":"^4.3.0","lodash.merge":"^4.6.1","lodash.upperfirst":"^4.3.1","mkdirp":"^0.5.1","mocha":"^6.0.0","mustache":"^3.0.0","nock":"^11.3.3","npm-run-all":"^4.1.2","nyc":"^14.0.0","prettier":"^1.14.2","proxy":"^0.2.4","semantic-release":"^15.0.0","sinon":"^7.2.4","sinon-chai":"^3.0.0","sort-keys":"^4.0.0","string-to-arraybuffer":"^1.0.0","string-to-jsdoc-comment":"^1.0.0","typescript":"^3.3.1","webpack":"^4.0.0","webpack-bundle-analyzer":"^3.0.0","webpack-cli":"^3.0.0"},"types":"index.d.ts","scripts":{"coverage":"nyc report --reporter=html && open coverage/index.html","lint":"prettier --check \'{lib,plugins,scripts,test}/**/*.{js,json,ts}\' \'docs/*.{js,json}\' \'docs/src/**/*\' index.js README.md package.json","lint:fix":"prettier --write \'{lib,plugins,scripts,test}/**/*.{js,json,ts}\' \'docs/*.{js,json}\' \'docs/src/**/*\' index.js README.md package.json","pretest":"npm run -s lint","test":"nyc mocha test/mocha-node-setup.js \\"test/*/**/*-test.js\\"","test:browser":"cypress run --browser chrome","build":"npm-run-all build:*","build:ts":"node scripts/generate-types","prebuild:browser":"mkdirp dist/","build:browser":"npm-run-all build:browser:*","build:browser:development":"webpack --mode development --entry . --output-library=Octokit --output=./dist/octokit-rest.js --profile --json > dist/bundle-stats.json","build:browser:production":"webpack --mode production --entry . --plugin=compression-webpack-plugin --output-library=Octokit --output-path=./dist --output-filename=octokit-rest.min.js --devtool source-map","generate-bundle-report":"webpack-bundle-analyzer dist/bundle-stats.json --mode=static --no-open --report dist/bundle-report.html","generate-routes":"node scripts/generate-routes","prevalidate:ts":"npm run -s build:ts","validate:ts":"tsc --target es6 --noImplicitAny index.d.ts","postvalidate:ts":"tsc --noEmit --target es6 test/typescript-validate.ts","start-fixtures-server":"octokit-fixtures-server"},"license":"MIT","files":["index.js","index.d.ts","lib","plugins"],"nyc":{"ignore":["test"]},"release":{"publish":["@semantic-release/npm",{"path":"@semantic-release/github","assets":["dist/*","!dist/*.map.gz"]}]},"bundlesize":[{"path":"./dist/octokit-rest.min.js.gz","maxSize":"33 kB"}]}');
+
+/***/ }),
+
+/***/ 1608:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"activity":{"checkStarringRepo":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/user/starred/:owner/:repo"},"deleteRepoSubscription":{"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/subscription"},"deleteThreadSubscription":{"method":"DELETE","params":{"thread_id":{"required":true,"type":"integer"}},"url":"/notifications/threads/:thread_id/subscription"},"getRepoSubscription":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/subscription"},"getThread":{"method":"GET","params":{"thread_id":{"required":true,"type":"integer"}},"url":"/notifications/threads/:thread_id"},"getThreadSubscription":{"method":"GET","params":{"thread_id":{"required":true,"type":"integer"}},"url":"/notifications/threads/:thread_id/subscription"},"listEventsForOrg":{"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/events/orgs/:org"},"listEventsForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/events"},"listFeeds":{"method":"GET","params":{},"url":"/feeds"},"listNotifications":{"method":"GET","params":{"all":{"type":"boolean"},"before":{"type":"string"},"page":{"type":"integer"},"participating":{"type":"boolean"},"per_page":{"type":"integer"},"since":{"type":"string"}},"url":"/notifications"},"listNotificationsForRepo":{"method":"GET","params":{"all":{"type":"boolean"},"before":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"participating":{"type":"boolean"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"since":{"type":"string"}},"url":"/repos/:owner/:repo/notifications"},"listPublicEvents":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/events"},"listPublicEventsForOrg":{"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/events"},"listPublicEventsForRepoNetwork":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/networks/:owner/:repo/events"},"listPublicEventsForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/events/public"},"listReceivedEventsForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/received_events"},"listReceivedPublicEventsForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/received_events/public"},"listRepoEvents":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/events"},"listReposStarredByAuthenticatedUser":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"sort":{"enum":["created","updated"],"type":"string"}},"url":"/user/starred"},"listReposStarredByUser":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"sort":{"enum":["created","updated"],"type":"string"},"username":{"required":true,"type":"string"}},"url":"/users/:username/starred"},"listReposWatchedByUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/subscriptions"},"listStargazersForRepo":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/stargazers"},"listWatchedReposForAuthenticatedUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/subscriptions"},"listWatchersForRepo":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/subscribers"},"markAsRead":{"method":"PUT","params":{"last_read_at":{"type":"string"}},"url":"/notifications"},"markNotificationsAsReadForRepo":{"method":"PUT","params":{"last_read_at":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/notifications"},"markThreadAsRead":{"method":"PATCH","params":{"thread_id":{"required":true,"type":"integer"}},"url":"/notifications/threads/:thread_id"},"setRepoSubscription":{"method":"PUT","params":{"ignored":{"type":"boolean"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"subscribed":{"type":"boolean"}},"url":"/repos/:owner/:repo/subscription"},"setThreadSubscription":{"method":"PUT","params":{"ignored":{"type":"boolean"},"thread_id":{"required":true,"type":"integer"}},"url":"/notifications/threads/:thread_id/subscription"},"starRepo":{"method":"PUT","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/user/starred/:owner/:repo"},"unstarRepo":{"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/user/starred/:owner/:repo"}},"apps":{"addRepoToInstallation":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"PUT","params":{"installation_id":{"required":true,"type":"integer"},"repository_id":{"required":true,"type":"integer"}},"url":"/user/installations/:installation_id/repositories/:repository_id"},"checkAccountIsAssociatedWithAny":{"method":"GET","params":{"account_id":{"required":true,"type":"integer"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/marketplace_listing/accounts/:account_id"},"checkAccountIsAssociatedWithAnyStubbed":{"method":"GET","params":{"account_id":{"required":true,"type":"integer"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/marketplace_listing/stubbed/accounts/:account_id"},"createContentAttachment":{"headers":{"accept":"application/vnd.github.corsair-preview+json"},"method":"POST","params":{"body":{"required":true,"type":"string"},"content_reference_id":{"required":true,"type":"integer"},"title":{"required":true,"type":"string"}},"url":"/content_references/:content_reference_id/attachments"},"createFromManifest":{"headers":{"accept":"application/vnd.github.fury-preview+json"},"method":"POST","params":{"code":{"required":true,"type":"string"}},"url":"/app-manifests/:code/conversions"},"createInstallationToken":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"POST","params":{"installation_id":{"required":true,"type":"integer"},"permissions":{"type":"object"},"repository_ids":{"type":"integer[]"}},"url":"/app/installations/:installation_id/access_tokens"},"deleteInstallation":{"headers":{"accept":"application/vnd.github.gambit-preview+json,application/vnd.github.machine-man-preview+json"},"method":"DELETE","params":{"installation_id":{"required":true,"type":"integer"}},"url":"/app/installations/:installation_id"},"findOrgInstallation":{"deprecated":"octokit.apps.findOrgInstallation() has been renamed to octokit.apps.getOrgInstallation() (2019-04-10)","headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"org":{"required":true,"type":"string"}},"url":"/orgs/:org/installation"},"findRepoInstallation":{"deprecated":"octokit.apps.findRepoInstallation() has been renamed to octokit.apps.getRepoInstallation() (2019-04-10)","headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/installation"},"findUserInstallation":{"deprecated":"octokit.apps.findUserInstallation() has been renamed to octokit.apps.getUserInstallation() (2019-04-10)","headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"username":{"required":true,"type":"string"}},"url":"/users/:username/installation"},"getAuthenticated":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{},"url":"/app"},"getBySlug":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"app_slug":{"required":true,"type":"string"}},"url":"/apps/:app_slug"},"getInstallation":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"installation_id":{"required":true,"type":"integer"}},"url":"/app/installations/:installation_id"},"getOrgInstallation":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"org":{"required":true,"type":"string"}},"url":"/orgs/:org/installation"},"getRepoInstallation":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/installation"},"getUserInstallation":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"username":{"required":true,"type":"string"}},"url":"/users/:username/installation"},"listAccountsUserOrOrgOnPlan":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"plan_id":{"required":true,"type":"integer"},"sort":{"enum":["created","updated"],"type":"string"}},"url":"/marketplace_listing/plans/:plan_id/accounts"},"listAccountsUserOrOrgOnPlanStubbed":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"plan_id":{"required":true,"type":"integer"},"sort":{"enum":["created","updated"],"type":"string"}},"url":"/marketplace_listing/stubbed/plans/:plan_id/accounts"},"listInstallationReposForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"installation_id":{"required":true,"type":"integer"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/installations/:installation_id/repositories"},"listInstallations":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/app/installations"},"listInstallationsForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/installations"},"listMarketplacePurchasesForAuthenticatedUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/marketplace_purchases"},"listMarketplacePurchasesForAuthenticatedUserStubbed":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/marketplace_purchases/stubbed"},"listPlans":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/marketplace_listing/plans"},"listPlansStubbed":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/marketplace_listing/stubbed/plans"},"listRepos":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/installation/repositories"},"removeRepoFromInstallation":{"headers":{"accept":"application/vnd.github.machine-man-preview+json"},"method":"DELETE","params":{"installation_id":{"required":true,"type":"integer"},"repository_id":{"required":true,"type":"integer"}},"url":"/user/installations/:installation_id/repositories/:repository_id"}},"checks":{"create":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"POST","params":{"actions":{"type":"object[]"},"actions[].description":{"required":true,"type":"string"},"actions[].identifier":{"required":true,"type":"string"},"actions[].label":{"required":true,"type":"string"},"completed_at":{"type":"string"},"conclusion":{"enum":["success","failure","neutral","cancelled","timed_out","action_required"],"type":"string"},"details_url":{"type":"string"},"external_id":{"type":"string"},"head_sha":{"required":true,"type":"string"},"name":{"required":true,"type":"string"},"output":{"type":"object"},"output.annotations":{"type":"object[]"},"output.annotations[].annotation_level":{"enum":["notice","warning","failure"],"required":true,"type":"string"},"output.annotations[].end_column":{"type":"integer"},"output.annotations[].end_line":{"required":true,"type":"integer"},"output.annotations[].message":{"required":true,"type":"string"},"output.annotations[].path":{"required":true,"type":"string"},"output.annotations[].raw_details":{"type":"string"},"output.annotations[].start_column":{"type":"integer"},"output.annotations[].start_line":{"required":true,"type":"integer"},"output.annotations[].title":{"type":"string"},"output.images":{"type":"object[]"},"output.images[].alt":{"required":true,"type":"string"},"output.images[].caption":{"type":"string"},"output.images[].image_url":{"required":true,"type":"string"},"output.summary":{"required":true,"type":"string"},"output.text":{"type":"string"},"output.title":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"started_at":{"type":"string"},"status":{"enum":["queued","in_progress","completed"],"type":"string"}},"url":"/repos/:owner/:repo/check-runs"},"createSuite":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"POST","params":{"head_sha":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/check-suites"},"get":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"GET","params":{"check_run_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/check-runs/:check_run_id"},"getSuite":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"GET","params":{"check_suite_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/check-suites/:check_suite_id"},"listAnnotations":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"GET","params":{"check_run_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/check-runs/:check_run_id/annotations"},"listForRef":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"GET","params":{"check_name":{"type":"string"},"filter":{"enum":["latest","all"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"status":{"enum":["queued","in_progress","completed"],"type":"string"}},"url":"/repos/:owner/:repo/commits/:ref/check-runs"},"listForSuite":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"GET","params":{"check_name":{"type":"string"},"check_suite_id":{"required":true,"type":"integer"},"filter":{"enum":["latest","all"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"status":{"enum":["queued","in_progress","completed"],"type":"string"}},"url":"/repos/:owner/:repo/check-suites/:check_suite_id/check-runs"},"listSuitesForRef":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"GET","params":{"app_id":{"type":"integer"},"check_name":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:ref/check-suites"},"rerequestSuite":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"POST","params":{"check_suite_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/check-suites/:check_suite_id/rerequest"},"setSuitesPreferences":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"PATCH","params":{"auto_trigger_checks":{"type":"object[]"},"auto_trigger_checks[].app_id":{"required":true,"type":"integer"},"auto_trigger_checks[].setting":{"required":true,"type":"boolean"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/check-suites/preferences"},"update":{"headers":{"accept":"application/vnd.github.antiope-preview+json"},"method":"PATCH","params":{"actions":{"type":"object[]"},"actions[].description":{"required":true,"type":"string"},"actions[].identifier":{"required":true,"type":"string"},"actions[].label":{"required":true,"type":"string"},"check_run_id":{"required":true,"type":"integer"},"completed_at":{"type":"string"},"conclusion":{"enum":["success","failure","neutral","cancelled","timed_out","action_required"],"type":"string"},"details_url":{"type":"string"},"external_id":{"type":"string"},"name":{"type":"string"},"output":{"type":"object"},"output.annotations":{"type":"object[]"},"output.annotations[].annotation_level":{"enum":["notice","warning","failure"],"required":true,"type":"string"},"output.annotations[].end_column":{"type":"integer"},"output.annotations[].end_line":{"required":true,"type":"integer"},"output.annotations[].message":{"required":true,"type":"string"},"output.annotations[].path":{"required":true,"type":"string"},"output.annotations[].raw_details":{"type":"string"},"output.annotations[].start_column":{"type":"integer"},"output.annotations[].start_line":{"required":true,"type":"integer"},"output.annotations[].title":{"type":"string"},"output.images":{"type":"object[]"},"output.images[].alt":{"required":true,"type":"string"},"output.images[].caption":{"type":"string"},"output.images[].image_url":{"required":true,"type":"string"},"output.summary":{"required":true,"type":"string"},"output.text":{"type":"string"},"output.title":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"started_at":{"type":"string"},"status":{"enum":["queued","in_progress","completed"],"type":"string"}},"url":"/repos/:owner/:repo/check-runs/:check_run_id"}},"codesOfConduct":{"getConductCode":{"headers":{"accept":"application/vnd.github.scarlet-witch-preview+json"},"method":"GET","params":{"key":{"required":true,"type":"string"}},"url":"/codes_of_conduct/:key"},"getForRepo":{"headers":{"accept":"application/vnd.github.scarlet-witch-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/community/code_of_conduct"},"listConductCodes":{"headers":{"accept":"application/vnd.github.scarlet-witch-preview+json"},"method":"GET","params":{},"url":"/codes_of_conduct"}},"emojis":{"get":{"method":"GET","params":{},"url":"/emojis"}},"gists":{"checkIsStarred":{"method":"GET","params":{"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/star"},"create":{"method":"POST","params":{"description":{"type":"string"},"files":{"required":true,"type":"object"},"files.content":{"type":"string"},"public":{"type":"boolean"}},"url":"/gists"},"createComment":{"method":"POST","params":{"body":{"required":true,"type":"string"},"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/comments"},"delete":{"method":"DELETE","params":{"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id"},"deleteComment":{"method":"DELETE","params":{"comment_id":{"required":true,"type":"integer"},"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/comments/:comment_id"},"fork":{"method":"POST","params":{"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/forks"},"get":{"method":"GET","params":{"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id"},"getComment":{"method":"GET","params":{"comment_id":{"required":true,"type":"integer"},"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/comments/:comment_id"},"getRevision":{"method":"GET","params":{"gist_id":{"required":true,"type":"string"},"sha":{"required":true,"type":"string"}},"url":"/gists/:gist_id/:sha"},"list":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"}},"url":"/gists"},"listComments":{"method":"GET","params":{"gist_id":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/gists/:gist_id/comments"},"listCommits":{"method":"GET","params":{"gist_id":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/gists/:gist_id/commits"},"listForks":{"method":"GET","params":{"gist_id":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/gists/:gist_id/forks"},"listPublic":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"}},"url":"/gists/public"},"listPublicForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"},"username":{"required":true,"type":"string"}},"url":"/users/:username/gists"},"listStarred":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"}},"url":"/gists/starred"},"star":{"method":"PUT","params":{"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/star"},"unstar":{"method":"DELETE","params":{"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/star"},"update":{"method":"PATCH","params":{"description":{"type":"string"},"files":{"type":"object"},"files.content":{"type":"string"},"files.filename":{"type":"string"},"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id"},"updateComment":{"method":"PATCH","params":{"body":{"required":true,"type":"string"},"comment_id":{"required":true,"type":"integer"},"gist_id":{"required":true,"type":"string"}},"url":"/gists/:gist_id/comments/:comment_id"}},"git":{"createBlob":{"method":"POST","params":{"content":{"required":true,"type":"string"},"encoding":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/blobs"},"createCommit":{"method":"POST","params":{"author":{"type":"object"},"author.date":{"type":"string"},"author.email":{"type":"string"},"author.name":{"type":"string"},"committer":{"type":"object"},"committer.date":{"type":"string"},"committer.email":{"type":"string"},"committer.name":{"type":"string"},"message":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"parents":{"required":true,"type":"string[]"},"repo":{"required":true,"type":"string"},"signature":{"type":"string"},"tree":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/commits"},"createRef":{"method":"POST","params":{"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/refs"},"createTag":{"method":"POST","params":{"message":{"required":true,"type":"string"},"object":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"tag":{"required":true,"type":"string"},"tagger":{"type":"object"},"tagger.date":{"type":"string"},"tagger.email":{"type":"string"},"tagger.name":{"type":"string"},"type":{"enum":["commit","tree","blob"],"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/tags"},"createTree":{"method":"POST","params":{"base_tree":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"tree":{"required":true,"type":"object[]"},"tree[].content":{"type":"string"},"tree[].mode":{"enum":["100644","100755","040000","160000","120000"],"type":"string"},"tree[].path":{"type":"string"},"tree[].sha":{"type":"string"},"tree[].type":{"enum":["blob","tree","commit"],"type":"string"}},"url":"/repos/:owner/:repo/git/trees"},"deleteRef":{"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/refs/:ref"},"getBlob":{"method":"GET","params":{"file_sha":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/blobs/:file_sha"},"getCommit":{"method":"GET","params":{"commit_sha":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/commits/:commit_sha"},"getRef":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/refs/:ref"},"getTag":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"tag_sha":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/tags/:tag_sha"},"getTree":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"recursive":{"enum":["1"],"type":"integer"},"repo":{"required":true,"type":"string"},"tree_sha":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/trees/:tree_sha"},"listRefs":{"method":"GET","params":{"namespace":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/refs/:namespace"},"updateRef":{"method":"PATCH","params":{"force":{"type":"boolean"},"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/git/refs/:ref"}},"gitignore":{"getTemplate":{"method":"GET","params":{"name":{"required":true,"type":"string"}},"url":"/gitignore/templates/:name"},"listTemplates":{"method":"GET","params":{},"url":"/gitignore/templates"}},"interactions":{"addOrUpdateRestrictionsForOrg":{"headers":{"accept":"application/vnd.github.sombra-preview+json"},"method":"PUT","params":{"limit":{"enum":["existing_users","contributors_only","collaborators_only"],"required":true,"type":"string"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/interaction-limits"},"addOrUpdateRestrictionsForRepo":{"headers":{"accept":"application/vnd.github.sombra-preview+json"},"method":"PUT","params":{"limit":{"enum":["existing_users","contributors_only","collaborators_only"],"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/interaction-limits"},"getRestrictionsForOrg":{"headers":{"accept":"application/vnd.github.sombra-preview+json"},"method":"GET","params":{"org":{"required":true,"type":"string"}},"url":"/orgs/:org/interaction-limits"},"getRestrictionsForRepo":{"headers":{"accept":"application/vnd.github.sombra-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/interaction-limits"},"removeRestrictionsForOrg":{"headers":{"accept":"application/vnd.github.sombra-preview+json"},"method":"DELETE","params":{"org":{"required":true,"type":"string"}},"url":"/orgs/:org/interaction-limits"},"removeRestrictionsForRepo":{"headers":{"accept":"application/vnd.github.sombra-preview+json"},"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/interaction-limits"}},"issues":{"addAssignees":{"method":"POST","params":{"assignees":{"type":"string[]"},"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/assignees"},"addLabels":{"method":"POST","params":{"issue_number":{"required":true,"type":"integer"},"labels":{"required":true,"type":"string[]"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/labels"},"checkAssignee":{"method":"GET","params":{"assignee":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/assignees/:assignee"},"create":{"method":"POST","params":{"assignee":{"type":"string"},"assignees":{"type":"string[]"},"body":{"type":"string"},"labels":{"type":"string[]"},"milestone":{"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"title":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues"},"createComment":{"method":"POST","params":{"body":{"required":true,"type":"string"},"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/comments"},"createLabel":{"method":"POST","params":{"color":{"required":true,"type":"string"},"description":{"type":"string"},"name":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/labels"},"createMilestone":{"method":"POST","params":{"description":{"type":"string"},"due_on":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"state":{"enum":["open","closed"],"type":"string"},"title":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/milestones"},"deleteComment":{"method":"DELETE","params":{"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/comments/:comment_id"},"deleteLabel":{"method":"DELETE","params":{"name":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/labels/:name"},"deleteMilestone":{"method":"DELETE","params":{"milestone_number":{"required":true,"type":"integer"},"number":{"alias":"milestone_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/milestones/:milestone_number"},"get":{"method":"GET","params":{"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number"},"getComment":{"method":"GET","params":{"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/comments/:comment_id"},"getEvent":{"method":"GET","params":{"event_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/events/:event_id"},"getLabel":{"method":"GET","params":{"name":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/labels/:name"},"getMilestone":{"method":"GET","params":{"milestone_number":{"required":true,"type":"integer"},"number":{"alias":"milestone_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/milestones/:milestone_number"},"list":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"filter":{"enum":["assigned","created","mentioned","subscribed","all"],"type":"string"},"labels":{"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"},"sort":{"enum":["created","updated","comments"],"type":"string"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/issues"},"listAssignees":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/assignees"},"listComments":{"method":"GET","params":{"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"since":{"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/comments"},"listCommentsForRepo":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"since":{"type":"string"},"sort":{"enum":["created","updated"],"type":"string"}},"url":"/repos/:owner/:repo/issues/comments"},"listEvents":{"method":"GET","params":{"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/events"},"listEventsForRepo":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/events"},"listEventsForTimeline":{"headers":{"accept":"application/vnd.github.mockingbird-preview+json"},"method":"GET","params":{"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/timeline"},"listForAuthenticatedUser":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"filter":{"enum":["assigned","created","mentioned","subscribed","all"],"type":"string"},"labels":{"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"},"sort":{"enum":["created","updated","comments"],"type":"string"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/user/issues"},"listForOrg":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"filter":{"enum":["assigned","created","mentioned","subscribed","all"],"type":"string"},"labels":{"type":"string"},"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"},"sort":{"enum":["created","updated","comments"],"type":"string"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/orgs/:org/issues"},"listForRepo":{"method":"GET","params":{"assignee":{"type":"string"},"creator":{"type":"string"},"direction":{"enum":["asc","desc"],"type":"string"},"labels":{"type":"string"},"mentioned":{"type":"string"},"milestone":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"since":{"type":"string"},"sort":{"enum":["created","updated","comments"],"type":"string"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/repos/:owner/:repo/issues"},"listLabelsForMilestone":{"method":"GET","params":{"milestone_number":{"required":true,"type":"integer"},"number":{"alias":"milestone_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/milestones/:milestone_number/labels"},"listLabelsForRepo":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/labels"},"listLabelsOnIssue":{"method":"GET","params":{"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/labels"},"listMilestonesForRepo":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"sort":{"enum":["due_on","completeness"],"type":"string"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/repos/:owner/:repo/milestones"},"lock":{"method":"PUT","params":{"issue_number":{"required":true,"type":"integer"},"lock_reason":{"enum":["off-topic","too heated","resolved","spam"],"type":"string"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/lock"},"removeAssignees":{"method":"DELETE","params":{"assignees":{"type":"string[]"},"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/assignees"},"removeLabel":{"method":"DELETE","params":{"issue_number":{"required":true,"type":"integer"},"name":{"required":true,"type":"string"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/labels/:name"},"removeLabels":{"method":"DELETE","params":{"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/labels"},"replaceLabels":{"method":"PUT","params":{"issue_number":{"required":true,"type":"integer"},"labels":{"type":"string[]"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/labels"},"unlock":{"method":"DELETE","params":{"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/lock"},"update":{"method":"PATCH","params":{"assignee":{"type":"string"},"assignees":{"type":"string[]"},"body":{"type":"string"},"issue_number":{"required":true,"type":"integer"},"labels":{"type":"string[]"},"milestone":{"allowNull":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"state":{"enum":["open","closed"],"type":"string"},"title":{"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number"},"updateComment":{"method":"PATCH","params":{"body":{"required":true,"type":"string"},"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/comments/:comment_id"},"updateLabel":{"method":"PATCH","params":{"color":{"type":"string"},"current_name":{"required":true,"type":"string"},"description":{"type":"string"},"name":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/labels/:current_name"},"updateMilestone":{"method":"PATCH","params":{"description":{"type":"string"},"due_on":{"type":"string"},"milestone_number":{"required":true,"type":"integer"},"number":{"alias":"milestone_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"state":{"enum":["open","closed"],"type":"string"},"title":{"type":"string"}},"url":"/repos/:owner/:repo/milestones/:milestone_number"}},"licenses":{"get":{"method":"GET","params":{"license":{"required":true,"type":"string"}},"url":"/licenses/:license"},"getForRepo":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/license"},"list":{"deprecated":"octokit.licenses.list() has been renamed to octokit.licenses.listCommonlyUsed() (2019-03-05)","method":"GET","params":{},"url":"/licenses"},"listCommonlyUsed":{"method":"GET","params":{},"url":"/licenses"}},"markdown":{"render":{"method":"POST","params":{"context":{"type":"string"},"mode":{"enum":["markdown","gfm"],"type":"string"},"text":{"required":true,"type":"string"}},"url":"/markdown"},"renderRaw":{"headers":{"content-type":"text/plain; charset=utf-8"},"method":"POST","params":{"data":{"mapTo":"data","required":true,"type":"string"}},"url":"/markdown/raw"}},"meta":{"get":{"method":"GET","params":{},"url":"/meta"}},"migrations":{"cancelImport":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/import"},"deleteArchiveForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"DELETE","params":{"migration_id":{"required":true,"type":"integer"}},"url":"/user/migrations/:migration_id/archive"},"deleteArchiveForOrg":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"DELETE","params":{"migration_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/migrations/:migration_id/archive"},"getArchiveForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"GET","params":{"migration_id":{"required":true,"type":"integer"}},"url":"/user/migrations/:migration_id/archive"},"getArchiveForOrg":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"GET","params":{"migration_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/migrations/:migration_id/archive"},"getCommitAuthors":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"since":{"type":"string"}},"url":"/repos/:owner/:repo/import/authors"},"getImportProgress":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/import"},"getLargeFiles":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/import/large_files"},"getStatusForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"GET","params":{"migration_id":{"required":true,"type":"integer"}},"url":"/user/migrations/:migration_id"},"getStatusForOrg":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"GET","params":{"migration_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/migrations/:migration_id"},"listForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/migrations"},"listForOrg":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/migrations"},"mapCommitAuthor":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"PATCH","params":{"author_id":{"required":true,"type":"integer"},"email":{"type":"string"},"name":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/import/authors/:author_id"},"setLfsPreference":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"PATCH","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"use_lfs":{"enum":["opt_in","opt_out"],"required":true,"type":"string"}},"url":"/repos/:owner/:repo/import/lfs"},"startForAuthenticatedUser":{"method":"POST","params":{"exclude_attachments":{"type":"boolean"},"lock_repositories":{"type":"boolean"},"repositories":{"required":true,"type":"string[]"}},"url":"/user/migrations"},"startForOrg":{"method":"POST","params":{"exclude_attachments":{"type":"boolean"},"lock_repositories":{"type":"boolean"},"org":{"required":true,"type":"string"},"repositories":{"required":true,"type":"string[]"}},"url":"/orgs/:org/migrations"},"startImport":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"PUT","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"tfvc_project":{"type":"string"},"vcs":{"enum":["subversion","git","mercurial","tfvc"],"type":"string"},"vcs_password":{"type":"string"},"vcs_url":{"required":true,"type":"string"},"vcs_username":{"type":"string"}},"url":"/repos/:owner/:repo/import"},"unlockRepoForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"DELETE","params":{"migration_id":{"required":true,"type":"integer"},"repo_name":{"required":true,"type":"string"}},"url":"/user/migrations/:migration_id/repos/:repo_name/lock"},"unlockRepoForOrg":{"headers":{"accept":"application/vnd.github.wyandotte-preview+json"},"method":"DELETE","params":{"migration_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"},"repo_name":{"required":true,"type":"string"}},"url":"/orgs/:org/migrations/:migration_id/repos/:repo_name/lock"},"updateImport":{"headers":{"accept":"application/vnd.github.barred-rock-preview+json"},"method":"PATCH","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"vcs_password":{"type":"string"},"vcs_username":{"type":"string"}},"url":"/repos/:owner/:repo/import"}},"oauthAuthorizations":{"checkAuthorization":{"method":"GET","params":{"access_token":{"required":true,"type":"string"},"client_id":{"required":true,"type":"string"}},"url":"/applications/:client_id/tokens/:access_token"},"createAuthorization":{"method":"POST","params":{"client_id":{"type":"string"},"client_secret":{"type":"string"},"fingerprint":{"type":"string"},"note":{"required":true,"type":"string"},"note_url":{"type":"string"},"scopes":{"type":"string[]"}},"url":"/authorizations"},"deleteAuthorization":{"method":"DELETE","params":{"authorization_id":{"required":true,"type":"integer"}},"url":"/authorizations/:authorization_id"},"deleteGrant":{"method":"DELETE","params":{"grant_id":{"required":true,"type":"integer"}},"url":"/applications/grants/:grant_id"},"getAuthorization":{"method":"GET","params":{"authorization_id":{"required":true,"type":"integer"}},"url":"/authorizations/:authorization_id"},"getGrant":{"method":"GET","params":{"grant_id":{"required":true,"type":"integer"}},"url":"/applications/grants/:grant_id"},"getOrCreateAuthorizationForApp":{"method":"PUT","params":{"client_id":{"required":true,"type":"string"},"client_secret":{"required":true,"type":"string"},"fingerprint":{"type":"string"},"note":{"type":"string"},"note_url":{"type":"string"},"scopes":{"type":"string[]"}},"url":"/authorizations/clients/:client_id"},"getOrCreateAuthorizationForAppAndFingerprint":{"method":"PUT","params":{"client_id":{"required":true,"type":"string"},"client_secret":{"required":true,"type":"string"},"fingerprint":{"required":true,"type":"string"},"note":{"type":"string"},"note_url":{"type":"string"},"scopes":{"type":"string[]"}},"url":"/authorizations/clients/:client_id/:fingerprint"},"getOrCreateAuthorizationForAppFingerprint":{"deprecated":"octokit.oauthAuthorizations.getOrCreateAuthorizationForAppFingerprint() has been renamed to octokit.oauthAuthorizations.getOrCreateAuthorizationForAppAndFingerprint() (2018-12-27)","method":"PUT","params":{"client_id":{"required":true,"type":"string"},"client_secret":{"required":true,"type":"string"},"fingerprint":{"required":true,"type":"string"},"note":{"type":"string"},"note_url":{"type":"string"},"scopes":{"type":"string[]"}},"url":"/authorizations/clients/:client_id/:fingerprint"},"listAuthorizations":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/authorizations"},"listGrants":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/applications/grants"},"resetAuthorization":{"method":"POST","params":{"access_token":{"required":true,"type":"string"},"client_id":{"required":true,"type":"string"}},"url":"/applications/:client_id/tokens/:access_token"},"revokeAuthorizationForApplication":{"method":"DELETE","params":{"access_token":{"required":true,"type":"string"},"client_id":{"required":true,"type":"string"}},"url":"/applications/:client_id/tokens/:access_token"},"revokeGrantForApplication":{"method":"DELETE","params":{"access_token":{"required":true,"type":"string"},"client_id":{"required":true,"type":"string"}},"url":"/applications/:client_id/grants/:access_token"},"updateAuthorization":{"method":"PATCH","params":{"add_scopes":{"type":"string[]"},"authorization_id":{"required":true,"type":"integer"},"fingerprint":{"type":"string"},"note":{"type":"string"},"note_url":{"type":"string"},"remove_scopes":{"type":"string[]"},"scopes":{"type":"string[]"}},"url":"/authorizations/:authorization_id"}},"orgs":{"addOrUpdateMembership":{"method":"PUT","params":{"org":{"required":true,"type":"string"},"role":{"enum":["admin","member"],"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/memberships/:username"},"blockUser":{"method":"PUT","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/blocks/:username"},"checkBlockedUser":{"method":"GET","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/blocks/:username"},"checkMembership":{"method":"GET","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/members/:username"},"checkPublicMembership":{"method":"GET","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/public_members/:username"},"concealMembership":{"method":"DELETE","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/public_members/:username"},"convertMemberToOutsideCollaborator":{"method":"PUT","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/outside_collaborators/:username"},"createHook":{"method":"POST","params":{"active":{"type":"boolean"},"config":{"required":true,"type":"object"},"config.content_type":{"type":"string"},"config.insecure_ssl":{"type":"string"},"config.secret":{"type":"string"},"config.url":{"required":true,"type":"string"},"events":{"type":"string[]"},"name":{"required":true,"type":"string"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/hooks"},"createInvitation":{"method":"POST","params":{"email":{"type":"string"},"invitee_id":{"type":"integer"},"org":{"required":true,"type":"string"},"role":{"enum":["admin","direct_member","billing_manager"],"type":"string"},"team_ids":{"type":"integer[]"}},"url":"/orgs/:org/invitations"},"deleteHook":{"method":"DELETE","params":{"hook_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/hooks/:hook_id"},"get":{"method":"GET","params":{"org":{"required":true,"type":"string"}},"url":"/orgs/:org"},"getHook":{"method":"GET","params":{"hook_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/hooks/:hook_id"},"getMembership":{"method":"GET","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/memberships/:username"},"getMembershipForAuthenticatedUser":{"method":"GET","params":{"org":{"required":true,"type":"string"}},"url":"/user/memberships/orgs/:org"},"list":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"}},"url":"/organizations"},"listBlockedUsers":{"method":"GET","params":{"org":{"required":true,"type":"string"}},"url":"/orgs/:org/blocks"},"listForAuthenticatedUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/orgs"},"listForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/orgs"},"listHooks":{"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/hooks"},"listInvitationTeams":{"method":"GET","params":{"invitation_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/invitations/:invitation_id/teams"},"listMembers":{"method":"GET","params":{"filter":{"enum":["2fa_disabled","all"],"type":"string"},"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"role":{"enum":["all","admin","member"],"type":"string"}},"url":"/orgs/:org/members"},"listMemberships":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"state":{"enum":["active","pending"],"type":"string"}},"url":"/user/memberships/orgs"},"listOutsideCollaborators":{"method":"GET","params":{"filter":{"enum":["2fa_disabled","all"],"type":"string"},"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/outside_collaborators"},"listPendingInvitations":{"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/invitations"},"listPublicMembers":{"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/public_members"},"pingHook":{"method":"POST","params":{"hook_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/hooks/:hook_id/pings"},"publicizeMembership":{"method":"PUT","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/public_members/:username"},"removeMember":{"method":"DELETE","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/members/:username"},"removeMembership":{"method":"DELETE","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/memberships/:username"},"removeOutsideCollaborator":{"method":"DELETE","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/outside_collaborators/:username"},"unblockUser":{"method":"DELETE","params":{"org":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/orgs/:org/blocks/:username"},"update":{"method":"PATCH","params":{"billing_email":{"type":"string"},"company":{"type":"string"},"default_repository_permission":{"enum":["read","write","admin","none"],"type":"string"},"description":{"type":"string"},"email":{"type":"string"},"has_organization_projects":{"type":"boolean"},"has_repository_projects":{"type":"boolean"},"location":{"type":"string"},"members_allowed_repository_creation_type":{"enum":["all","private","none"],"type":"string"},"members_can_create_repositories":{"type":"boolean"},"name":{"type":"string"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org"},"updateHook":{"method":"PATCH","params":{"active":{"type":"boolean"},"config":{"type":"object"},"config.content_type":{"type":"string"},"config.insecure_ssl":{"type":"string"},"config.secret":{"type":"string"},"config.url":{"required":true,"type":"string"},"events":{"type":"string[]"},"hook_id":{"required":true,"type":"integer"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/hooks/:hook_id"},"updateMembership":{"method":"PATCH","params":{"org":{"required":true,"type":"string"},"state":{"enum":["active"],"required":true,"type":"string"}},"url":"/user/memberships/orgs/:org"}},"projects":{"addCollaborator":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"PUT","params":{"permission":{"enum":["read","write","admin"],"type":"string"},"project_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/projects/:project_id/collaborators/:username"},"createCard":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"POST","params":{"column_id":{"required":true,"type":"integer"},"content_id":{"type":"integer"},"content_type":{"type":"string"},"note":{"type":"string"}},"url":"/projects/columns/:column_id/cards"},"createColumn":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"POST","params":{"name":{"required":true,"type":"string"},"project_id":{"required":true,"type":"integer"}},"url":"/projects/:project_id/columns"},"createForAuthenticatedUser":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"POST","params":{"body":{"type":"string"},"name":{"required":true,"type":"string"}},"url":"/user/projects"},"createForOrg":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"POST","params":{"body":{"type":"string"},"name":{"required":true,"type":"string"},"org":{"required":true,"type":"string"}},"url":"/orgs/:org/projects"},"createForRepo":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"POST","params":{"body":{"type":"string"},"name":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/projects"},"delete":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"DELETE","params":{"project_id":{"required":true,"type":"integer"}},"url":"/projects/:project_id"},"deleteCard":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"DELETE","params":{"card_id":{"required":true,"type":"integer"}},"url":"/projects/columns/cards/:card_id"},"deleteColumn":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"DELETE","params":{"column_id":{"required":true,"type":"integer"}},"url":"/projects/columns/:column_id"},"get":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"project_id":{"required":true,"type":"integer"}},"url":"/projects/:project_id"},"getCard":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"card_id":{"required":true,"type":"integer"}},"url":"/projects/columns/cards/:card_id"},"getColumn":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"column_id":{"required":true,"type":"integer"}},"url":"/projects/columns/:column_id"},"listCards":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"archived_state":{"enum":["all","archived","not_archived"],"type":"string"},"column_id":{"required":true,"type":"integer"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/projects/columns/:column_id/cards"},"listCollaborators":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"affiliation":{"enum":["outside","direct","all"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"project_id":{"required":true,"type":"integer"}},"url":"/projects/:project_id/collaborators"},"listColumns":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"project_id":{"required":true,"type":"integer"}},"url":"/projects/:project_id/columns"},"listForOrg":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/orgs/:org/projects"},"listForRepo":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/repos/:owner/:repo/projects"},"listForUser":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"state":{"enum":["open","closed","all"],"type":"string"},"username":{"required":true,"type":"string"}},"url":"/users/:username/projects"},"moveCard":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"POST","params":{"card_id":{"required":true,"type":"integer"},"column_id":{"type":"integer"},"position":{"required":true,"type":"string","validation":"^(top|bottom|after:\\\\d+)$"}},"url":"/projects/columns/cards/:card_id/moves"},"moveColumn":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"POST","params":{"column_id":{"required":true,"type":"integer"},"position":{"required":true,"type":"string","validation":"^(first|last|after:\\\\d+)$"}},"url":"/projects/columns/:column_id/moves"},"removeCollaborator":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"DELETE","params":{"project_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/projects/:project_id/collaborators/:username"},"reviewUserPermissionLevel":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"project_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/projects/:project_id/collaborators/:username/permission"},"update":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"PATCH","params":{"body":{"type":"string"},"name":{"type":"string"},"organization_permission":{"type":"string"},"private":{"type":"boolean"},"project_id":{"required":true,"type":"integer"},"state":{"enum":["open","closed"],"type":"string"}},"url":"/projects/:project_id"},"updateCard":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"PATCH","params":{"archived":{"type":"boolean"},"card_id":{"required":true,"type":"integer"},"note":{"type":"string"}},"url":"/projects/columns/cards/:card_id"},"updateColumn":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"PATCH","params":{"column_id":{"required":true,"type":"integer"},"name":{"required":true,"type":"string"}},"url":"/projects/columns/:column_id"}},"pulls":{"checkIfMerged":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/merge"},"create":{"method":"POST","params":{"base":{"required":true,"type":"string"},"body":{"type":"string"},"draft":{"type":"boolean"},"head":{"required":true,"type":"string"},"maintainer_can_modify":{"type":"boolean"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"title":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls"},"createComment":{"method":"POST","params":{"body":{"required":true,"type":"string"},"commit_id":{"required":true,"type":"string"},"in_reply_to":{"deprecated":true,"description":"The comment ID to reply to. **Note**: This must be the ID of a top-level comment, not a reply to that comment. Replies to replies are not supported.","type":"integer"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"path":{"required":true,"type":"string"},"position":{"required":true,"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/comments"},"createCommentReply":{"deprecated":"octokit.pulls.createCommentReply() has been renamed to octokit.pulls.createComment() (2019-09-09)","method":"POST","params":{"body":{"required":true,"type":"string"},"commit_id":{"required":true,"type":"string"},"in_reply_to":{"deprecated":true,"description":"The comment ID to reply to. **Note**: This must be the ID of a top-level comment, not a reply to that comment. Replies to replies are not supported.","type":"integer"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"path":{"required":true,"type":"string"},"position":{"required":true,"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/comments"},"createFromIssue":{"deprecated":"octokit.pulls.createFromIssue() has been deprecated. Use octokit.pulls.create() instead.","method":"POST","params":{"base":{"required":true,"type":"string"},"draft":{"type":"boolean"},"head":{"required":true,"type":"string"},"issue":{"required":true,"type":"integer"},"maintainer_can_modify":{"type":"boolean"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls"},"createReview":{"method":"POST","params":{"body":{"type":"string"},"comments":{"type":"object[]"},"comments[].body":{"required":true,"type":"string"},"comments[].path":{"required":true,"type":"string"},"comments[].position":{"required":true,"type":"integer"},"commit_id":{"type":"string"},"event":{"enum":["APPROVE","REQUEST_CHANGES","COMMENT"],"type":"string"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews"},"createReviewCommentReply":{"method":"POST","params":{"body":{"required":true,"type":"string"},"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies"},"createReviewRequest":{"method":"POST","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"reviewers":{"type":"string[]"},"team_reviewers":{"type":"string[]"}},"url":"/repos/:owner/:repo/pulls/:pull_number/requested_reviewers"},"deleteComment":{"method":"DELETE","params":{"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/comments/:comment_id"},"deletePendingReview":{"method":"DELETE","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"review_id":{"required":true,"type":"integer"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id"},"deleteReviewRequest":{"method":"DELETE","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"reviewers":{"type":"string[]"},"team_reviewers":{"type":"string[]"}},"url":"/repos/:owner/:repo/pulls/:pull_number/requested_reviewers"},"dismissReview":{"method":"PUT","params":{"message":{"required":true,"type":"string"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"review_id":{"required":true,"type":"integer"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals"},"get":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number"},"getComment":{"method":"GET","params":{"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/comments/:comment_id"},"getCommentsForReview":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"review_id":{"required":true,"type":"integer"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments"},"getReview":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"review_id":{"required":true,"type":"integer"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id"},"list":{"method":"GET","params":{"base":{"type":"string"},"direction":{"enum":["asc","desc"],"type":"string"},"head":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"sort":{"enum":["created","updated","popularity","long-running"],"type":"string"},"state":{"enum":["open","closed","all"],"type":"string"}},"url":"/repos/:owner/:repo/pulls"},"listComments":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"since":{"type":"string"},"sort":{"enum":["created","updated"],"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/comments"},"listCommentsForRepo":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"since":{"type":"string"},"sort":{"enum":["created","updated"],"type":"string"}},"url":"/repos/:owner/:repo/pulls/comments"},"listCommits":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/commits"},"listFiles":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/files"},"listReviewRequests":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/requested_reviewers"},"listReviews":{"method":"GET","params":{"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews"},"merge":{"method":"PUT","params":{"commit_message":{"type":"string"},"commit_title":{"type":"string"},"merge_method":{"enum":["merge","squash","rebase"],"type":"string"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"sha":{"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/merge"},"submitReview":{"method":"POST","params":{"body":{"type":"string"},"event":{"enum":["APPROVE","REQUEST_CHANGES","COMMENT"],"required":true,"type":"string"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"review_id":{"required":true,"type":"integer"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events"},"update":{"method":"PATCH","params":{"base":{"type":"string"},"body":{"type":"string"},"maintainer_can_modify":{"type":"boolean"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"state":{"enum":["open","closed"],"type":"string"},"title":{"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number"},"updateBranch":{"headers":{"accept":"application/vnd.github.lydian-preview+json"},"method":"PUT","params":{"expected_head_sha":{"type":"string"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/:pull_number/update-branch"},"updateComment":{"method":"PATCH","params":{"body":{"required":true,"type":"string"},"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/comments/:comment_id"},"updateReview":{"method":"PUT","params":{"body":{"required":true,"type":"string"},"number":{"alias":"pull_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"pull_number":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"review_id":{"required":true,"type":"integer"}},"url":"/repos/:owner/:repo/pulls/:pull_number/reviews/:review_id"}},"rateLimit":{"get":{"method":"GET","params":{},"url":"/rate_limit"}},"reactions":{"createForCommitComment":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"POST","params":{"comment_id":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/comments/:comment_id/reactions"},"createForIssue":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"POST","params":{"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"required":true,"type":"string"},"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/reactions"},"createForIssueComment":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"POST","params":{"comment_id":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/comments/:comment_id/reactions"},"createForPullRequestReviewComment":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"POST","params":{"comment_id":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/comments/:comment_id/reactions"},"createForTeamDiscussion":{"headers":{"accept":"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json"},"method":"POST","params":{"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"required":true,"type":"string"},"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/reactions"},"createForTeamDiscussionComment":{"headers":{"accept":"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json"},"method":"POST","params":{"comment_number":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"required":true,"type":"string"},"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions"},"delete":{"headers":{"accept":"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json"},"method":"DELETE","params":{"reaction_id":{"required":true,"type":"integer"}},"url":"/reactions/:reaction_id"},"listForCommitComment":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"GET","params":{"comment_id":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/comments/:comment_id/reactions"},"listForIssue":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"GET","params":{"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"type":"string"},"issue_number":{"required":true,"type":"integer"},"number":{"alias":"issue_number","deprecated":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/:issue_number/reactions"},"listForIssueComment":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"GET","params":{"comment_id":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/issues/comments/:comment_id/reactions"},"listForPullRequestReviewComment":{"headers":{"accept":"application/vnd.github.squirrel-girl-preview+json"},"method":"GET","params":{"comment_id":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pulls/comments/:comment_id/reactions"},"listForTeamDiscussion":{"headers":{"accept":"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json"},"method":"GET","params":{"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"type":"string"},"discussion_number":{"required":true,"type":"integer"},"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/reactions"},"listForTeamDiscussionComment":{"headers":{"accept":"application/vnd.github.echo-preview+json,application/vnd.github.squirrel-girl-preview+json"},"method":"GET","params":{"comment_number":{"required":true,"type":"integer"},"content":{"enum":["+1","-1","laugh","confused","heart","hooray","rocket","eyes"],"type":"string"},"discussion_number":{"required":true,"type":"integer"},"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions"}},"repos":{"acceptInvitation":{"method":"PATCH","params":{"invitation_id":{"required":true,"type":"integer"}},"url":"/user/repository_invitations/:invitation_id"},"addCollaborator":{"method":"PUT","params":{"owner":{"required":true,"type":"string"},"permission":{"enum":["pull","push","admin"],"type":"string"},"repo":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/collaborators/:username"},"addDeployKey":{"method":"POST","params":{"key":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"read_only":{"type":"boolean"},"repo":{"required":true,"type":"string"},"title":{"type":"string"}},"url":"/repos/:owner/:repo/keys"},"addProtectedBranchAdminEnforcement":{"method":"POST","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/enforce_admins"},"addProtectedBranchAppRestrictions":{"method":"POST","params":{"apps":{"mapTo":"data","required":true,"type":"string[]"},"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps"},"addProtectedBranchRequiredSignatures":{"headers":{"accept":"application/vnd.github.zzzax-preview+json"},"method":"POST","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_signatures"},"addProtectedBranchRequiredStatusChecksContexts":{"method":"POST","params":{"branch":{"required":true,"type":"string"},"contexts":{"mapTo":"data","required":true,"type":"string[]"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts"},"addProtectedBranchTeamRestrictions":{"method":"POST","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"teams":{"mapTo":"data","required":true,"type":"string[]"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams"},"addProtectedBranchUserRestrictions":{"method":"POST","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"users":{"mapTo":"data","required":true,"type":"string[]"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/users"},"checkCollaborator":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/collaborators/:username"},"checkVulnerabilityAlerts":{"headers":{"accept":"application/vnd.github.dorian-preview+json"},"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/vulnerability-alerts"},"compareCommits":{"method":"GET","params":{"base":{"required":true,"type":"string"},"head":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/compare/:base...:head"},"createCommitComment":{"method":"POST","params":{"body":{"required":true,"type":"string"},"commit_sha":{"required":true,"type":"string"},"line":{"type":"integer"},"owner":{"required":true,"type":"string"},"path":{"type":"string"},"position":{"type":"integer"},"repo":{"required":true,"type":"string"},"sha":{"alias":"commit_sha","deprecated":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:commit_sha/comments"},"createDeployment":{"method":"POST","params":{"auto_merge":{"type":"boolean"},"description":{"type":"string"},"environment":{"type":"string"},"owner":{"required":true,"type":"string"},"payload":{"type":"string"},"production_environment":{"type":"boolean"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"required_contexts":{"type":"string[]"},"task":{"type":"string"},"transient_environment":{"type":"boolean"}},"url":"/repos/:owner/:repo/deployments"},"createDeploymentStatus":{"method":"POST","params":{"auto_inactive":{"type":"boolean"},"deployment_id":{"required":true,"type":"integer"},"description":{"type":"string"},"environment":{"enum":["production","staging","qa"],"type":"string"},"environment_url":{"type":"string"},"log_url":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"state":{"enum":["error","failure","inactive","in_progress","queued","pending","success"],"required":true,"type":"string"},"target_url":{"type":"string"}},"url":"/repos/:owner/:repo/deployments/:deployment_id/statuses"},"createDispatchEvent":{"headers":{"accept":"application/vnd.github.everest-preview+json"},"method":"POST","params":{"event_type":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/dispatches"},"createFile":{"deprecated":"octokit.repos.createFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)","method":"PUT","params":{"author":{"type":"object"},"author.email":{"required":true,"type":"string"},"author.name":{"required":true,"type":"string"},"branch":{"type":"string"},"committer":{"type":"object"},"committer.email":{"required":true,"type":"string"},"committer.name":{"required":true,"type":"string"},"content":{"required":true,"type":"string"},"message":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"path":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"type":"string"}},"url":"/repos/:owner/:repo/contents/:path"},"createForAuthenticatedUser":{"method":"POST","params":{"allow_merge_commit":{"type":"boolean"},"allow_rebase_merge":{"type":"boolean"},"allow_squash_merge":{"type":"boolean"},"auto_init":{"type":"boolean"},"description":{"type":"string"},"gitignore_template":{"type":"string"},"has_issues":{"type":"boolean"},"has_projects":{"type":"boolean"},"has_wiki":{"type":"boolean"},"homepage":{"type":"string"},"is_template":{"type":"boolean"},"license_template":{"type":"string"},"name":{"required":true,"type":"string"},"private":{"type":"boolean"},"team_id":{"type":"integer"}},"url":"/user/repos"},"createFork":{"method":"POST","params":{"organization":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/forks"},"createHook":{"method":"POST","params":{"active":{"type":"boolean"},"config":{"required":true,"type":"object"},"config.content_type":{"type":"string"},"config.insecure_ssl":{"type":"string"},"config.secret":{"type":"string"},"config.url":{"required":true,"type":"string"},"events":{"type":"string[]"},"name":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/hooks"},"createInOrg":{"method":"POST","params":{"allow_merge_commit":{"type":"boolean"},"allow_rebase_merge":{"type":"boolean"},"allow_squash_merge":{"type":"boolean"},"auto_init":{"type":"boolean"},"description":{"type":"string"},"gitignore_template":{"type":"string"},"has_issues":{"type":"boolean"},"has_projects":{"type":"boolean"},"has_wiki":{"type":"boolean"},"homepage":{"type":"string"},"is_template":{"type":"boolean"},"license_template":{"type":"string"},"name":{"required":true,"type":"string"},"org":{"required":true,"type":"string"},"private":{"type":"boolean"},"team_id":{"type":"integer"}},"url":"/orgs/:org/repos"},"createOrUpdateFile":{"method":"PUT","params":{"author":{"type":"object"},"author.email":{"required":true,"type":"string"},"author.name":{"required":true,"type":"string"},"branch":{"type":"string"},"committer":{"type":"object"},"committer.email":{"required":true,"type":"string"},"committer.name":{"required":true,"type":"string"},"content":{"required":true,"type":"string"},"message":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"path":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"type":"string"}},"url":"/repos/:owner/:repo/contents/:path"},"createRelease":{"method":"POST","params":{"body":{"type":"string"},"draft":{"type":"boolean"},"name":{"type":"string"},"owner":{"required":true,"type":"string"},"prerelease":{"type":"boolean"},"repo":{"required":true,"type":"string"},"tag_name":{"required":true,"type":"string"},"target_commitish":{"type":"string"}},"url":"/repos/:owner/:repo/releases"},"createStatus":{"method":"POST","params":{"context":{"type":"string"},"description":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"required":true,"type":"string"},"state":{"enum":["error","failure","pending","success"],"required":true,"type":"string"},"target_url":{"type":"string"}},"url":"/repos/:owner/:repo/statuses/:sha"},"createUsingTemplate":{"headers":{"accept":"application/vnd.github.baptiste-preview+json"},"method":"POST","params":{"description":{"type":"string"},"name":{"required":true,"type":"string"},"owner":{"type":"string"},"private":{"type":"boolean"},"template_owner":{"required":true,"type":"string"},"template_repo":{"required":true,"type":"string"}},"url":"/repos/:template_owner/:template_repo/generate"},"declineInvitation":{"method":"DELETE","params":{"invitation_id":{"required":true,"type":"integer"}},"url":"/user/repository_invitations/:invitation_id"},"delete":{"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo"},"deleteCommitComment":{"method":"DELETE","params":{"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/comments/:comment_id"},"deleteDownload":{"method":"DELETE","params":{"download_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/downloads/:download_id"},"deleteFile":{"method":"DELETE","params":{"author":{"type":"object"},"author.email":{"type":"string"},"author.name":{"type":"string"},"branch":{"type":"string"},"committer":{"type":"object"},"committer.email":{"type":"string"},"committer.name":{"type":"string"},"message":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"path":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/contents/:path"},"deleteHook":{"method":"DELETE","params":{"hook_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/hooks/:hook_id"},"deleteInvitation":{"method":"DELETE","params":{"invitation_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/invitations/:invitation_id"},"deleteRelease":{"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"release_id":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/:release_id"},"deleteReleaseAsset":{"method":"DELETE","params":{"asset_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/assets/:asset_id"},"disableAutomatedSecurityFixes":{"headers":{"accept":"application/vnd.github.london-preview+json"},"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/automated-security-fixes"},"disablePagesSite":{"headers":{"accept":"application/vnd.github.switcheroo-preview+json"},"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pages"},"disableVulnerabilityAlerts":{"headers":{"accept":"application/vnd.github.dorian-preview+json"},"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/vulnerability-alerts"},"enableAutomatedSecurityFixes":{"headers":{"accept":"application/vnd.github.london-preview+json"},"method":"PUT","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/automated-security-fixes"},"enablePagesSite":{"headers":{"accept":"application/vnd.github.switcheroo-preview+json"},"method":"POST","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"source":{"type":"object"},"source.branch":{"enum":["master","gh-pages"],"type":"string"},"source.path":{"type":"string"}},"url":"/repos/:owner/:repo/pages"},"enableVulnerabilityAlerts":{"headers":{"accept":"application/vnd.github.dorian-preview+json"},"method":"PUT","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/vulnerability-alerts"},"get":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo"},"getAppsWithAccessToProtectedBranch":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps"},"getArchiveLink":{"method":"GET","params":{"archive_format":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/:archive_format/:ref"},"getBranch":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch"},"getBranchProtection":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection"},"getClones":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"per":{"enum":["day","week"],"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/traffic/clones"},"getCodeFrequencyStats":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/stats/code_frequency"},"getCollaboratorPermissionLevel":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/collaborators/:username/permission"},"getCombinedStatusForRef":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:ref/status"},"getCommit":{"method":"GET","params":{"commit_sha":{"alias":"ref","deprecated":true,"type":"string"},"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"alias":"ref","deprecated":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:ref"},"getCommitActivityStats":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/stats/commit_activity"},"getCommitComment":{"method":"GET","params":{"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/comments/:comment_id"},"getCommitRefSha":{"deprecated":"\\"Get the SHA-1 of a commit reference\\" will be removed. Use \\"Get a single commit\\" instead with media type format set to \\"sha\\" instead.","method":"GET","params":{"owner":{"required":true,"type":"string"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:ref"},"getContents":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"path":{"required":true,"type":"string"},"ref":{"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/contents/:path"},"getContributorsStats":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/stats/contributors"},"getDeployKey":{"method":"GET","params":{"key_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/keys/:key_id"},"getDeployment":{"method":"GET","params":{"deployment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/deployments/:deployment_id"},"getDeploymentStatus":{"method":"GET","params":{"deployment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"status_id":{"required":true,"type":"integer"}},"url":"/repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id"},"getDownload":{"method":"GET","params":{"download_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/downloads/:download_id"},"getHook":{"method":"GET","params":{"hook_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/hooks/:hook_id"},"getLatestPagesBuild":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pages/builds/latest"},"getLatestRelease":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/latest"},"getPages":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pages"},"getPagesBuild":{"method":"GET","params":{"build_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pages/builds/:build_id"},"getParticipationStats":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/stats/participation"},"getProtectedBranchAdminEnforcement":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/enforce_admins"},"getProtectedBranchPullRequestReviewEnforcement":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews"},"getProtectedBranchRequiredSignatures":{"headers":{"accept":"application/vnd.github.zzzax-preview+json"},"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_signatures"},"getProtectedBranchRequiredStatusChecks":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_status_checks"},"getProtectedBranchRestrictions":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions"},"getPunchCardStats":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/stats/punch_card"},"getReadme":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"ref":{"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/readme"},"getRelease":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"release_id":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/:release_id"},"getReleaseAsset":{"method":"GET","params":{"asset_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/assets/:asset_id"},"getReleaseByTag":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"tag":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/tags/:tag"},"getTeamsWithAccessToProtectedBranch":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams"},"getTopPaths":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/traffic/popular/paths"},"getTopReferrers":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/traffic/popular/referrers"},"getUsersWithAccessToProtectedBranch":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/users"},"getViews":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"per":{"enum":["day","week"],"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/traffic/views"},"list":{"method":"GET","params":{"affiliation":{"type":"string"},"direction":{"enum":["asc","desc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"sort":{"enum":["created","updated","pushed","full_name"],"type":"string"},"type":{"enum":["all","owner","public","private","member"],"type":"string"},"visibility":{"enum":["all","public","private"],"type":"string"}},"url":"/user/repos"},"listAppsWithAccessToProtectedBranch":{"deprecated":"octokit.repos.listAppsWithAccessToProtectedBranch() has been renamed to octokit.repos.getAppsWithAccessToProtectedBranch() (2019-09-13)","method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps"},"listAssetsForRelease":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"release_id":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/:release_id/assets"},"listBranches":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"protected":{"type":"boolean"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches"},"listBranchesForHeadCommit":{"headers":{"accept":"application/vnd.github.groot-preview+json"},"method":"GET","params":{"commit_sha":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:commit_sha/branches-where-head"},"listCollaborators":{"method":"GET","params":{"affiliation":{"enum":["outside","direct","all"],"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/collaborators"},"listCommentsForCommit":{"method":"GET","params":{"commit_sha":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"ref":{"alias":"commit_sha","deprecated":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:commit_sha/comments"},"listCommitComments":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/comments"},"listCommits":{"method":"GET","params":{"author":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"path":{"type":"string"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"sha":{"type":"string"},"since":{"type":"string"},"until":{"type":"string"}},"url":"/repos/:owner/:repo/commits"},"listContributors":{"method":"GET","params":{"anon":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/contributors"},"listDeployKeys":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/keys"},"listDeploymentStatuses":{"method":"GET","params":{"deployment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/deployments/:deployment_id/statuses"},"listDeployments":{"method":"GET","params":{"environment":{"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"ref":{"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"type":"string"},"task":{"type":"string"}},"url":"/repos/:owner/:repo/deployments"},"listDownloads":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/downloads"},"listForOrg":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"sort":{"enum":["created","updated","pushed","full_name"],"type":"string"},"type":{"enum":["all","public","private","forks","sources","member"],"type":"string"}},"url":"/orgs/:org/repos"},"listForUser":{"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"sort":{"enum":["created","updated","pushed","full_name"],"type":"string"},"type":{"enum":["all","owner","member"],"type":"string"},"username":{"required":true,"type":"string"}},"url":"/users/:username/repos"},"listForks":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"},"sort":{"enum":["newest","oldest","stargazers"],"type":"string"}},"url":"/repos/:owner/:repo/forks"},"listHooks":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/hooks"},"listInvitations":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/invitations"},"listInvitationsForAuthenticatedUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/repository_invitations"},"listLanguages":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/languages"},"listPagesBuilds":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pages/builds"},"listProtectedBranchRequiredStatusChecksContexts":{"method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts"},"listProtectedBranchTeamRestrictions":{"deprecated":"octokit.repos.listProtectedBranchTeamRestrictions() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-09)","method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams"},"listProtectedBranchUserRestrictions":{"deprecated":"octokit.repos.listProtectedBranchUserRestrictions() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-09)","method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/users"},"listPublic":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"}},"url":"/repositories"},"listPullRequestsAssociatedWithCommit":{"headers":{"accept":"application/vnd.github.groot-preview+json"},"method":"GET","params":{"commit_sha":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:commit_sha/pulls"},"listReleases":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases"},"listStatusesForRef":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"ref":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/commits/:ref/statuses"},"listTags":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/tags"},"listTeams":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/teams"},"listTeamsWithAccessToProtectedBranch":{"deprecated":"octokit.repos.listTeamsWithAccessToProtectedBranch() has been renamed to octokit.repos.getTeamsWithAccessToProtectedBranch() (2019-09-13)","method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams"},"listTopics":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/topics"},"listUsersWithAccessToProtectedBranch":{"deprecated":"octokit.repos.listUsersWithAccessToProtectedBranch() has been renamed to octokit.repos.getUsersWithAccessToProtectedBranch() (2019-09-13)","method":"GET","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/users"},"merge":{"method":"POST","params":{"base":{"required":true,"type":"string"},"commit_message":{"type":"string"},"head":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/merges"},"pingHook":{"method":"POST","params":{"hook_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/hooks/:hook_id/pings"},"removeBranchProtection":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection"},"removeCollaborator":{"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/collaborators/:username"},"removeDeployKey":{"method":"DELETE","params":{"key_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/keys/:key_id"},"removeProtectedBranchAdminEnforcement":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/enforce_admins"},"removeProtectedBranchAppRestrictions":{"method":"DELETE","params":{"apps":{"mapTo":"data","required":true,"type":"string[]"},"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps"},"removeProtectedBranchPullRequestReviewEnforcement":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews"},"removeProtectedBranchRequiredSignatures":{"headers":{"accept":"application/vnd.github.zzzax-preview+json"},"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_signatures"},"removeProtectedBranchRequiredStatusChecks":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_status_checks"},"removeProtectedBranchRequiredStatusChecksContexts":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"contexts":{"mapTo":"data","required":true,"type":"string[]"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts"},"removeProtectedBranchRestrictions":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions"},"removeProtectedBranchTeamRestrictions":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"teams":{"mapTo":"data","required":true,"type":"string[]"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams"},"removeProtectedBranchUserRestrictions":{"method":"DELETE","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"users":{"mapTo":"data","required":true,"type":"string[]"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/users"},"replaceProtectedBranchAppRestrictions":{"method":"PUT","params":{"apps":{"mapTo":"data","required":true,"type":"string[]"},"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/apps"},"replaceProtectedBranchRequiredStatusChecksContexts":{"method":"PUT","params":{"branch":{"required":true,"type":"string"},"contexts":{"mapTo":"data","required":true,"type":"string[]"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts"},"replaceProtectedBranchTeamRestrictions":{"method":"PUT","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"teams":{"mapTo":"data","required":true,"type":"string[]"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/teams"},"replaceProtectedBranchUserRestrictions":{"method":"PUT","params":{"branch":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"users":{"mapTo":"data","required":true,"type":"string[]"}},"url":"/repos/:owner/:repo/branches/:branch/protection/restrictions/users"},"replaceTopics":{"method":"PUT","params":{"names":{"required":true,"type":"string[]"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/topics"},"requestPageBuild":{"headers":{"accept":"application/vnd.github.mister-fantastic-preview+json"},"method":"POST","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/pages/builds"},"retrieveCommunityProfileMetrics":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/community/profile"},"testPushHook":{"method":"POST","params":{"hook_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/hooks/:hook_id/tests"},"transfer":{"headers":{"accept":"application/vnd.github.nightshade-preview+json"},"method":"POST","params":{"new_owner":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"team_ids":{"type":"integer[]"}},"url":"/repos/:owner/:repo/transfer"},"update":{"method":"PATCH","params":{"allow_merge_commit":{"type":"boolean"},"allow_rebase_merge":{"type":"boolean"},"allow_squash_merge":{"type":"boolean"},"archived":{"type":"boolean"},"default_branch":{"type":"string"},"description":{"type":"string"},"has_issues":{"type":"boolean"},"has_projects":{"type":"boolean"},"has_wiki":{"type":"boolean"},"homepage":{"type":"string"},"is_template":{"type":"boolean"},"name":{"type":"string"},"owner":{"required":true,"type":"string"},"private":{"type":"boolean"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo"},"updateBranchProtection":{"method":"PUT","params":{"branch":{"required":true,"type":"string"},"enforce_admins":{"allowNull":true,"required":true,"type":"boolean"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"required_pull_request_reviews":{"allowNull":true,"required":true,"type":"object"},"required_pull_request_reviews.dismiss_stale_reviews":{"type":"boolean"},"required_pull_request_reviews.dismissal_restrictions":{"type":"object"},"required_pull_request_reviews.dismissal_restrictions.teams":{"type":"string[]"},"required_pull_request_reviews.dismissal_restrictions.users":{"type":"string[]"},"required_pull_request_reviews.require_code_owner_reviews":{"type":"boolean"},"required_pull_request_reviews.required_approving_review_count":{"type":"integer"},"required_status_checks":{"allowNull":true,"required":true,"type":"object"},"required_status_checks.contexts":{"required":true,"type":"string[]"},"required_status_checks.strict":{"required":true,"type":"boolean"},"restrictions":{"allowNull":true,"required":true,"type":"object"},"restrictions.apps":{"type":"string[]"},"restrictions.teams":{"required":true,"type":"string[]"},"restrictions.users":{"required":true,"type":"string[]"}},"url":"/repos/:owner/:repo/branches/:branch/protection"},"updateCommitComment":{"method":"PATCH","params":{"body":{"required":true,"type":"string"},"comment_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/comments/:comment_id"},"updateFile":{"deprecated":"octokit.repos.updateFile() has been renamed to octokit.repos.createOrUpdateFile() (2019-06-07)","method":"PUT","params":{"author":{"type":"object"},"author.email":{"required":true,"type":"string"},"author.name":{"required":true,"type":"string"},"branch":{"type":"string"},"committer":{"type":"object"},"committer.email":{"required":true,"type":"string"},"committer.name":{"required":true,"type":"string"},"content":{"required":true,"type":"string"},"message":{"required":true,"type":"string"},"owner":{"required":true,"type":"string"},"path":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"sha":{"type":"string"}},"url":"/repos/:owner/:repo/contents/:path"},"updateHook":{"method":"PATCH","params":{"active":{"type":"boolean"},"add_events":{"type":"string[]"},"config":{"type":"object"},"config.content_type":{"type":"string"},"config.insecure_ssl":{"type":"string"},"config.secret":{"type":"string"},"config.url":{"required":true,"type":"string"},"events":{"type":"string[]"},"hook_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"remove_events":{"type":"string[]"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/hooks/:hook_id"},"updateInformationAboutPagesSite":{"method":"PUT","params":{"cname":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"source":{"enum":["\\"gh-pages\\"","\\"master\\"","\\"master /docs\\""],"type":"string"}},"url":"/repos/:owner/:repo/pages"},"updateInvitation":{"method":"PATCH","params":{"invitation_id":{"required":true,"type":"integer"},"owner":{"required":true,"type":"string"},"permissions":{"enum":["read","write","admin"],"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/invitations/:invitation_id"},"updateProtectedBranchPullRequestReviewEnforcement":{"method":"PATCH","params":{"branch":{"required":true,"type":"string"},"dismiss_stale_reviews":{"type":"boolean"},"dismissal_restrictions":{"type":"object"},"dismissal_restrictions.teams":{"type":"string[]"},"dismissal_restrictions.users":{"type":"string[]"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"require_code_owner_reviews":{"type":"boolean"},"required_approving_review_count":{"type":"integer"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews"},"updateProtectedBranchRequiredStatusChecks":{"method":"PATCH","params":{"branch":{"required":true,"type":"string"},"contexts":{"type":"string[]"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"strict":{"type":"boolean"}},"url":"/repos/:owner/:repo/branches/:branch/protection/required_status_checks"},"updateRelease":{"method":"PATCH","params":{"body":{"type":"string"},"draft":{"type":"boolean"},"name":{"type":"string"},"owner":{"required":true,"type":"string"},"prerelease":{"type":"boolean"},"release_id":{"required":true,"type":"integer"},"repo":{"required":true,"type":"string"},"tag_name":{"type":"string"},"target_commitish":{"type":"string"}},"url":"/repos/:owner/:repo/releases/:release_id"},"updateReleaseAsset":{"method":"PATCH","params":{"asset_id":{"required":true,"type":"integer"},"label":{"type":"string"},"name":{"type":"string"},"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"}},"url":"/repos/:owner/:repo/releases/assets/:asset_id"},"uploadReleaseAsset":{"method":"POST","params":{"file":{"mapTo":"data","required":true,"type":"string | object"},"headers":{"required":true,"type":"object"},"headers.content-length":{"required":true,"type":"integer"},"headers.content-type":{"required":true,"type":"string"},"label":{"type":"string"},"name":{"required":true,"type":"string"},"url":{"required":true,"type":"string"}},"url":":url"}},"search":{"code":{"method":"GET","params":{"order":{"enum":["desc","asc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"q":{"required":true,"type":"string"},"sort":{"enum":["indexed"],"type":"string"}},"url":"/search/code"},"commits":{"headers":{"accept":"application/vnd.github.cloak-preview+json"},"method":"GET","params":{"order":{"enum":["desc","asc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"q":{"required":true,"type":"string"},"sort":{"enum":["author-date","committer-date"],"type":"string"}},"url":"/search/commits"},"issues":{"deprecated":"octokit.search.issues() has been renamed to octokit.search.issuesAndPullRequests() (2018-12-27)","method":"GET","params":{"order":{"enum":["desc","asc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"q":{"required":true,"type":"string"},"sort":{"enum":["comments","reactions","reactions-+1","reactions--1","reactions-smile","reactions-thinking_face","reactions-heart","reactions-tada","interactions","created","updated"],"type":"string"}},"url":"/search/issues"},"issuesAndPullRequests":{"method":"GET","params":{"order":{"enum":["desc","asc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"q":{"required":true,"type":"string"},"sort":{"enum":["comments","reactions","reactions-+1","reactions--1","reactions-smile","reactions-thinking_face","reactions-heart","reactions-tada","interactions","created","updated"],"type":"string"}},"url":"/search/issues"},"labels":{"method":"GET","params":{"order":{"enum":["desc","asc"],"type":"string"},"q":{"required":true,"type":"string"},"repository_id":{"required":true,"type":"integer"},"sort":{"enum":["created","updated"],"type":"string"}},"url":"/search/labels"},"repos":{"method":"GET","params":{"order":{"enum":["desc","asc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"q":{"required":true,"type":"string"},"sort":{"enum":["stars","forks","help-wanted-issues","updated"],"type":"string"}},"url":"/search/repositories"},"topics":{"method":"GET","params":{"q":{"required":true,"type":"string"}},"url":"/search/topics"},"users":{"method":"GET","params":{"order":{"enum":["desc","asc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"q":{"required":true,"type":"string"},"sort":{"enum":["followers","repositories","joined"],"type":"string"}},"url":"/search/users"}},"teams":{"addMember":{"deprecated":"octokit.teams.addMember() is deprecated, see https://developer.github.com/v3/teams/members/#add-team-member","method":"PUT","params":{"team_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/teams/:team_id/members/:username"},"addOrUpdateMembership":{"method":"PUT","params":{"role":{"enum":["member","maintainer"],"type":"string"},"team_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/teams/:team_id/memberships/:username"},"addOrUpdateProject":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"PUT","params":{"permission":{"enum":["read","write","admin"],"type":"string"},"project_id":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/projects/:project_id"},"addOrUpdateRepo":{"method":"PUT","params":{"owner":{"required":true,"type":"string"},"permission":{"enum":["pull","push","admin"],"type":"string"},"repo":{"required":true,"type":"string"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/repos/:owner/:repo"},"checkManagesRepo":{"method":"GET","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/repos/:owner/:repo"},"create":{"method":"POST","params":{"description":{"type":"string"},"maintainers":{"type":"string[]"},"name":{"required":true,"type":"string"},"org":{"required":true,"type":"string"},"parent_team_id":{"type":"integer"},"permission":{"enum":["pull","push","admin"],"type":"string"},"privacy":{"enum":["secret","closed"],"type":"string"},"repo_names":{"type":"string[]"}},"url":"/orgs/:org/teams"},"createDiscussion":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"POST","params":{"body":{"required":true,"type":"string"},"private":{"type":"boolean"},"team_id":{"required":true,"type":"integer"},"title":{"required":true,"type":"string"}},"url":"/teams/:team_id/discussions"},"createDiscussionComment":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"POST","params":{"body":{"required":true,"type":"string"},"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/comments"},"delete":{"method":"DELETE","params":{"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id"},"deleteDiscussion":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"DELETE","params":{"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number"},"deleteDiscussionComment":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"DELETE","params":{"comment_number":{"required":true,"type":"integer"},"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/comments/:comment_number"},"get":{"method":"GET","params":{"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id"},"getByName":{"method":"GET","params":{"org":{"required":true,"type":"string"},"team_slug":{"required":true,"type":"string"}},"url":"/orgs/:org/teams/:team_slug"},"getDiscussion":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"GET","params":{"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number"},"getDiscussionComment":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"GET","params":{"comment_number":{"required":true,"type":"integer"},"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/comments/:comment_number"},"getMember":{"deprecated":"octokit.teams.getMember() is deprecated, see https://developer.github.com/v3/teams/members/#get-team-member","method":"GET","params":{"team_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/teams/:team_id/members/:username"},"getMembership":{"method":"GET","params":{"team_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/teams/:team_id/memberships/:username"},"list":{"method":"GET","params":{"org":{"required":true,"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/orgs/:org/teams"},"listChild":{"headers":{"accept":"application/vnd.github.hellcat-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/teams"},"listDiscussionComments":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"discussion_number":{"required":true,"type":"integer"},"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/comments"},"listDiscussions":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"GET","params":{"direction":{"enum":["asc","desc"],"type":"string"},"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions"},"listForAuthenticatedUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/teams"},"listMembers":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"role":{"enum":["member","maintainer","all"],"type":"string"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/members"},"listPendingInvitations":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/invitations"},"listProjects":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/projects"},"listRepos":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/repos"},"removeMember":{"deprecated":"octokit.teams.removeMember() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-member","method":"DELETE","params":{"team_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/teams/:team_id/members/:username"},"removeMembership":{"method":"DELETE","params":{"team_id":{"required":true,"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/teams/:team_id/memberships/:username"},"removeProject":{"method":"DELETE","params":{"project_id":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/projects/:project_id"},"removeRepo":{"method":"DELETE","params":{"owner":{"required":true,"type":"string"},"repo":{"required":true,"type":"string"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/repos/:owner/:repo"},"reviewProject":{"headers":{"accept":"application/vnd.github.inertia-preview+json"},"method":"GET","params":{"project_id":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/projects/:project_id"},"update":{"method":"PATCH","params":{"description":{"type":"string"},"name":{"required":true,"type":"string"},"parent_team_id":{"type":"integer"},"permission":{"enum":["pull","push","admin"],"type":"string"},"privacy":{"enum":["secret","closed"],"type":"string"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id"},"updateDiscussion":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"PATCH","params":{"body":{"type":"string"},"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"},"title":{"type":"string"}},"url":"/teams/:team_id/discussions/:discussion_number"},"updateDiscussionComment":{"headers":{"accept":"application/vnd.github.echo-preview+json"},"method":"PATCH","params":{"body":{"required":true,"type":"string"},"comment_number":{"required":true,"type":"integer"},"discussion_number":{"required":true,"type":"integer"},"team_id":{"required":true,"type":"integer"}},"url":"/teams/:team_id/discussions/:discussion_number/comments/:comment_number"}},"users":{"addEmails":{"method":"POST","params":{"emails":{"required":true,"type":"string[]"}},"url":"/user/emails"},"block":{"method":"PUT","params":{"username":{"required":true,"type":"string"}},"url":"/user/blocks/:username"},"checkBlocked":{"method":"GET","params":{"username":{"required":true,"type":"string"}},"url":"/user/blocks/:username"},"checkFollowing":{"method":"GET","params":{"username":{"required":true,"type":"string"}},"url":"/user/following/:username"},"checkFollowingForUser":{"method":"GET","params":{"target_user":{"required":true,"type":"string"},"username":{"required":true,"type":"string"}},"url":"/users/:username/following/:target_user"},"createGpgKey":{"method":"POST","params":{"armored_public_key":{"type":"string"}},"url":"/user/gpg_keys"},"createPublicKey":{"method":"POST","params":{"key":{"type":"string"},"title":{"type":"string"}},"url":"/user/keys"},"deleteEmails":{"method":"DELETE","params":{"emails":{"required":true,"type":"string[]"}},"url":"/user/emails"},"deleteGpgKey":{"method":"DELETE","params":{"gpg_key_id":{"required":true,"type":"integer"}},"url":"/user/gpg_keys/:gpg_key_id"},"deletePublicKey":{"method":"DELETE","params":{"key_id":{"required":true,"type":"integer"}},"url":"/user/keys/:key_id"},"follow":{"method":"PUT","params":{"username":{"required":true,"type":"string"}},"url":"/user/following/:username"},"getAuthenticated":{"method":"GET","params":{},"url":"/user"},"getByUsername":{"method":"GET","params":{"username":{"required":true,"type":"string"}},"url":"/users/:username"},"getContextForUser":{"headers":{"accept":"application/vnd.github.hagar-preview+json"},"method":"GET","params":{"subject_id":{"type":"string"},"subject_type":{"enum":["organization","repository","issue","pull_request"],"type":"string"},"username":{"required":true,"type":"string"}},"url":"/users/:username/hovercard"},"getGpgKey":{"method":"GET","params":{"gpg_key_id":{"required":true,"type":"integer"}},"url":"/user/gpg_keys/:gpg_key_id"},"getPublicKey":{"method":"GET","params":{"key_id":{"required":true,"type":"integer"}},"url":"/user/keys/:key_id"},"list":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"since":{"type":"string"}},"url":"/users"},"listBlocked":{"method":"GET","params":{},"url":"/user/blocks"},"listEmails":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/emails"},"listFollowersForAuthenticatedUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/followers"},"listFollowersForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/followers"},"listFollowingForAuthenticatedUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/following"},"listFollowingForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/following"},"listGpgKeys":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/gpg_keys"},"listGpgKeysForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/gpg_keys"},"listPublicEmails":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/public_emails"},"listPublicKeys":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"}},"url":"/user/keys"},"listPublicKeysForUser":{"method":"GET","params":{"page":{"type":"integer"},"per_page":{"type":"integer"},"username":{"required":true,"type":"string"}},"url":"/users/:username/keys"},"togglePrimaryEmailVisibility":{"method":"PATCH","params":{"email":{"required":true,"type":"string"},"visibility":{"required":true,"type":"string"}},"url":"/user/email/visibility"},"unblock":{"method":"DELETE","params":{"username":{"required":true,"type":"string"}},"url":"/user/blocks/:username"},"unfollow":{"method":"DELETE","params":{"username":{"required":true,"type":"string"}},"url":"/user/following/:username"},"updateAuthenticated":{"method":"PATCH","params":{"bio":{"type":"string"},"blog":{"type":"string"},"company":{"type":"string"},"email":{"type":"string"},"hireable":{"type":"boolean"},"location":{"type":"string"},"name":{"type":"string"}},"url":"/user"}}}');
 
 /***/ })
 
@@ -33114,10 +34285,11 @@ module.exports = require("zlib");
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/ 	function __nccwpck_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -33129,7 +34301,7 @@ module.exports = require("zlib");
 /******/ 		// Execute the module function
 /******/ 		var threw = true;
 /******/ 		try {
-/******/ 			__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 			__webpack_modules__[moduleId].call(module.exports, module, module.exports, __nccwpck_require__);
 /******/ 			threw = false;
 /******/ 		} finally {
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
@@ -33145,7 +34317,7 @@ module.exports = require("zlib");
 /************************************************************************/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
-/******/ 		__webpack_require__.nmd = (module) => {
+/******/ 		__nccwpck_require__.nmd = (module) => {
 /******/ 			module.paths = [];
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
@@ -33154,11 +34326,21 @@ module.exports = require("zlib");
 /******/ 	
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
-/******/ 	__webpack_require__.ab = __dirname + "/";/************************************************************************/
-/******/ 	// module exports must be returned from runtime so entry inlining is disabled
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(3109);
+/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+var exports = __webpack_exports__;
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const run_1 = __nccwpck_require__(3863);
+run_1.run();
+
+})();
+
+module.exports = __webpack_exports__;
 /******/ })()
 ;
-//# sourceMappingURL=index.js.map
