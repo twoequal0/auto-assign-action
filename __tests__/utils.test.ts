@@ -84,13 +84,18 @@ describe('chooseUsersFromGroups', () => {
     // GIVEN
     const owner = 'owner'
     const reviewers = {
-      groupA: ['owner', 'reviewer1'],
-      groupB: ['reviewer2'],
+      groupA: ['owner', 'reviewer1', 'reviewer2'],
+      groupB: ['reviewer3'],
     }
-    const numberOfReviewers = 1
+    const numberOfReviewers = 0
 
     // WHEN
-    const list = chooseUsersFromGroups(owner, reviewers, numberOfReviewers)
+    const list = chooseUsersFromGroups(
+      owner,
+      reviewers,
+      numberOfReviewers,
+      false
+    )
 
     // THEN
     expect(list).toEqual(['reviewer1', 'reviewer2'])
@@ -106,7 +111,12 @@ describe('chooseUsersFromGroups', () => {
     const numberOfReviewers = 1
 
     // WHEN
-    const list = chooseUsersFromGroups(owner, reviewers, numberOfReviewers)
+    const list = chooseUsersFromGroups(
+      owner,
+      reviewers,
+      numberOfReviewers,
+      false
+    )
 
     // THEN
     expect(list.length).toEqual(1)
@@ -125,7 +135,12 @@ describe('chooseUsersFromGroups', () => {
     const numberOfReviewers = 1
 
     // WHEN
-    const list = chooseUsersFromGroups(owner, reviewers, numberOfReviewers)
+    const list = chooseUsersFromGroups(
+      owner,
+      reviewers,
+      numberOfReviewers,
+      false
+    )
 
     // THEN
     expect(list.length).toEqual(3)
@@ -144,7 +159,12 @@ describe('chooseUsersFromGroups', () => {
     const numberOfReviewers = 1
 
     // WHEN
-    const list = chooseUsersFromGroups(owner, reviewers, numberOfReviewers)
+    const list = chooseUsersFromGroups(
+      owner,
+      reviewers,
+      numberOfReviewers,
+      false
+    )
 
     // THEN
     expect(list.length).toEqual(1)
@@ -161,7 +181,12 @@ describe('chooseUsersFromGroups', () => {
     const numberOfReviewers = 2
 
     // WHEN
-    const list = chooseUsersFromGroups(owner, reviewers, numberOfReviewers)
+    const list = chooseUsersFromGroups(
+      owner,
+      reviewers,
+      numberOfReviewers,
+      false
+    )
 
     // THEN
     expect(list.length).toEqual(1)
@@ -178,7 +203,12 @@ describe('chooseUsersFromGroups', () => {
     const numberOfReviewers = 2
 
     // WHEN
-    const list = chooseUsersFromGroups(owner, reviewers, numberOfReviewers)
+    const list = chooseUsersFromGroups(
+      owner,
+      reviewers,
+      numberOfReviewers,
+      false
+    )
 
     // THEN
     expect(list.length).toEqual(0)

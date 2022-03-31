@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import * as core from '@actions/core'
 import * as github from '@actions/github'
 import * as yaml from 'js-yaml'
 import { Config } from './handler'
@@ -73,10 +74,12 @@ export function chooseUsers(
   desiredNumber: number,
   filterUser: string = ''
 ): string[] {
+  core.info(`chooseUsers, candidates ${candidates}`)
   const filteredCandidates = candidates.filter((reviewer: string): boolean => {
     return reviewer !== filterUser
   })
 
+  core.info(`chooseUsers, filteredCandidates ${filteredCandidates}`)
   // all-assign
   if (desiredNumber === 0) {
     return filteredCandidates
@@ -107,9 +110,11 @@ export function chooseUsersFromGroups(
   let users: string[] = []
   for (const group in groups) {
     if (useAllGroups || groups[group].indexOf(owner) > -1) {
+      core.info(`owner group`)
       users = users.concat(chooseUsers(groups[group], desiredNumber, owner))
     }
   }
+  core.info(`users ${users.join(', ')}`)
   return users
 }
 
