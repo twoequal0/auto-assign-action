@@ -1,6 +1,6 @@
 # Auto Assign Bot
 
-An action which adds reviewers to the pull request when the pull request is opened.
+Add assignees and reviewers when pull requests are opened.
 
 ## :arrow_forward: Usage
 
