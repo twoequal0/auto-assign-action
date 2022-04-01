@@ -7,6 +7,10 @@ addAssignees: author
 # Set to true to add reviewers from different groups to pull requests
 useReviewGroups: true
 
+# A number of reviewers added to the pull request
+# Set 0 to add all the reviewers (default: 0)
+numberOfReviewers: 2
+
 # A list of reviewers, split into different groups, to be added to pull requests (GitHub user name)
 reviewGroups:
   groupA:
