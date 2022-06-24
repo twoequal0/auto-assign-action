@@ -1,13 +1,14 @@
 name: 'Auto Assign'
-on: 
+on:
   pull_request:
-   types:
-    - opend
-    - reopend
-    - assigned
-    - ready_for_review
-    - labeld
-    - unlabeled
+    types:
+      - opened
+      - reopened
+      - ready_for_review
+      - synchronize
+      - assigned
+      - labeld
+      - unlabeled
 
 jobs:
   add-reviews:
