@@ -5,6 +5,7 @@ on:
     - opend
     - reopend
     - assigned
+    - ready_for_review
     - labeld
     - unlabeled
 
