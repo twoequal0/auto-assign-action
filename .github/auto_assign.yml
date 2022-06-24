@@ -9,6 +9,8 @@ addAssignees: author
 # Uses numberOfReviewers if unset.
 numberOfAssignees: 0
 
+numberOfReviewers: 0
+
 useReviewGroups: true
 
 reviewGroups:
