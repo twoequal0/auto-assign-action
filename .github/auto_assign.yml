@@ -13,11 +13,14 @@ numberOfReviewers: 0
 
 # A list of reviewers, split into different groups, to be added to pull requests (GitHub user name)
 reviewGroups:
-  groupA:
+  커머스:
     - dawn0114
     - twoequal0
-  groupB:
+  콘텐츠:
+    - dawn0114
     - smilee0114
+  검색:
+    - dawn0114
 
 # A list of keywords to be skipped the process that add reviewers if pull requests include it
 skipKeywords:

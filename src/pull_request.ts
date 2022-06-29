@@ -40,4 +40,12 @@ export class PullRequest {
     const { labels: pullRequestLabels = [] } = this.context.payload.pull_request
     return pullRequestLabels.some(label => labels.includes(label.name))
   }
+
+  getLabels(): string[] {
+    if (!this.context.payload.pull_request) {
+       return []
+    }
+    const { labels: pullRequestLabels = [] } = this.context.payload.pull_request
+    return pullRequestLabels.name
+  }
 }
