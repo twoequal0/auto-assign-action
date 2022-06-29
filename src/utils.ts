@@ -118,7 +118,7 @@ export function chooseUsersFromGroups(
         users = users.concat(chooseUsers(groups[group], desiredNumber, owner))
       }
     } else {
-      for (const label in labels) {
+      for (const label of labels) {
         core.info(`lablel : ${label}`)
         users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
       }

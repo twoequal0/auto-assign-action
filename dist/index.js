@@ -36342,7 +36342,7 @@ function chooseUsersFromGroups(owner, groups, desiredNumber, useAllGroups, label
             }
         }
         else {
-            for (const label in labels) {
+            for (const label of labels) {
                 core.info(`lablel : ${label}`);
                 users = users.concat(chooseUsers(groups[label], desiredNumber, owner));
             }
