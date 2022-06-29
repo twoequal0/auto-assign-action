@@ -109,7 +109,7 @@ export async function handlePullRequest(
         }
       }
       core.info(
-        `PR Labels : ${pr.getLabels()}`
+        `PR Labels : ${pr.getLabels().join(', ')}`
       )
       const reviewers = utils.chooseReviewers(owner, useAllReviewGroups, config, pr.getLabels())
 

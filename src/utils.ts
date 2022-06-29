@@ -3,6 +3,7 @@ import * as github from '@actions/github'
 import * as yaml from 'js-yaml'
 import { Config } from './handler'
 import { group } from 'console'
+import * as core from '@actions/core'
 
 export function chooseReviewers(
   owner: string,
@@ -125,7 +126,9 @@ export function chooseUsersFromGroups(
     }
   }
 
-  return users
+  const userSet = new Set(users)
+  const uniqueUsers = [...userSet]
+  return uniqueUsers
 }
 
 export async function fetchConfigurationFile(client: github.GitHub, options) {
