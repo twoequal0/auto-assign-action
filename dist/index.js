@@ -36155,11 +36155,15 @@ class PullRequest {
         return pullRequestLabels.some(label => labels.includes(label.name));
     }
     getLabels() {
+        let labelStringArray = [];
         if (!this.context.payload.pull_request) {
             return [];
         }
-        const { labels: pullRequestLabels = [] } = this.context.payload.pull_request;
-        return pullRequestLabels.name;
+        const labels = this.context.payload.pull_request.labels;
+        for (const label of labels) {
+            labelStringArray.push(label.name);
+        }
+        return labelStringArray;
     }
 }
 exports.PullRequest = PullRequest;

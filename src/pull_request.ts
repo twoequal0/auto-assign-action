@@ -2,6 +2,15 @@ import * as github from '@actions/github'
 import * as core from '@actions/core'
 import { Context } from '@actions/github/lib/context'
 
+interface Label {
+  color: string,
+  default: boolean,
+  description: string,
+  name: string,
+  node_id: string,
+  url: string,
+}
+
 export class PullRequest {
   private client: github.GitHub
   private context: Context
@@ -42,10 +51,14 @@ export class PullRequest {
   }
 
   getLabels(): string[] {
+    let labelStringArray: string[] = []
     if (!this.context.payload.pull_request) {
-       return []
+      return []
     }
-    const { labels: pullRequestLabels = [] } = this.context.payload.pull_request
-    return pullRequestLabels.name
+    const labels: Label[] = this.context.payload.pull_request.labels
+    for (const label of labels) {
+      labelStringArray.push(label.name)
+    }
+    return labelStringArray
   }
 }
