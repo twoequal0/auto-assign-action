@@ -119,13 +119,14 @@ export function chooseUsersFromGroups(
       }
     } else {
       for (const label in labels) {
+        core.info(`lablel : ${label}`)
         if (groups.keys.indexOf(label) > -1) {
           users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
         }
       }
     }
   }
-
+  core.info(`users : ${users.join(", ")}`)
   const userSet = new Set(users)
   const uniqueUsers = [...userSet]
   return uniqueUsers
