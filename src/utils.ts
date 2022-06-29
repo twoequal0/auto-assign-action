@@ -120,7 +120,7 @@ export function chooseUsersFromGroups(
     } else {
       for (const label in labels) {
         core.info(`lablel : ${label}`)
-        if (groups.keys.indexOf(label) > -1) {
+        if (groups.keys.includes(label)) {
           users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
         }
       }
