@@ -108,7 +108,6 @@ export async function handlePullRequest(
           useAllReviewGroups = pr.hasAnyLabel(useAllReviewGroupsLabels)
         }
       }
-      core.info(`PR Label : ${pr.getLabels().join(', ')}`)
       const reviewers = utils.chooseReviewers(owner, useAllReviewGroups, config, pr.getLabels())
 
       if (reviewers.length > 0) {
