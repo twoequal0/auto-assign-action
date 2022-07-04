@@ -2,8 +2,6 @@ import _ from 'lodash'
 import * as github from '@actions/github'
 import * as yaml from 'js-yaml'
 import { Config } from './handler'
-import { group } from 'console'
-import * as core from '@actions/core'
 
 export function chooseReviewers(
   owner: string,
@@ -119,12 +117,10 @@ export function chooseUsersFromGroups(
       }
     } else {
       for (const label of labels) {
-        core.info(`lablel : ${label}`)
         users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
       }
     }
   }
-  core.info(`users : ${users.join(", ")}`)
   const userSet = new Set(users)
   const uniqueUsers = [...userSet]
   return uniqueUsers

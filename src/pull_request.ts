@@ -3,12 +3,12 @@ import * as core from '@actions/core'
 import { Context } from '@actions/github/lib/context'
 
 interface Label {
-  color: string,
-  default: boolean,
-  description: string,
-  name: string,
-  node_id: string,
-  url: string,
+  color: string
+  default: boolean
+  description: string
+  name: string
+  node_id: string
+  url: string
 }
 
 export class PullRequest {

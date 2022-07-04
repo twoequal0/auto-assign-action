@@ -108,7 +108,12 @@ export async function handlePullRequest(
           useAllReviewGroups = pr.hasAnyLabel(useAllReviewGroupsLabels)
         }
       }
-      const reviewers = utils.chooseReviewers(owner, useAllReviewGroups, config, pr.getLabels())
+      const reviewers = utils.chooseReviewers(
+        owner,
+        useAllReviewGroups,
+        config,
+        pr.getLabels()
+      )
 
       if (reviewers.length > 0) {
         await pr.addReviewers(reviewers)
