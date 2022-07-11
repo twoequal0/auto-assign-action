@@ -2,6 +2,7 @@ import _ from 'lodash'
 import * as github from '@actions/github'
 import * as yaml from 'js-yaml'
 import { Config } from './handler'
+import * as core from '@actions/core'
 
 export function chooseReviewers(
   owner: string,
@@ -117,7 +118,11 @@ export function chooseUsersFromGroups(
       }
     } else {
       for (const label of labels) {
-        users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
+        core.info(`groups.keys ${groups.keys}`)
+        core.info(`groups.keys includes ${(groups.keys || []).includes(label)}`)
+        if ((groups.keys || []).includes(label)) {
+          users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
+        }
       }
     }
   }

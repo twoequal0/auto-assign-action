@@ -36279,6 +36279,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fetchConfigurationFile = exports.chooseUsersFromGroups = exports.includesSkipKeywords = exports.chooseUsers = exports.chooseAssignees = exports.chooseReviewers = void 0;
 const lodash_1 = __importDefault(__nccwpck_require__(7482));
 const yaml = __importStar(__nccwpck_require__(884));
+const core = __importStar(__nccwpck_require__(4181));
 function chooseReviewers(owner, useAllReviewGroups, config, labels) {
     const { useReviewGroups, reviewGroups, numberOfReviewers, reviewers } = config;
     let chosenReviewers = [];
@@ -36342,7 +36343,11 @@ function chooseUsersFromGroups(owner, groups, desiredNumber, useAllGroups, label
         }
         else {
             for (const label of labels) {
-                users = users.concat(chooseUsers(groups[label], desiredNumber, owner));
+                core.info(`groups.keys ${groups.keys}`);
+                core.info(`groups.keys includes ${(groups.keys || []).includes(label)}`);
+                if ((groups.keys || []).includes(label)) {
+                    users = users.concat(chooseUsers(groups[label], desiredNumber, owner));
+                }
             }
         }
     }
