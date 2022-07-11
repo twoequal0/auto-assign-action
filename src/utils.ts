@@ -118,9 +118,9 @@ export function chooseUsersFromGroups(
       }
     } else {
       for (const label of labels) {
-        core.info(`groups.keys ${groups.keys}`)
-        core.info(`groups.keys includes ${(groups.keys || []).includes(label)}`)
-        if ((groups.keys || []).includes(label)) {
+        core.info(`groups.keys ${groups.key}`)
+        core.info(`groups.keys includes ${(groups.key || []).includes(label)}`)
+        if ((groups.key || []).includes(label)) {
           users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
         }
       }
