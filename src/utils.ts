@@ -2,11 +2,13 @@ import _ from 'lodash'
 import * as github from '@actions/github'
 import * as yaml from 'js-yaml'
 import { Config } from './handler'
+import * as core from '@actions/core'
 
 export function chooseReviewers(
   owner: string,
   useAllReviewGroups: Boolean,
-  config: Config
+  config: Config,
+  labels: string[]
 ): string[] {
   const { useReviewGroups, reviewGroups, numberOfReviewers, reviewers } = config
   let chosenReviewers: string[] = []
@@ -18,7 +20,8 @@ export function chooseReviewers(
       owner,
       reviewGroups,
       numberOfReviewers,
-      useAllReviewGroups
+      useAllReviewGroups,
+      labels
     )
   } else {
     chosenReviewers = chooseUsers(reviewers, numberOfReviewers, owner)
@@ -54,7 +57,8 @@ export function chooseAssignees(owner: string, config: Config): string[] {
       owner,
       assigneeGroups,
       numberOfAssignees || numberOfReviewers,
-      false
+      false,
+      []
     )
   } else {
     const candidates = assignees ? assignees : reviewers
@@ -102,15 +106,29 @@ export function chooseUsersFromGroups(
   owner: string,
   groups: { [key: string]: string[] } | undefined,
   desiredNumber: number,
-  useAllGroups: Boolean
+  useAllGroups: Boolean,
+  labels: string[]
 ): string[] {
   let users: string[] = []
-  for (const group in groups) {
-    if (useAllGroups || groups[group].indexOf(owner) > -1) {
-      users = users.concat(chooseUsers(groups[group], desiredNumber, owner))
+
+  if (groups !== undefined) {
+    if (useAllGroups) {
+      for (const group in groups) {
+        users = users.concat(chooseUsers(groups[group], desiredNumber, owner))
+      }
+    } else {
+      for (const label of labels) {
+        core.info(`groups.key ${Object.keys(groups)}`)
+        core.info(`groups.key includes ${Object.keys(groups).includes(label)}`)
+        if (Object.keys(groups).includes(label)) {
+          users = users.concat(chooseUsers(groups[label], desiredNumber, owner))
+        }
+      }
     }
   }
-  return users
+  const userSet = new Set(users)
+  const uniqueUsers = [...userSet]
+  return uniqueUsers
 }
 
 export async function fetchConfigurationFile(client: github.GitHub, options) {

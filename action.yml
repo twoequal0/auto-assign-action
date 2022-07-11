@@ -1,6 +1,6 @@
 name: 'Auto Assign Bot'
 description: 'Add assignees and reviewers when pull requests are opened.'
-author: 'Dong Young'
+author: 'Dawn Lee'
 inputs:
   repo-token:
     description: 'A token for the repo'
